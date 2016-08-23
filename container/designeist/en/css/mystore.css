@@ -1,0 +1,25 @@
+/* CSS Document */
+
+
+#container #main_block{ float:left;width:100%;background:url(../img/app/bg_mystore.jpg) no-repeat; background-size:100% 100%;overflow-y:auto;overflow-x:none;}
+#container #main_block #tlt_block{ float:left; clear:both;width:100%; text-align:center;}
+#container #main_block #tlt_block .img_tlt{ width:65%; margin:15% 0 10px 0;}
+#container #main_block #nav_block{ float:left; clear:both;width:100%;}
+#container #main_block #nav_block .single_nav{ float:left;width:50%;}
+#container #main_block #nav_block a{display:block;max-width:100px;width:45%;text-align:center; padding: 4% 10px;border-radius:10px; border:solid 4px rgba(0,0,0,0.2); opacity:0.7;}
+#container #main_block #nav_block .a_left{float:right;margin:0 8% 20px 0;}
+#container #main_block #nav_block .a_right{float:left;margin:0 0 20px 8%;}
+#container #main_block #nav_block .bg_color1{ background:#00B7EE;}
+#container #main_block #nav_block .bg_color2{ background:#EC6941;}
+#container #main_block #nav_block .bg_color3{ background:#630;}
+#container #main_block #nav_block .bg_color4{ background:#0C0;}
+#container #main_block #nav_block .bg_color5{ background:#CC0;}
+#container #main_block #nav_block .bg_color6{ background:#036;}
+#container #main_block #nav_block .bg_color7{ background:#90F;}
+#container #main_block #nav_block .bg_color8{ background:#F0C;}
+#container #main_block #nav_block .img_nav{ width:70%;}
+#container #main_block #nav_block .txt_nav{ font-size:16px; color:#FFF;}
+#container #main_block .padding_bottom{ float:left; clear:both; height:30px; width:100%;}
+
+
+

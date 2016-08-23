@@ -1,0 +1,99 @@
+<link href="css/table.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-2.0.3.min.js"></script>
+
+<script type="text/javascript">
+window.func;//自动载入
+var role;
+function func()
+{}
+$.ajax({
+	url:'"../php/user/actOperation.php?action=getuseractjoinstate&actID="'+product[i-1].actID,
+	datatype:"json",
+	type:"post",
+	success:function(data){
+		var product = eval("(" + data + ")");
+		if(product=="cancel")
+		{
+			var a_act="<a href=\"#\" onclick=\"f_DoActState('url"+n+"','"+n+" ： "+n+"');\">参加</a>";	
+			td_act.innerHTML=a_act;
+		}
+		else if(product=="joined")
+		{
+									
+		}
+	}
+});
+function f_DoActState(url,studentInfo){
+	if(confirm("是否要删除所选学员【"+studentInfo+"】的活动记录？")){
+		location.href=url;		
+	}
+}
+
+for(var i=0;i<product.length;i++){  
+	var tOption= document.createElement("Option");
+		tOption.text = product[i];
+		tOption.selected = false;
+		tOption.value = product[i];
+		document.getElementById("Oper_Type").options.add(tOption); 
+}
+/*html下拉框
+<select name="Oper_Type" id="Oper_Type">
+<option selected="selected" value="">请选择</option>
+</select>*/
+
+//取权限
+$.ajax({
+    url:"../php/getSession.php",
+    datatype:"json",
+    type:"post",
+    success:function(data){
+         role=eval("("+data+")")[1];
+    }
+});
+//取数据
+$.ajax({
+    url:"../php/getSession.php",
+    datatype:"json",
+    type:"post",
+    success:function(data){
+        var product = eval("(" + data + ")");
+		if(product=="-1")
+			alert("数据为空！");
+		else
+			make_tbl(product);
+	}
+});
+//绘制表格
+function make_tbl(product);
+{
+	var tab=document.getElementById("table");//清空table记录
+	var num=tab.rows.length;
+	for(var i=0; i<= product.length; i++)//逐行绘表
+	{
+		var tr=tab.insertRow(tab.rows.length);
+		var td1=tr.insertCell(0);
+		var td2=tr.insertCell(1);
+		td1.align="center";td1.width="130";
+		td2.align="center";td2.width="100";
+		
+		if(i==0)
+		{
+			td1.innerHTML="";
+			td1.setAttribute("class","tab_h");
+			td2.innerHTML="";
+			td2.setAttribute("class","tab_h");
+		}
+		else
+		{
+			td1.innerHTML=product[i-1].;
+			td2.innerHTML=product[i-1].;
+					
+			if(i%2==0)
+			{
+				td1.setAttribute("class","tab_l");
+				td2.setAttribute("class","tab_l");
+			}
+		}
+	}
+}
+

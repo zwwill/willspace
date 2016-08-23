@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>商品发布</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="../css/com.css">
+<link rel="stylesheet" type="text/css" href="../css/add.css">
+<!--JS文件-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/com.js"></script>
+<script src="../js/add.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+ 
+	<!--main_block-->
+	<div id="main_block">
+    	<div id="preview_block">
+            <div class="single_pic" id="img_b1">+</div>
+            <span class="pic_info">主图</span>
+            <input class="hidden_input" name="img1" id="img1" type="file" onchange="previewImage(this,'1')" />
+            <span class="btn_del" id="btn_del1" p="1">✕</span>
+            
+            <div class="single_pic" id="img_b2">+</div>
+            <input class="hidden_input" name="img2" id="img2" type="file" onchange="previewImage(this,'2')" />
+            <span class="btn_del" id="btn_del2" p="2">✕</span>
+            
+            <div class="single_pic" id="img_b3">+</div>
+            <input class="hidden_input" name="img3" id="img3" type="file" onchange="previewImage(this,'3')" />
+            <span class="btn_del" id="btn_del3" p="3">✕</span>
+            
+            <div class="single_pic" id="img_b4">+</div>
+            <input class="hidden_input" name="img4" id="img4" type="file" onchange="previewImage(this,'4')" />
+            <span class="btn_del" id="btn_del4" p="4">✕</span>
+            
+            <div class="single_pic" id="img_b5">+</div>
+            <input class="hidden_input" name="img5" id="img5" type="file" onchange="previewImage(this,'5')" />
+            <span class="btn_del" id="btn_del5" p="5">✕</span>
+            
+            <div class="single_pic" id="img_b6">+</div>
+            <input class="hidden_input" name="img6" id="img6" type="file" onchange="previewImage(this,'6')" />
+            <span class="btn_del" id="btn_del6" p="6">✕</span>
+            
+            <span class="tips_info"><span>Tips: </span>主图建议上传方图，图片限6张。</span>
+        </div>
+        <div id="goods_name_block">
+        	<p class="tlt">设计名</p>
+            <textarea name="goods_name" id="goods_name" class="txt_name" placeholder="给您的设计起个逼格的名字吧"></textarea>
+        </div>
+        
+        <div id="goods_isnew_block">
+        	<p class="tlt">是否进行众筹</p> 
+        	<div class="btn_checkbox" new="1">
+            	<div class="checkbox">
+            	<span class="onoff onoff-on"><label><span class="b"></span></label></span>
+                </div>
+           	</div> 
+         </div>
+        <div id="other_info_block" class="target_price" style="display:none;">
+          	<span class="single_i">
+            	<p class="tlt">目标资金</p>
+            	<input type="text" name="price_t" id="price_t" class="in_txt" value="0"/>
+                <input type="range" id="price_t_scroll" step="100" value="0" min="0" max="100000" oninput='listen_price_t_range_scroll()'/>
+            </span>  
+        </div>
+        <div id="goods_info_block">
+        	<p class="tlt">设计描述</p>
+            <textarea name="goods_info" id="goods_info" class="txt_info" placeholder="没有故事的设计不是好设计"></textarea>
+        </div>
+        <div id="other_info_block">
+          	<span class="single_i">
+            	<p class="tlt">原价</p>
+            	<input type="text" name="price_o" id="price_o" class="in_txt" value="0"/>
+                <input type="range" id="price_o_scroll" step="1" value="0" min="0" max="1000" oninput='listen_price_o_range_scroll()'/>
+            </span>
+            <span class="single_i">
+            	<p class="tlt">现售</p>
+            	<input type="text" name="price" id="price" class="in_txt" value="0"/>
+                <input type="range" id="price_scroll" step="1" value="0" min="0" max="1000" oninput='listen_price_range_scroll()'/>
+            </span>
+        	<span class="single_i">
+            	<p class="tlt">库存</p>
+                <input type="num" name="nums" id="nums" class="in_txt" min="0" value="0" />
+                <input type="range"  id="nums_scroll" step="10" value="1" min="0" max="100"oninput='listen_nums_range_scroll()' />
+            </span>
+        </div>
+    </div>
+	<!--END main_block-->
+    
+	<!--sub_block-->
+    <span class="menu_padding_block"></span>
+    <span class="menu_padding_block"></span>
+    <div id="sub_block"  class="foot_block">
+    	<a id="btn_sub">确 认 发 布</a>
+    </div>
+	<!--END sub_block-->
+</div>
+</body>
+</html>

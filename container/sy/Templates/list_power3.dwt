@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>思源网-动力源泉</title>
+<!-- TemplateEndEditable -->
+<meta name="keywords" content="大学生，学习，英语，考研，资料下载，职业规划">
+<meta name="description" content="80900思源网是完全面向大学生的学习指导网站，致力于为中国大学生提供优质的学习服务与生活指导。">
+
+<link href="../content/power/css/list.css" rel="stylesheet" type="text/css" />
+<script>
+	function setHome(oThis){
+		oThis.style.behavior='url(#default#homepage)';
+		oThis.setHomePage(strHome);
+		return false;
+	}
+	function getNav(){
+			if(navigator.userAgent.indexOf("MSIE")!=-1)    return 1;
+			if(navigator.userAgent.indexOf("Firefox")!=-1) return 2;
+			return 0;
+		}
+		var strHome = 'http://www.80900.cc';
+		function addFav(){
+		switch(getNav()){
+			case 1:
+			  window.external.addFavorite(strHome,'思源网 80900.cc');
+			  break;
+			case 2:
+			  window.sidebar.addPanel('思源网 80900.cc',strHome,'');
+			  break;
+			case 0:
+			  alert("加入收藏失败");
+			  break;
+		}	
+	}
+</script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body style="background: #E4E4E4;">
+  
+
+	<div style="height:2px; background: #9C5B03; width:100%;" ></div>
+	<div id="container">
+    <div id="header" style="width:980px; height:130px;"  >
+        <a href="../index.html" target="_parent"><div id="logo"></div></a>
+        <div id="add">
+                    <ul>
+                      <a href="#" onclick="addFav()"><li class="add0">&nbsp;</li></a>
+                      <li><a href="#"  onclick="addFav()">加入收藏</a></li>
+                      <a href="#" onclick="setHome(this)"><li class="add0">&nbsp;</li></a>
+                      <li><a href="#" onclick="setHome(this)">设为主页</a></li>
+          </ul>
+      </div>
+<div id="nav">
+                    <ul>
+                      <li><a href="../index.html" target="_parent">80900首页</a></li>
+                      <li><a href="#">专业万花筒</a></li>
+                      <li><a href="#">职业规划</a></li>
+                      <li><a href="../content/power/index.html" style="color:#F30;">动力源泉</a></li>
+                      <li><a href="#">书香天地</a></li>
+                    </ul>
+        </div>
+        <div class="low">&nbsp;</div>
+     </div>
+   	<div id="main">
+       <div id="list">
+      	 <div id="up">
+      			<div class="left">
+            	<img src="../content/power/images/yy.png" width="150" height="150" />
+                </div>
+                    <div class="lis">
+                        <ul>
+                            <li><a href="../content/power/p/p1/01.html">微观世界</a></li>
+                            <li><a href="../content/power/p/p2/01.html">恋爱了吗？</a></li>
+                            <li><span>名人启示录</span></li>
+                            <li><a href="../content/power/p/p4/01.html">开心一刻</a></li>
+                        </ul>
+                    </div>
+			</div>
+             
+            <div id="neirong">
+            	<div id="left"><!-- TemplateBeginEditable name="left" -->left<!-- TemplateEndEditable -->
+               <div id="share">
+     		<img src="../content/power/images/link.png" width="60" height="40" style="float:left;" />
+     <script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<a class="bshareDiv" href="http://www.bshare.cn/share">分享</a>
+<script language="javascript" type="text/javascript" src="http://www.bshare.cn/button.js#uuid=2676a72a-c69b-461c-89ef-84b5d7483b97 &amp;style=-1"></script>
+<script language="javascript" type="text/javascript" src="http://www.bshare.cn/bshareAp.js"></script>
+     
+               </div> 	
+              </div>
+                <div id="right"></div>
+            </div>
+       </div>
+       
+       
+    </div>
+    
+    <div id="footer" style="width:980px; height:300px;" >
+     	 <p class="hr" style="margin:20px 0px 40px 0px;"></p>
+     	 <div class="help">
+   		 <p style="font-size:14px; font-weight:bold; color:#666; text-align:center">帮&nbsp;&nbsp;助</p>
+         <p class="hr">&nbsp;</p>
+       		<ul>
+            	<li>&nbsp;</li>
+            	<li><a href="#"></a></li>
+            	<li><a href="#">协助使用</a></li>
+            	<li>&nbsp;</li>
+                <li><a href="#">信息反馈</a></li>
+            	<li>&nbsp;</li>
+                <li><a href="#">意见建议</a></li>
+           	</ul>
+        </div>
+   	    <div class=" help link">
+   		 <p style="font-size:14px; font-weight:bold; color:#666; text-align:center">友情链接</p>
+         <p class="hr">&nbsp;</p>
+        	 <div class="ff">
+                 <ul>
+                    <li>&nbsp;</li>
+                    <li><a href="http://www.kaoyan.com/" target="_blank">考研网</a></li>
+                    <li><a href="http://open.163.com/" target="_blank">网易公开课</a></li>
+                    <li><a href="http://wenku.baidu.com/" target="_blank">百度文库</a></li>
+                    <li><a href="http://huaban.com/" target="_blank">花瓣网</a></li>
+                   <li><a href="http://www.5xue.com/" target="_blank">开复学习网</a></li>
+                </ul>
+            </div>
+           <div class="ff">
+                 <ul>
+                    <li>&nbsp;</li>
+                    <li><a href="http://www.docin.com/" target="_blank">豆丁网</a></li>
+                    <li><a href="http://www.busuu.com/" target="_blank">语言学习网</a></li>
+                    <li><a href="http://www.putclub.com/" target="_blank">普特英语</a></li>
+                    <li><a href="http://www.kaozheng123.com/" target="_blank">考证网</a></li>
+                    <li><a href="http://www.51lw.com/" target="_blank">无忧论文网</a></li>
+                   <li></li>
+                </ul>
+          </div>
+        </div>
+     	<div class="help">
+   		 <p style="font-size:14px; font-weight:bold; color:#666; text-align:center">关于我们</p>
+         <p class="hr">&nbsp;</p>
+       		<ul>
+            	<li>&nbsp;</li>
+            	<li><a href="#">关于我们</a></li>
+            	<li>&nbsp;</li>
+            	<li><a href="http://www.51.la/" target="_blank">网站统计</a></li>
+            	<li>&nbsp;</li>
+                <li><a href="#">联系站长</a></li>
+            </ul>
+        </div>
+        <div id="down">
+     	 <p><a href="../content/power/index.html" target="_parent"><img src="../content/power/images/logo_l.png" border="0" />80900思源网</a> CopyRight <span style="font-size:18px; vertical-align:bottom;">&copy;</span> 2013-2013 All Right Reserved</p>
+        </div>
+    	
+    </div>
+    </div>
+</body>
+</html>

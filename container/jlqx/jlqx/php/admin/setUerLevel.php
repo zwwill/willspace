@@ -1,0 +1,38 @@
+<?php
+session_start();
+require_once(dirname(__file__).'/../../lib/function.php');
+$studentID=$_SESSION["studentID"];
+$userLevel=$_SESSION["userLevel"];
+
+$setStudentID = $_REQUEST["setStudentID"];
+$setUserLevel = $_REQUEST["setUserLevel"];
+
+switch($userLevel)
+{
+	case 3:
+	if($setUserLevel >= 0 && $setUserLevel <= 3)
+	{
+		f_setUserLevel($setStudentID, $setUserLevel);
+		$getLevel = f_getLevel($setStudentID);
+		if($getLevel == $setUserLevel)
+		{$r = true;}
+		else
+		{$r = false;}
+	}
+	break;
+	case 2:
+	if($setUserLevel >= 0 && $setUserLevel <= 2)
+	{
+		f_setUserLevel($setStudentID, $setUserLevel);
+		$getLevel = f_getLevel($setStudentID);
+		if($getLevel == $setUserLevel)
+		{$r = true;}
+		else
+		{$r = false;}
+	}
+	break;
+	default:
+	$r = false;
+}
+echo $r;
+?>

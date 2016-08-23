@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>查看现有活动种类</title>
+<link href="css/table.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+		window.show_userlist();//该页面被载入则自动调用show函数
+		var role;//全局变量用于存放取得的身份
+		function show_userlist()
+		{	
+			//权限控制
+            $.ajax({
+                url:"../php/getSession.php",
+                datatype:"json",
+                type:"post",
+                success:function(data){
+                    role=eval("("+data+")")[1];
+                }
+            });
+			$.ajax({
+				url: '../php/leader/getActDict.php',   
+				datatype:"json",
+				type: "POST",
+				success:function(data){
+					var product = eval("(" + data + ")");
+                    
+                    if(product=="-1")//没有人员信息提示
+						alert(product);
+					else if(product=="没有权限")//没有权限信息提示
+						alert(product);	
+					else
+						tbl_users(product);
+				}
+            }); 
+		}
+		//用户信息表
+		function tbl_users(product)
+		{
+			var tab=document.getElementById("table");
+			//清空之前的记录
+			var num=tab.rows.length;
+			for(var i=0;i<num;i++){
+				tab.deleteRow(num-i-1);	
+			}
+			for(var i=0;i<=product.length;i++)
+			{	
+				var tr=tab.insertRow(tab.rows.length);
+				var td1=tr.insertCell(0);
+				var td2=tr.insertCell(1);
+				var td3=tr.insertCell(2);
+				var td4=tr.insertCell(3);
+				var td5=tr.insertCell(4);
+				var td6=tr.insertCell(5);
+				/*if(role>=2 && role<=3)
+				{
+					var td_act=tr.incertCell(5);
+					td_act.align="center";td.act.width="90";	
+				}*/
+				td1.align="center";td1.width="130";
+				td2.align="center";td2.width="100";
+				td3.align="center";td3.width="170";
+				td4.align="center";td4.width="100";
+				td5.align="center";td5.width="50";
+				td6.align="center";td5.width="100";
+
+				
+				if(i==0)
+				{
+					td1.innerHTML="项目代号actCodeNum";
+					td1.setAttribute("class","tab_h");
+					td2.innerHTML="项目名称actName";
+					td2.setAttribute("class","tab_h");
+					td3.innerHTML="项目简介actIntro";
+					td3.setAttribute("class","tab_h");
+					td4.innerHTML="时间actTime";
+					td4.setAttribute("class","tab_h");
+					td5.innerHTML="时长actHour";
+					td5.setAttribute("class","tab_h");
+					td6.innerHTML="活动队领队studentID";
+					td6.setAttribute("class","tab_h");
+					/*if(role>=2 && role<=3)
+					{
+						td_act.innerHTML="操作 action";
+						td_act.setAttribute("class","tab_h");
+					}*/
+				}
+				else
+				{
+					td1.innerHTML=product[i-1].actCodeNum;
+					td2.innerHTML=product[i-1].actName;
+					td3.innerHTML=product[i-1].actIntro;
+					td4.innerHTML=product[i-1].actTime;
+					td5.innerHTML=product[i-1].actHour;
+					td6.innerHTML=product[i-1].studentID;
+					/*if(role>=2 && role<=3)
+					{
+						var a_act="<a href=\"#\" onclick=\"f_DoActJoin('../php/user/deleteActivity.php?delActInfoID="+product[i-1].activityID+"','"+product[i-1].userName+" ： "+product[i-1].activityName+"');\">增加 </a><a href=\"#\" onclick=\"f_DoActJoin('../php/user/deleteActivity.php?delActInfoID="+product[i-1].activityID+"','"+product[i-1].userName+" ： "+product[i-1].activityName+"');\">删除</a>";
+						td_act.innerHTML = a_act;	
+					}*/
+				}	
+			}
+		}
+		
+		</script>
+<style>
+#show{
+	width:auto;
+	height:auto;
+}
+</style>
+
+<body>
+	<div id="continer">
+	
+        <div id="show">
+    		<table id="table" >		
+            </table>
+         
+        </div>
+ 
+	</div>
+
+</body>
+</html>

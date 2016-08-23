@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="css/com.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<!--JS文件-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/com.js"></script>
+<script src="js/jquery.touchslider.min.js"></script>
+<script src="js/index.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+
+	<!--top_block-->
+	<div id="top_block">
+    	<a class="btn_left" href="#"><img src="img/app/ico_mail.png" /></a>
+        <p class="tlt">设计学人</p>
+    	<a class="btn_right" href="htm/search.html"><img src="img/app/ico_search2.png" /></a>
+    </div>
+	<!--END top_block-->
+
+	<!--main_block-->
+	<div id="main_block">
+    	<!--adds touchslider--> 
+        <div id="adds_block">
+            <div class="touchslider">
+                <div class="touchslider-viewport" id="viewport-roll"> 
+                    <div class="touchslider-item">
+                        <a href="#"><img src="img/ads_b/ad_01.jpg" style="vertical-align:top;"/></a>
+                    </div> 
+                    <div class="touchslider-item">
+                        <a href="#"><img src="img/ads_b/ad_02.jpg" style="vertical-align:top;"/></a>
+                    </div>
+                    <div class="touchslider-item">
+                        <a href="#"><img src="img/ads_b/ad_03.jpg" style="vertical-align:top;"/></a>
+                    </div> 
+                    <div class="touchslider-item">
+                        <a href="#"><img src="img/ads_b/ad_04.jpg" style="vertical-align:top;"/></a>
+                    </div>
+                    <div class="touchslider-item">
+                        <a href="#"><img src="img/ads_b/ad_designeist.jpg" style="vertical-align:top;"/></a>
+                    </div> 
+                </div>
+                <div class="touchslider-navtag"> 
+                    <span class="touchslider-nav-item touchslider-nav-item-current"></span> 
+                    <span class="touchslider-nav-item "></span> 
+                    <span class="touchslider-nav-item "></span> 
+                    <span class="touchslider-nav-item "></span> 
+                    <span class="touchslider-nav-item "></span> 
+                 </div>
+            </div>
+        </div>
+    	<!--END ADDS touchslider-->
+        
+    	<!--NAV 导航-->
+        <div id="nav_block">
+        	<a id="btn_nav1" href="htm/design_list12.html"></a>
+        	<a id="btn_nav1" href="htm/design_list.html"></a>
+        	<a id="btn_nav1" href="htm/design_list11.html"></a>
+        </div>
+    	<!--END NAV-->
+        
+    	<!-- CLASS 分类-->
+        <div id="class_block">
+        	<a href="#"><div class="single_class">
+            	<img src="img/app/ico_cloth.png" />
+                <p class="class_name">服装</p>
+            </div></a>
+        	<a href="htm/design_list01.html"><div class="single_class">
+            	<img src="img/app/ico_ring.png" />
+                <p class="class_name">饰品</p>
+            </div></a>
+        	<a href="htm/design_list02.html"><div class="single_class">
+            	<img src="img/app/ico_paint.png" />
+                <p class="class_name">绘画</p>
+            </div></a>
+        	<a href="htm/class_list.html"><div class="single_class">
+            	<img src="img/app/ico_other.png" />
+                <p class="class_name">其他设计</p>
+            </div></a>
+        </div>
+    	<!--END -->
+         
+    	<!-- 设计师块 d_block -->
+        <div id="d_block">
+        
+        	<div class="single_d">
+                <p class="tlt">【Logo Designer】Elizabeth</p>
+                <a class="btn_lock" href="htm/store.html" ><img src="img/app/ico_eye.png" /></a>
+                <span class="photo2d" style=" background-image:url(img/d/d2_photo.jpg);"></span>
+                <a class="a_d_work" href="htm/info_goods.html"><span class="work_img" style="background-image:url(img/d/d2_work1.jpg);"></span></a>
+                <a class="a_d_work" href="htm/info_goods.html"><span class="work_img" style="background-image:url(img/d/d2_work2.jpg);"><span class="sub_tlt">筹</span></span></a>
+                <a class="a_d_work" href="htm/info_goods.html"><span class="work_img" style="background-image:url(img/d/d2_work3.jpg);"></span></a>
+            </div>
+            
+        	<div class="single_d">
+                <p class="tlt">【首饰设计师】Ansen</p>
+                <a class="btn_lock" href="htm/store01.html" ><img src="img/app/ico_eye.png" /></a>
+                <span class="photo2d" style=" background-image:url(img/d/d4_photo.jpg);"></span>
+                <a class="a_d_work" href="htm/info_goods01.html"><span class="work_img" style="background-image:url(img/d/d4_work10.jpg);">
+            	<span class="sub_tlt">筹</span></span></a>
+                <a class="a_d_work" href="htm/info_goods02.html"><span class="work_img" style="background-image:url(img/d/d4_work20.jpg);"></span></a>
+                <a class="a_d_work" href="htm/info_goods03.html"><span class="work_img" style="background-image:url(img/d/d4_work40.jpg);"></span></a>
+            </div>
+            
+        	<div class="single_d">
+                <p class="tlt">【插画设计师】靈曦</p>
+                <a class="btn_lock" href="htm/store01.html" ><img src="img/app/ico_eye.png" /></a>
+                <span class="photo2d" style=" background-image:url(img/d/d5_photo.jpg);"></span>
+                <a class="a_d_work" href="htm/info_goods04.html"><span class="work_img" style="background-image:url(img/d/d5_work10.jpg);"></span></a>
+                <a class="a_d_work" href="htm/info_goods04.html"><span class="work_img" style="background-image:url(img/d/d5_work11.jpg);"></span></a>
+                <a class="a_d_work" href="htm/info_goods04.html"><span class="work_img" style="background-image:url(img/d/d5_work13.jpg);"></span></a>
+            </div>
+            
+            
+        	<div class="single_d">
+                <p class="tlt">【汽车设计师】JACK</p>
+                <a class="btn_lock" href="htm/store.html" ><img src="img/app/ico_eye.png" /></a>
+                <span class="photo2d" style=" background-image:url(img/d/d1_photo.jpg);"></span>
+                <a class="a_d_work" href="htm/info_goods.html"><span class="work_img" style="background-image:url(img/d/d1_work1.jpg);"></span></a>
+                <a class="a_d_work" href="htm/info_goods.html"><span class="work_img" style="background-image:url(img/d/d1_work2.jpg);"></span></a>
+                <a class="a_d_work" href="htm/info_goods.html"><span class="work_img" style="background-image:url(img/d/d1_work3.jpg);"></span></a>
+            </div>
+            
+        	<div class="single_d">
+                <p class="tlt">【UI Designer】BOB</p>
+                <a class="btn_lock" href="htm/store.html" ><img src="img/app/ico_eye.png" /></a>
+                <span class="photo2d" style=" background-image:url(img/d/d3_photo.jpg);"></span>
+                <a class="a_d_work" href="htm/info_goods.html"><span class="work_img" style="background-image:url(img/d/d3_work1.jpg);"></span></a>
+                <a class="a_d_work" href="htm/info_goods.html"><span class="work_img" style="background-image:url(img/d/d3_work2.jpg);"></span></a>
+                <a class="a_d_work" href="htm/info_goods.html"><span class="work_img" style="background-image:url(img/d/d3_work3.jpg);"></span></a>
+            </div>
+        </div>
+    	<!--END 设计师块 d_block-->
+        
+        
+        <!--校园二货-->
+        <!--END 校园二货-->
+        <div class="loading">
+            <span id="loading_block"><img src="img/app/loading_b.gif" class="img_loading" />Loding...</span>
+        </div>
+		<a id="btn_top" href="#m_top">Top</a>
+    </div>
+	<!--END main_block-->
+
+	<!--menu_block-->
+    <span class="menu_padding_block"></span>
+    <div id="menu_block">
+      <div class="single_menu menu_on">
+        	<img src="img/app/ico_cycle.png" class="menu_pic" />
+            <p class="menu_p menu_p">首页</p>
+      </div>
+      
+      <a href="htm/designer.html" class="a_del_back"><div class="single_menu">
+        	<img src="img/app/ico_d.png" class="menu_pic" />
+            <p class="menu_p">设计师</p>
+      </div></a>
+      
+      <a href="htm/find.html" class="a_del_back"><div class="single_menu">
+        	<img src="img/app/ico_find.png" class="menu_pic" />
+            <p class="menu_p">发现</p>
+      </div></a>
+      
+      <a href="htm/mine.html" class="a_del_back"><div class="single_menu">
+        	<img src="img/app/ico_mine.png" class="menu_pic" />
+            <p class="menu_p">我</p>
+      </div></a>
+      
+    </div>
+	<!--END menu_block-->
+</div>
+</body>
+</html>

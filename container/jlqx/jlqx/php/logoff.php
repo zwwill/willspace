@@ -1,0 +1,9 @@
+<?php
+session_start();
+/*
+session_destroy();
+require_once(dirname(__file__).'/../login.html');
+*/
+session_destroy();
+header("location:../login.html");
+?>

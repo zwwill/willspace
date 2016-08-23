@@ -1,0 +1,13 @@
+﻿<?php
+session_start();
+require_once(dirname(__file__).'/../../lib/function.php');
+$studentID=$_SESSION["studentID"];
+$userLevel=$_SESSION["userLevel"];
+if($userLevel>=2)
+{
+	$actCodeNum = $_REQUEST["actCodeNum"];
+	$actStudentID = $_REQUEST["actStudentID"];
+	$operation = $_REQUEST["operation"];
+	$r = f_actDictLeader($actCodeNum,$actStudentID,$operarion);
+}
+?>

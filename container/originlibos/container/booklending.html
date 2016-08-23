@@ -1,0 +1,541 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/hf.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>OriginLib OS</title>
+<!-- InstanceEndEditable -->
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/hf.css"/>
+<link rel="shortcut icon" href="../img/origin_logo.ico"/>
+<script type="text/javascript" src="../js/hf.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<!--link-->
+<script type="text/javascript" src="booklending/bl.js"></script>
+<link rel="stylesheet" type="text/css" href="booklending/bl.css"/>
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div id="l_r">
+  <div id="lr_mask"></div>
+  <div id="login" >
+    <form>
+      <table width="350" border="0">
+        <tr>
+          <td colspan="2" class="lr_title">用户登录</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:15px;"></td>
+        </tr>
+        <tr>
+          <td width="55">账号：</td>
+          <td width="279"><input type="text" name="account" class="inport1" id="account"  placeholder="在此输入账号"/></td>
+        </tr>
+        <tr>
+          <td>密码：</td>
+          <td><input name="pwd" id="pwd" class="inport1" type="password"  placeholder="在此输入密码"/></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:10px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><div data-role="controlgroup" data-type="vertical"> <a href="../pspace.html"  data-role="button" rel="external"  data-icon="check" class="btn1">
+              <p>登 录</p>
+              </a> <a href="#" id="btn_back" data-role="button" data-icon="back" class="btn1">
+              <p>返 回</p>
+              </a> </div></td>
+            </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <div id="reg">
+    <form>
+      <table width="350" border="0">
+        <tr>
+          <td colspan="2" class="lr_title">用户注册</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:15px;"></td>
+        </tr>
+        <tr>
+          <td width="90" align="right">账号：</td>
+          <td width="236"><input type="text" data-icon="home" name="account" class="inport1" id="account" placeholder="在此输入账号"/></td>
+        </tr>
+        <tr>
+          <td align="right">密码：</td>
+          <td><input name="pwd" id="pwd" class="inport1" type="password"  placeholder="在此输入密码"/></td>
+        </tr>
+        <tr>
+          <td align="right">密码确认：</td>
+          <td><input name="pwd2" id="pwd2" class="inport1" type="password" placeholder="再次输入密码" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:10px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><div data-role="controlgroup" data-type="vertical"> <a href="pspace.html" id="" data-role="button" rel="external"  data-icon="plus" class="btn1">
+              <p>注 册</p>
+              </a> <a href="#" id="btn_back" data-role="button" data-icon="back" class="btn1">
+              <p>返 回</p>
+              </a> </div></td>
+          <td width="1"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+<div style="height:4px; background: #0a5; width:100%;" ></div>
+<div id="header"> <a href="../index.html" target="_parent">
+  <div id="logo"></div>
+  </a>
+  <div id="header_right">
+    <div data-role="controlgroup" data-type="horizontal"> <a href="#" id="btn_login" data-role="button">
+      <p>登 录</p>
+      </a> <a href="#" id="btn_reg" data-role="button">
+      <p>注 册</p>
+      </a> </div>
+    </td>
+  </div>
+</div>
+<div id="nav">
+  <div id="nav_list">
+    <ul>
+      <li><a href="../index.html" rel="external" id="nav1">首页</a></li>
+      <li><a href="booksearch.html" rel="external" id="nav2">图书检索</a></li>
+      <li><a href="booklending.html"  rel="external" id="nav3">借阅信息</a></li>
+      <li><a href="share.html"  rel="external" id="nav4">资源共享</a></li>
+      <li><a href="collect.html"  rel="external" id="nav5">我的收藏</a></li>
+      <li><a href="stroll.html"  rel="external" id="nav6">随便逛逛</a></li>
+      <li><a href="about.html"  rel="external" id="nav7">关于我们</a></li>
+    </ul>
+  </div>
+</div>
+<div id="middle">
+  <div id="main"> 
+	<!-- InstanceBeginEditable name="middle" -->
+    <div id="bl_block_top">
+      <ul>
+        <li><a href="#" id="btn_bl1">当前借阅</a></li>
+        <li><a href="#" id="btn_bl2">借阅历史</a></li>
+        <li><a href="#" id="btn_bl3">借阅违章</a></li>
+        <li><a href="#" id="btn_bl4" rel="external">我的书评</a></li>
+      </ul>
+    </div>
+    <!--当前借阅-->
+    <div id="bl1" class="bl_show">
+      <div id="bl_info"> <span id="bl_on">当前借阅</span> <span class="info">当前借阅( <span class="light">5</span> 册) </span> <span class="page">
+        <table>
+          <tr>
+            <td width="130"><a href="#">上一页</a> 1/5 <a href="#">下一页</a></td>
+            <td>跳转到第：</td>
+            <td><select data-role="none" name="list_page" id="list_page">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select></td>
+            <td>页</td>
+          </tr>
+        </table>
+        </span></div>
+      <div class="bl_table">
+        <table border="0">
+          <tr>
+            <td class="td1 t_head">条码号</td>
+            <td class="td2 t_head">题名/负责者</td>
+            <td class="td3 t_head">借阅日期</td>
+            <td class="td4 t_head">应还日期</td>
+            <td class="td5 t_head">续借量</td>
+            <td class="td6 t_head">所属图书馆</td>
+            <td class="td7 t_head">续借</td>
+          </tr>
+          <tr>
+            <td>2011507033</td>
+            <td><a href="#">软件工程:实践者的研究方法:a practitioner's approach</a> / (美) Roger S. Pressman著</td>
+            <td>2014-06-21</td>
+            <td>2014-09-21</td>
+            <td>0</td>
+            <td>南京大学金陵学院思源图书馆</td>
+            <td><a href="#" class="btn">续借</a></td>
+          </tr>
+          <tr>
+            <td>2012547263</td>
+            <td><a href="#">Div+CSS 3.0网页样式与布局经典范例</a> / 张晓景编著</td>
+            <td>2014-06-21</td>
+            <td>2014-09-21</td>
+            <td>1</td>
+            <td>南京大学图书馆</td>
+            <td><a href="#" class="btn">续借</a></td>
+          </tr>
+          <tr>
+            <td>2011507033</td>
+            <td><a href="#">软件工程:实践者的研究方法:a practitioner's approach</a> / (美) Roger S. Pressman著</td>
+            <td>2014-06-21</td>
+            <td>2014-09-21</td>
+            <td>0</td>
+            <td>南京图书馆</td>
+            <td><a href="#" class="btn">续借</a></td>
+          </tr>
+          <tr>
+            <td>2012547263</td>
+            <td><a href="#">Div+CSS 3.0网页样式与布局经典范例</a> / 张晓景编著</td>
+            <td>2014-06-21</td>
+            <td>2014-09-21</td>
+            <td>1</td>
+            <td>南京图书馆</td>
+            <td><a href="#" class="btn">续借</a></td>
+          </tr>
+          <tr>
+            <td>2014500809</td>
+            <td><a href="#">Android应用UI设计模式:interaction design solutions for developers</a> / (美) Greg Nudelman著</td>
+            <td>2014-06-21</td>
+            <td>2014-09-21</td>
+            <td>1</td>
+            <td>南京大学仙林校区图书馆</td>
+            <td><a href="#" class="btn">续借</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!--借阅历史-->
+    <div id="bl2" class="bl_show">
+      <div class="lib_selt">
+        <select name="libCard" id="libCard">
+          <option value="0">请选择您要检索的图书馆</option>
+          <option value="c1">南京大学金陵学院2012020100051</option>
+          <option value="c2">南京大学2012020100051</option>
+          <option value="c3">南京图书馆201200112</option>
+        </select>
+      </div>
+      <div id="bl_info"><span id="bl_on">借阅历史</span> <span class="info">
+        <table>
+          <tr>
+            <td width="130"><a href="#">上一页</a> 1/5 <a href="#">下一页</a></td>
+            <td>跳转到第：</td>
+            <td><select data-role="none" name="list_page" id="list_page">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select></td>
+            <td>页</td>
+          </tr>
+        </table>
+        </span> </div>
+      <div class="bl_table">
+        <table border="0">
+          <tr>
+            <td class="td0 t_head">&nbsp;</td>
+            <td class="td1 t_head">条码号</td>
+            <td class="td2 t_head">题名</td>
+            <td class="td3 t_head">负责者</td>
+            <td class="td4 t_head">借阅日期</td>
+            <td class="td5 t_head">归还日期</td>
+            <td class="td6 t_head">所属图书馆</td>
+            <td class="td7 t_head">书评</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2012505085</td>
+            <td><a href="#">网页设计创意书:the ultimate guide to themes, trends & styles in website design.第2卷.Volume 2</a></td>
+            <td>(美) Patrick McNeil著</td>
+            <td>2014-06-03</td>
+            <td>2014-06-23</td>
+            <td>南京大学仙林校区图书馆</td>
+            <td><a href="#" class="btn">发表书评</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2012535503</td>
+            <td><a href="#">网络设计的原理</a></td>
+            <td>(日) 桧山佐知子著</td>
+            <td>2014-06-03</td>
+            <td>2014-06-23</td>
+            <td>南京大学仙林校区图书馆</td>
+            <td><a href="#" class="btn_rv">回顾书评</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>2012505085</td>
+            <td><a href="#">网页设计创意书:the ultimate guide to themes, trends & styles in website design.第2卷.Volume 2</a></td>
+            <td>(美) Patrick McNeil著</td>
+            <td>2014-06-03</td>
+            <td>2014-06-23</td>
+            <td>南京大学鼓楼校区图书馆</td>
+            <td><a href="#" class="btn_rv">回顾书评</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>2012535503</td>
+            <td><a href="#">网络设计的原理</a></td>
+            <td>(日) 桧山佐知子著</td>
+            <td>2014-06-03</td>
+            <td>2014-06-23</td>
+            <td>南京大学鼓楼校区图书馆</td>
+            <td><a href="#" class="btn">发表书评</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>2012505085</td>
+            <td><a href="#">网页设计创意书:the ultimate guide to themes, trends & styles in website design.第2卷.Volume 2</a></td>
+            <td>(美) Patrick McNeil著</td>
+            <td>2014-06-03</td>
+            <td>2014-06-23</td>
+            <td>南京大学鼓楼校区图书馆</td>
+            <td><a href="#" class="btn_rv">回顾书评</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>2012535503</td>
+            <td><a href="#">网络设计的原理</a></td>
+            <td>(日) 桧山佐知子著</td>
+            <td>2014-06-03</td>
+            <td>2014-06-23</td>
+            <td>南京大学浦口校区思源图书馆</td>
+            <td><a href="#" class="btn">发表书评</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>2012505085</td>
+            <td><a href="#">网页设计创意书:the ultimate guide to themes, trends & styles in website design.第2卷.Volume 2</a></td>
+            <td>(美) Patrick McNeil著</td>
+            <td>2014-06-03</td>
+            <td>2014-06-23</td>
+            <td>南京大学浦口校区思源图书馆</td>
+            <td><a href="#" class="btn_rv">回顾书评</a></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>2012535503</td>
+            <td><a href="#">网络设计的原理</a></td>
+            <td>(日) 桧山佐知子著</td>
+            <td>2014-06-03</td>
+            <td>2014-06-23</td>
+            <td>南京市图书馆</td>
+            <td><a href="#" class="btn_rv">回顾书评</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    
+    <!--当前违章-->
+    <div id="bl3" class="bl_show">
+      <div id="bl_info"> <span id="bl_on">当前违章</span> <span class="info">
+        <table>
+          <tr>
+            <td width="130"><a href="#">上一页</a> 1/5 <a href="#">下一页</a></td>
+            <td>跳转到第：</td>
+            <td><select data-role="none" name="list_page" id="list_page">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select></td>
+            <td>页</td>
+          </tr>
+        </table>
+        </span> </div>
+      <div class="bl_table">
+        <table border="0">
+          <tr>
+            <td class="td1 t_head">条码号</td>
+            <td class="td2 t_head">锁书号</td>
+            <td class="td3 t_head">题名</td>
+            <td class="td4 t_head">借阅日期</td>
+            <td class="td4 t_head">应还日期</td>
+            <td class="td5 t_head">超期</td>
+            <td class="td6 t_head">应缴费</td>
+            <td class="td7 t_head">实缴费</td>
+            <td class="td8 t_head">状态</td>
+          </tr>
+          <tr>
+            <td>2010539049</td>
+            <td>TP391.41/Z570</td>
+            <td><a href="#">人脸识别:原理、方法与技术</a></td>
+            <td>2013-05-15</td>
+            <td>2013-06-14</td>
+            <td class="color_red">3</td>
+            <td>0.3</td>
+            <td>0</td>
+            <td class="color_red">等待缴费</td>
+          </tr>
+          <tr>
+            <td>2011511484</td>
+            <td>TP312C/Z325</td>
+            <td><a href="#">数字图像处理与机器视觉:Visual C++与Matlab实现</a></td>
+            <td>2013-05-15</td>
+            <td>2013-06-14</td>
+            <td class="color_red">3</td>
+            <td>0.3</td>
+            <td>0</td>
+            <td class="color_red">等待缴费</td>
+          </tr>
+          <tr>
+            <td>2011511895</td>
+            <td>TN911.73/Z40</td>
+            <td><a href="#">特征提取与图像处理</a></td>
+            <td>2013-05-15</td>
+            <td>2013-06-14</td>
+            <td class="color_red">3</td>
+            <td>0.3</td>
+            <td>0</td>
+            <td class="color_red">等待缴费</td>
+          </tr>
+        </table>
+      </div>
+      <!--历史违章-->
+      <div id="bl_info"> <span id="bl_on">历史违章</span> <span class="info">
+        <table>
+          <tr>
+            <td width="130"><a href="#">上一页</a> 1/5 <a href="#">下一页</a></td>
+            <td>跳转到第：</td>
+            <td><select data-role="none" name="list_page" id="list_page">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select></td>
+            <td>页</td>
+          </tr>
+        </table>
+        </span> </div>
+      <div class="bl_table">
+        <table border="0">
+          <tr>
+            <td class="td1 t_head">条码号</td>
+            <td class="td2 t_head">锁书号</td>
+            <td class="td3 t_head">题名</td>
+            <td class="td4 t_head">借阅日期</td>
+            <td class="td4 t_head">应还日期</td>
+            <td class="td5 t_head">超期</td>
+            <td class="td6 t_head">应缴费</td>
+            <td class="td7 t_head">实缴费</td>
+            <td class="td8 t_head">状态</td>
+          </tr>
+          <tr>
+            <td>2010539049</td>
+            <td>TP391.41/Z570</td>
+            <td><a href="#">人脸识别:原理、方法与技术</a></td>
+            <td>2013-05-15</td>
+            <td>2013-06-14</td>
+            <td>3</td>
+            <td>0.3</td>
+            <td>0.3</td>
+            <td class="color_green">处理完毕</td>
+          </tr>
+          <tr>
+            <td>2011511484</td>
+            <td>TP312C/Z325</td>
+            <td><a href="#">数字图像处理与机器视觉:Visual C++与Matlab实现</a></td>
+            <td>2013-05-15</td>
+            <td>2013-06-14</td>
+            <td>3</td>
+            <td>0.3</td>
+            <td>0.3</td>
+            <td class="color_green">处理完毕</td>
+          </tr>
+          <tr>
+            <td>2011511895</td>
+            <td>TN911.73/Z40</td>
+            <td><a href="#">特征提取与图像处理</a></td>
+            <td>2013-05-15</td>
+            <td>2013-06-14</td>
+            <td>3</td>
+            <td>0.3</td>
+            <td>0.3</td>
+            <td class="color_green">处理完毕</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!--我的书评-->
+    <div id="bl4" class="bl_show">
+      <div id="bl_info"><span id="bl_on">我的书评</span> <span class="info">
+        <table>
+          <tr>
+            <td width="130"><a href="#">上一页</a> 1/5 <a href="#">下一页</a></td>
+            <td>跳转到第：</td>
+            <td><select data-role="none" name="list_page" id="list_page">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select></td>
+            <td>页</td>
+          </tr>
+        </table>
+        </span> </div>
+      <div class="bl_table">
+        <table border="0">
+          <tr>
+            <td class="td0 t_head">&nbsp;</td>
+            <td class="td1 t_head">题名</td>
+            <td class="td2 t_head">负责者</td>
+            <td class="td3 t_head">借阅日期</td>
+            <td class="td4 t_head">所属图书馆</td>
+            <td class="td5 t_head">书评</td>
+            <td class="td6 t_head">操作</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td><a href="#">网页设计创意书:the ultimate guide to themes, trends & styles in website design.第2卷.Volume 2</a></td>
+            <td>(美) Patrick McNeil著</td>
+            <td>2014-06-03</td>
+            <td>南京大学仙林校区图书馆</td>
+            <td>这里我的书评内容。。。</td>
+            <td><a href="#" class="btn">书评详情</a><a href="#" class="btn_del">删除</a></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td><a href="#">网页设计创意书:the ultimate guide to themes, trends & styles in website design.第2卷.Volume 2</a></td>
+            <td>(美) Patrick McNeil著</td>
+            <td>2014-06-03</td>
+            <td>南京大学仙林校区图书馆</td>
+            <td>这里我的书评内容。。。</td>
+            <td><a href="#" class="btn">书评详情</a><a href="#" class="btn_del">删除</a></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td><a href="#">网页设计创意书:the ultimate guide to themes, trends & styles in website design.第2卷.Volume 2</a></td>
+            <td>(美) Patrick McNeil著</td>
+            <td>2014-06-03</td>
+            <td>南京大学仙林校区图书馆</td>
+            <td>这里我的书评内容。。。</td>
+            <td><a href="#" class="btn">书评详情</a><a href="#" class="btn_del">删除</a></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td><a href="#">网页设计创意书:the ultimate guide to themes, trends & styles in website design.第2卷.Volume 2</a></td>
+            <td>(美) Patrick McNeil著</td>
+            <td>2014-06-03</td>
+            <td>南京大学仙林校区图书馆</td>
+            <td>这里我的书评内容。。。</td>
+            <td><a href="#" class="btn">书评详情</a><a href="#" class="btn_del">删除</a></td>
+          </tr>
+          
+        </table>
+      </div>
+    </div>
+    
+    <!-- InstanceEndEditable -->
+  </div>
+</div>
+<div id="footer">
+  <div id="down"> 
+    <p id="cpy_right"><a href="../index.html" target="_parent"><img src="../img/logo_l.png" />源点图书平台</a> CopyRight <span style="font-size:18px; vertical-align:bottom;">&copy;</span> 2014-2014 All Right Reserved</p>
+    <p id="author">Designed By Zhang Wei /Jester Will From Origin Studio NJU 2014</p>
+  </div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,48 @@
+/* CSS Document */
+
+/*广告touchslider*/
+#adds_block .touchslider{position:relative;}
+#adds_block .touchslider .touchslider-viewport{overflow:hidden; height:100px;}
+#adds_block .touchslider .touchslider-viewport .touchslider-item a{z-index:1;width:100%;display:block;}
+#adds_block .touchslider .touchslider-viewport .touchslider-item img{ width:100%;}
+#adds_block .touchslider .touchslider-navtag{position:relative;text-align:right;z-index:2;display:block;vertical-align:middle;margin-top:-20px; margin-right:10px;}
+#adds_block .touchslider .touchslider-navtag span{width:7px;height:7px;background:rgba(204,204,204,.6); border-radius:50px;overflow:hidden;display:inline-block; }
+#adds_block .touchslider .touchslider-navtag .touchslider-nav-item-current{background:rgba(255,0,0,.6);}
+
+/*导航NAV*/
+#nav_block{ display:block;float:left; width:100%; height:150px; background:#111; background-image:url(../img/app/bg_nav.png); background-repeat:no-repeat; background-position:center; background-size:contain;}
+#nav_block a{float:left; width:33.33%; height:100%; }
+#nav_block a:hover{ background:rgba(255,255,255,.2);}
+
+/*CLASS 分类*/
+#class_block{ display:block;float:left; width:100%;overflow:hidden; background:#666;}
+#class_block .a_class{}
+#class_block .single_class{ display:inline-block; float:left; width:25%;height:100px;overflow:hidden; }
+#class_block .single_class:hover{ background-color:rgba(255,255,255,.2);}
+#class_block .single_class img{ display:block; width:65%; margin-top:10%;}
+#class_block .single_class .class_name{ display:block; width:100%; text-align:center;margin-top:4%; font-size:3.5vw;}
+@media (min-width:560px) {#class_block .single_class .class_name{font-size:20px;} }
+
+/*设计师块 d_block*/
+#d_block{ display:block;float:left; width:100%;}
+#d_block .single_d{ float:left; width:100%;}
+#d_block .tlt{float:left; width:100%; height:50px; font-size:3.5vw; line-height:50px; text-align:center; color:#fff; background:#111;}
+@media (min-width:560px) {#d_block .tlt{font-size:20px;} }
+#d_block .btn_lock{ float:right; height:50px; width:50px; margin-top:-50px; text-align:right; padding-right:3%;}
+#d_block .btn_lock img{ height:50%; margin-top:13px;}
+#d_block .photo2d{ display:block; float:left; width:100%;height:170px; background-position:center; background-size:cover;}
+#d_block .a_d_work{float:left; width:33.33%; height:100px; background:#bbb; overflow:hidden; outline:solid 1px rgba(255,255,255,.3)}
+#d_block .a_d_work:hover{ background-color:rgba(0,0,0,.4);}
+#d_block .work_img{ float:left; width:90%; height:90%; background-position:center; background-size:cover; border-radius:5px; margin-top:3%; margin-left:5%;}
+#d_block .work_img .sub_tlt{float:left; height:20px; width:120px;color:#fff; text-align:center; line-height:20px; background:rgba(255,0,0,0.6); border:solid 1px rgba(255,255,255,0.5);
+transform: rotate(-35deg);box-shadow:1px 2px 3px #888 ;
+-ms-transform: rotate(-35deg);		/* IE 9 */
+-webkit-transform: rotate(-35deg);	/* Safari and Chrome */
+-o-transform: rotate(-35deg);		/* Opera */
+-moz-transform: rotate(-35deg);		/* Firefox */
+margin:5px 0 0 -45px;}
+
+#main_block .loading{ display:block; float:left;height:50px; width:100%; text-align:center; line-height:50px; color:#999; font-size:14px;}
+#main_block .loading .img_loading{ display:inline-block; height:20px; width:20px; padding:0 7px;}
+
+

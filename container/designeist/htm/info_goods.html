@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>商品信息</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="../css/com.css">
+<link rel="stylesheet" type="text/css" href="../css/info_gooods.css">
+<!--JS文件-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/com.js"></script>
+<script src="../js/info_gooods.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+ 
+	<!--main_block-->
+	<div id="main_block">
+      <div class="top_btn_block">
+      	<span id="btn_back" onClick="javascript:history.go(-1);"><img src="../img/app/ico_row_w_left.png"></span>
+      	<a href="shoppingcart.html" id="btn_shoppingcart"><img src="../img/app/ico_shoppongcart.png"></a>
+      </div>
+    	<div id="img_block"><img src="../img/d/d2_work1.jpg" class="main_img" /></div>
+        <span class="name">品牌LOGO设计草图</span>
+        <div id="info_block">
+            <span class="price">￥500.0</span>
+            <span class="old_price">价格：<span class="num">￥2999.0</span></span>
+            <span class="sell_num">已关注：3291</span>
+        </div>
+        <div id="seller_block">
+        	<div class="photo_name">
+            	<img src="../img/designeist.png" class="img_touxiang" />
+                <span class="txt_name">设计师：Elizabeth</span>
+                <div class="credit">评价：<span class="level"><img src="../img/app/ico_huangguan.png" /><img src="../img/app/ico_huangguan.png" /><img src="../img/app/ico_huangguan.png" /></span></div>
+            </div>
+            <a href="chatblock/chatboard.html"><span class="btn_sixin">私信设计师</span></a>
+            <a href="store.html"><span class="btn_go2store">进入主页</span></a>
+            
+        </div>
+        
+        <div id="further_block">
+        	<div class="btn" id="btn_picinfo" on="1">图片详情</div>
+        	<div class="btn" id="btn_comment" on="0">评  价</div>
+            <div class="picinfo_block">
+            	<span class="txt">灵感来自太极，由8个等大的正圆顺序叠加而成，层次鲜明，过度有序。<br/>如有设计需求可直接联系。<br/>以下是其他设计样图：</span>
+                <img src="../img/d/d2_work2.jpg"/>
+                <img src="../img/d/d2_work3.jpg"/>
+                <img src="../img/d/d2_work4.png"/>
+            </div>
+            <div class="comment_block"><p class="err_p">暂无评价</p></div>
+        </div>
+    </div>
+	<!--END main_block-->
+	
+	<!--sub_block-->
+    <span class="menu_padding_block"></span>
+    <div id="sub_block"  class="foot_block">
+    	<a href="chatblock/chatboard.html"><div class="btn_1"><img src="../img/app/ico_sixin.png" /></div></a>
+    	<div class="btn_1" id="btn_collect" collected="0"><img src="../img/app/ico_star.png"/></div>
+    	<div class="btn_2" id="btn_add2basket">加入购物车</div>
+    	<div class="btn_2" id="btn_buynow">立刻购买</div>
+    </div>
+	<!--END sub_block-->
+</div>
+</body>
+</html>

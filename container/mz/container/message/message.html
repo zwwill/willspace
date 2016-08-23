@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Message</title>
+<link rel="stylesheet" type="text/css" href="message.css"/>
+<script type="text/javascript" src="../../js/jquery-1.11.js"></script>
+<script type="text/javascript" src="message.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('a[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({
+                    scrollTop: targetOffset
+                },
+                500);
+                return false;
+            }
+        }
+    });
+	//页面初始化  
+	goCenter();  
+                  
+	//滚动条滚动  
+	$(window).scroll(  
+		function(){  
+			goCenter();  
+		}  
+	);  
+	//拖动浏览器窗口  
+	$(window).resize(  
+		function(){  
+			goCenter();  
+		}  
+	);  
+});
+
+function goCenter()  
+{  
+	var h = $(window).height();  
+	var w = $(window).width();  
+	var st = $(window).scrollTop();  
+	var sl = $(window).scrollLeft();  
+  
+	$("#float_bar").css("top", (0)+st);  
+	$("#float_bar").css("left",(w-33)+sl);  
+}  
+</script>
+</head>
+
+<body>
+<div id="con" >
+		<div id="float_bar"> <a href="#txt_mess">留言</a> <a href="#con" class="css_a_top"></a> </div>
+		<div id="mess_con"> 
+				<!--历史留言：按更新时间排序-->
+				<div id="show_mess_h"> 
+
+						<!--信息块1
+						<div class="mess_block" id="mb1">
+								<div id="user"><img src="user.jpg" /></div>
+								<div id="mess_con">
+										<div id="mess_txt">留言test 留言test 留言test 留言test 留言test 留言test 留言test 留言test 留言test</div>
+										<div id="mess_time">时间：2014-07-11 11:11<a href="#none" onclick="show_reply_sub('rps1')">回复</a><a href="#"> 删除</a></div>
+										<div id="mess_reply">
+												<div id="reply_block"> <img src="manager.png" />
+														<div id="mess_p"> 回复test 回复test  回复test 回复test 回复test  回复test 回复test 回复test  回复test </div>
+														<div id="reply_time">时间：2014-07-11 11:11</div>
+												</div>
+												<div class="reply_sub" id="rps1">
+														<form action="" method="get">
+																<textarea name="reply_sub" class="reply_ta" ></textarea>
+																<a href="#">
+																<div class="input_btn_sub">发 布</div>
+																</a>
+														</form>
+												</div>
+										</div>
+								</div>
+						</div>-->
+						
+						<!--信息块2
+						<div class="mess_block" id="mb2">
+								<div id="user"><img src="user.jpg" /></div>
+								<div id="mess_con">
+										<div id="mess_txt">留言test 留言test 留言test 留言test 留言test 留言test 留言test 留言test 留言test</div>
+										<div id="mess_time">时间：2014-07-11 11:11<a href="#none" onclick="show_reply_sub('rps2')">回复</a><a href="#"> 删除</a></div>
+										<div id="mess_reply">
+												<div id="reply_block"> <img src="manager.png" />
+														<div id="mess_p"> 回复test 回复test  回复test 回复test 回复test  回复test 回复test 回复test  回复test </div>
+														<div id="reply_time">时间：2014-07-11 11:11</div>
+												</div>
+												<div class="reply_sub" id="rps2">
+														<form action="" method="get">
+																<textarea name="reply_sub" class="reply_ta" ></textarea>
+																<a href="#">
+																<div class="input_btn_sub">发 布</div>
+																</a>
+														</form>
+												</div>
+										</div>
+								</div>
+						</div>-->
+						
+						<!--信息块3
+						<div class="mess_block" id="mb3">
+								<div id="user"><img src="user.jpg" /></div>
+								<div id="mess_con">
+										<div id="mess_txt">留言test 留言test 留言test 留言test 留言test 留言test 留言test 留言test 留言test</div>
+										<div id="mess_time">时间：2014-07-11 11:11<a href="#none" onclick="show_reply_sub('rps3')">回复</a><a href="#"> 删除</a></div>
+										<div id="mess_reply">
+												<div id="reply_block"> <img src="manager.png" />
+														<div id="mess_p"> 回复test 回复test  回复test 回复test 回复test  回复test 回复test 回复test  回复test </div>
+														<div id="reply_time">时间：2014-07-11 11:11</div>
+												</div>
+												<div class="reply_sub" id="rps3">
+														<form action="" method="get">
+																<textarea name="reply_sub" class="reply_ta" ></textarea>
+																<a href="#">
+																<div class="input_btn_sub">发 布</div>
+																</a>
+														</form>
+												</div>
+										</div>
+								</div>
+						</div>-->
+				</div>
+				<!--留言--> 
+				<span id="title_mess">&nbsp;</span>
+				<div id="leave_a_mess">
+						<form action="../../php/common/message.php" method="get" name="mess" target="hidden_frame">
+								<!--<input type="text" border="0" onfocus="
+        clr_tlt_mess()" onblur="re_tlt_mess()" name="tlt_mess" id="tlt_mess" class="input_tlt" value="请输入留言标题" />
+								<label for="txt_mess"></label>-->
+								<textarea name="txt_mess" id="txt_mess" onfocus="
+        clr_txt_mess()" onblur="re_txt_mess()" class="input_txt"  >留言区</textarea>
+								<a id="sub">
+									<div class="input_btn_sub">留 言</div>
+								</a>
+						</form>
+						
+				</div>
+		</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tjyd</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/tianjiayundan.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jQuery2.js"></script>
+<script type="text/javascript" src="js/jQuery-jcDate.js"></script>
+<script type="text/javascript" src="js/jquery.city.select.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jcDate.css"/>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=lNFGQXgi4nbQILzdcySYHQU8"></script>
+<body>
+<div id="container">
+  <form action="#" method="post" class="yd_form" >
+    <table border="0" cellpadding="0" id="launch_list" >
+      <tr>
+        <td  width="90px">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td  width="130px">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr style="height:auto">
+        <td class="left_words">详细描述：</td>
+        <td colspan="3"><textarea rows="5"id="description" class="detail_des" name="detail_des"></textarea></td>
+      </tr>
+       <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="left_words">运费：</td>
+        <td colspan="3"><input id="price" class="simple_des" type="text" placeholder="" style="width:100%" /></td>
+       </tr>
+       <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="left_words">发货地址：</td>
+        <td colspan="3"><input id="send_addr" class="simple_des" type="text" placeholder="" style="width:100%" /></td>
+       </tr>
+       <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="left_words">地址确认：</td>
+        <td colspan="3">
+        	<select id="province"><option value="载入中">载入中</option></select>&nbsp;省，
+            <select id="city"><option value="载入中">载入中</option></select>&nbsp;市
+            </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+       <tr>
+        <td>&nbsp;</td>
+        <td colspan="3">
+        	<input id="area" class="simple_des" type="text" placeholder="此内容须从地图上获取" style="width:64%"/>
+        	<a id="btn_show_map" href="#">从地图上选</a>
+        </td>
+      </tr>
+       <tr>
+        <td>&nbsp;</td>
+        <td><input name="" class="point_lng" id="longitude" type="text" style="display:none;"/></td>
+        <td>&nbsp;</td>
+        <td><input name="" class="point_lat" id="latitude" type="text" style="display:none;"/></td>
+      </tr>
+      <tr>
+        <td class="left_words">发货时间：</td>
+        <td><input name="deliver_time" id="send_time" class="jcDate jcDateIco simple_des " type="text" /></td>
+        <td class="left_words">预计到货时间：</td>
+        <td><input name="ima_time" id="recv_time" class="jcDate jcDateIco simple_des " type="text" /></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="left_words">发货人：</td>
+        <td><input name="deliver" id="sender" class="simple_des" type="text" /></td>
+        <td class="left_words">发货人电话：</td>
+        <td><input name="deliver_tel" id="sender_phone" class="simple_des" type="text" /></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="left_words">收货人：</td>
+        <td><input name="receiver" id="recver" class="simple_des" type="text" /></td>
+        <td class="left_words">收货人电话：</td>
+        <td><input name="receiver_tel" id="recver_phone" class="simple_des" type="text" /></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="left_words">收货地址：</td>
+        <td colspan="3"><input  id="recv_addr" class="simple_des" type="text" style="width:100%" /></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="left_words">车长：</td>
+        <td><input name="car_size" id="car_length" class="simple_des" type="text" /></td>
+        <td class="left_words">车数：</td>
+        <td><input name="car_num" id="car_number" class="simple_des" type="text" /></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+            
+        <td colspan="4"><a href="#" id="btn_submit" class="btn_submit">发 布</a></td>
+      </tr>
+    </table>
+    
+  </form>
+  <div id="allmap"></div>
+  <div id="map_mask"></div>
+  <div id="mess_block">
+  	<div class="mess_info">
+    	<span class="info_title">您从地图上取点信息为：</span>
+        <span class="info_show">江苏省 南京市<br />秦淮区 中山南路</span>
+    </div>
+    <a href="#" id="btn_sub">确认选用</a>
+    <a href="#" id="btn_cancel">取消重选</a>
+  </div>
+</div>
+<div id="jcDate" style=" display:none; ">
+<input type="hidden" value="23" id="dateHideText">
+<div id="jcDateTt"><a id="d_prev"></a><div><span>2014</span><b>年</b><samp>10</samp><b>月</b></div>
+<a id="d_next"></a></div><dl id="jcYeas" style="display: none;"><dt>2005年</dt><dt>2006年</dt><dt>2007年</dt><dt>2008年</dt><dt>2009年</dt><dt>2010年</dt><dt>2011年</dt><dt>2012年</dt><dt>2013年</dt><dd class="visited">2014年</dd><dt>2015年</dt><dt>2016年</dt><dt>2017年</dt><dt>2018年</dt><dt>2019年</dt><dt>2020年</dt><dt>2021年</dt><dt>2022年</dt></dl><dl id="jcMonth" style="display: none;"><dt>1月</dt><dt>2月</dt><dt>3月</dt><dt>4月</dt><dt>5月</dt><dt>6月</dt><dt>7月</dt><dt>8月</dt><dt>9月</dt><dt class="visited">10月</dt><dt>11月</dt><dt>12月</dt></dl><div id="jcDayWrap"><dl id="jcDayCon"><dt>日</dt><dt>一 </dt><dt>二 </dt><dt>三 </dt><dt>四 </dt><dt>五 </dt><dt>六 </dt></dl><div id="jcDateMax" style="left: -1449px;"><ul><li>29</li><li>30</li><li>31</li><li class="jcDateColor">1</li><li class="jcDateColor">2</li><li class="jcDateColor">3</li><li class="jcDateColor">4</li><li class="jcDateColor">5</li><li class="jcDateColor">6</li><li class="jcDateColor">7</li><li class="jcDateColor">8</li><li class="jcDateColor">9</li><li class="jcDateColor">10</li><li class="jcDateColor">11</li><li class="jcDateColor">12</li><li class="jcDateColor">13</li><li class="jcDateColor">14</li><li class="jcDateColor">15</li><li class="jcDateColor">16</li><li class="jcDateColor">17</li><li class="jcDateColor">18</li><li class="jcDateColor">19</li><li class="jcDateColor">20</li><li class="jcDateColor">21</li><li class="jcDateColor">22</li><li class="jcDateColor">23</li><li class="jcDateColor">24</li><li class="jcDateColor">25</li><li class="jcDateColor">26</li><li class="jcDateColor">27</li><li class="jcDateColor">28</li><li class="jcDateColor">29</li><li class="jcDateColor">30</li><li class="jcDateColor">31</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li></ul><ul><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li><li class="jcDateColor">1</li><li class="jcDateColor">2</li><li class="jcDateColor">3</li><li class="jcDateColor">4</li><li class="jcDateColor">5</li><li class="jcDateColor">6</li><li class="jcDateColor">7</li><li class="jcDateColor">8</li><li class="jcDateColor">9</li><li class="jcDateColor">10</li><li class="jcDateColor">11</li><li class="jcDateColor">12</li><li class="jcDateColor">13</li><li class="jcDateColor">14</li><li class="jcDateColor">15</li><li class="jcDateColor">16</li><li class="jcDateColor">17</li><li class="jcDateColor">18</li><li class="jcDateColor">19</li><li class="jcDateColor">20</li><li class="jcDateColor">21</li><li class="jcDateColor">22</li><li class="jcDateColor">23</li><li class="jcDateColor">24</li><li class="jcDateColor">25</li><li class="jcDateColor">26</li><li class="jcDateColor">27</li><li class="jcDateColor">28</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li></ul><ul><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li><li>28</li><li class="jcDateColor">1</li><li class="jcDateColor">2</li><li class="jcDateColor">3</li><li class="jcDateColor">4</li><li class="jcDateColor">5</li><li class="jcDateColor">6</li><li class="jcDateColor">7</li><li class="jcDateColor">8</li><li class="jcDateColor">9</li><li class="jcDateColor">10</li><li class="jcDateColor">11</li><li class="jcDateColor">12</li><li class="jcDateColor">13</li><li class="jcDateColor">14</li><li class="jcDateColor">15</li><li class="jcDateColor">16</li><li class="jcDateColor">17</li><li class="jcDateColor">18</li><li class="jcDateColor">19</li><li class="jcDateColor">20</li><li class="jcDateColor">21</li><li class="jcDateColor">22</li><li class="jcDateColor">23</li><li class="jcDateColor">24</li><li class="jcDateColor">25</li><li class="jcDateColor">26</li><li class="jcDateColor">27</li><li class="jcDateColor">28</li><li class="jcDateColor">29</li><li class="jcDateColor">30</li><li class="jcDateColor">31</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul><ul><li>30</li><li>31</li><li class="jcDateColor">1</li><li class="jcDateColor">2</li><li class="jcDateColor">3</li><li class="jcDateColor">4</li><li class="jcDateColor">5</li><li class="jcDateColor">6</li><li class="jcDateColor">7</li><li class="jcDateColor">8</li><li class="jcDateColor">9</li><li class="jcDateColor">10</li><li class="jcDateColor">11</li><li class="jcDateColor">12</li><li class="jcDateColor">13</li><li class="jcDateColor">14</li><li class="jcDateColor">15</li><li class="jcDateColor">16</li><li class="jcDateColor">17</li><li class="jcDateColor">18</li><li class="jcDateColor">19</li><li class="jcDateColor">20</li><li class="jcDateColor">21</li><li class="jcDateColor">22</li><li class="jcDateColor">23</li><li class="jcDateColor">24</li><li class="jcDateColor">25</li><li class="jcDateColor">26</li><li class="jcDateColor">27</li><li class="jcDateColor">28</li><li class="jcDateColor">29</li><li class="jcDateColor">30</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li></ul><ul><li>27</li><li>28</li><li>29</li><li>30</li><li class="jcDateColor">1</li><li class="jcDateColor">2</li><li class="jcDateColor">3</li><li class="jcDateColor">4</li><li class="jcDateColor">5</li><li class="jcDateColor">6</li><li class="jcDateColor">7</li><li class="jcDateColor">8</li><li class="jcDateColor">9</li><li class="jcDateColor">10</li><li class="jcDateColor">11</li><li class="jcDateColor">12</li><li class="jcDateColor">13</li><li class="jcDateColor">14</li><li class="jcDateColor">15</li><li class="jcDateColor">16</li><li class="jcDateColor">17</li><li class="jcDateColor">18</li><li class="jcDateColor">19</li><li class="jcDateColor">20</li><li class="jcDateColor">21</li><li class="jcDateColor">22</li><li class="jcDateColor">23</li><li class="jcDateColor">24</li><li class="jcDateColor">25</li><li class="jcDateColor">26</li><li class="jcDateColor">27</li><li class="jcDateColor">28</li><li class="jcDateColor">29</li><li class="jcDateColor">30</li><li class="jcDateColor">31</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li></ul><ul><li class="jcDateColor">1</li><li class="jcDateColor">2</li><li class="jcDateColor">3</li><li class="jcDateColor">4</li><li class="jcDateColor">5</li><li class="jcDateColor">6</li><li class="jcDateColor">7</li><li class="jcDateColor">8</li><li class="jcDateColor">9</li><li class="jcDateColor">10</li><li class="jcDateColor">11</li><li class="jcDateColor">12</li><li class="jcDateColor">13</li><li class="jcDateColor">14</li><li class="jcDateColor">15</li><li class="jcDateColor">16</li><li class="jcDateColor">17</li><li class="jcDateColor">18</li><li class="jcDateColor">19</li><li class="jcDateColor">20</li><li class="jcDateColor">21</li><li class="jcDateColor">22</li><li class="jcDateColor">23</li><li class="jcDateColor">24</li><li class="jcDateColor">25</li><li class="jcDateColor">26</li><li class="jcDateColor">27</li><li class="jcDateColor">28</li><li class="jcDateColor">29</li><li class="jcDateColor">30</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li></ul><ul><li>29</li><li>30</li><li class="jcDateColor">1</li><li class="jcDateColor">2</li><li class="jcDateColor">3</li><li class="jcDateColor">4</li><li class="jcDateColor">5</li><li class="jcDateColor">6</li><li class="jcDateColor">7</li><li class="jcDateColor">8</li><li class="jcDateColor">9</li><li class="jcDateColor">10</li><li class="jcDateColor">11</li><li class="jcDateColor">12</li><li class="jcDateColor">13</li><li class="jcDateColor">14</li><li class="jcDateColor">15</li><li class="jcDateColor">16</li><li class="jcDateColor">17</li><li class="jcDateColor">18</li><li class="jcDateColor">19</li><li class="jcDateColor">20</li><li class="jcDateColor">21</li><li class="jcDateColor">22</li><li class="jcDateColor">23</li><li class="jcDateColor">24</li><li class="jcDateColor">25</li><li class="jcDateColor">26</li><li class="jcDateColor">27</li><li class="jcDateColor">28</li><li class="jcDateColor">29</li><li class="jcDateColor">30</li><li class="jcDateColor">31</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li></ul><ul><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li><li class="jcDateColor">1</li><li class="jcDateColor">2</li><li class="jcDateColor">3</li><li class="jcDateColor">4</li><li class="jcDateColor">5</li><li class="jcDateColor">6</li><li class="jcDateColor">7</li><li class="jcDateColor">8</li><li class="jcDateColor">9</li><li class="jcDateColor">10</li><li class="jcDateColor">11</li><li class="jcDateColor">12</li><li class="jcDateColor">13</li><li class="jcDateColor">14</li><li class="jcDateColor">15</li><li class="jcDateColor">16</li><li class="jcDateColor">17</li><li class="jcDateColor">18</li><li class="jcDateColor">19</li><li class="jcDateColor">20</li><li class="jcDateColor">21</li><li class="jcDateColor">22</li><li class="jcDateColor">23</li><li class="jcDateColor">24</li><li class="jcDateColor">25</li><li class="jcDateColor">26</li><li class="jcDateColor">27</li><li class="jcDateColor">28</li><li class="jcDateColor">29</li><li class="jcDateColor">30</li><li class="jcDateColor">31</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li></ul><ul><li>31</li><li class="jcDateColor">1</li><li class="jcDateColor">2</li><li class="jcDateColor">3</li><li class="jcDateColor">4</li><li class="jcDateColor">5</li><li class="jcDateColor">6</li><li class="jcDateColor">7</li><li class="jcDateColor">8</li><li class="jcDateColor">9</li><li class="jcDateColor">10</li><li class="jcDateColor">11</li><li class="jcDateColor">12</li><li class="jcDateColor">13</li><li class="jcDateColor">14</li><li class="jcDateColor">15</li><li class="jcDateColor">16</li><li class="jcDateColor">17</li><li class="jcDateColor">18</li><li class="jcDateColor">19</li><li class="jcDateColor">20</li><li class="jcDateColor">21</li><li class="jcDateColor">22</li><li class="jcDateColor">23</li><li class="jcDateColor">24</li><li class="jcDateColor">25</li><li class="jcDateColor">26</li><li class="jcDateColor">27</li><li class="jcDateColor">28</li><li class="jcDateColor">29</li><li class="jcDateColor">30</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li></ul><ul class="dateV"><li>28</li><li>29</li><li>30</li><li class="jcDateColor">1</li><li class="jcDateColor">2</li><li class="jcDateColor">3</li><li class="jcDateColor">4</li><li class="jcDateColor">5</li><li class="jcDateColor">6</li><li class="jcDateColor">7</li><li class="jcDateColor">8</li><li class="jcDateColor">9</li><li class="jcDateColor">10</li><li class="jcDateColor">11</li><li class="jcDateColor">12</li><li class="jcDateColor">13</li><li class="jcDateColor">14</li><li class="jcDateColor">15</li><li class="jcDateColor">16</li><li class="jcDateColor">17</li><li class="jcDateColor">18</li><li class="jcDateColor">19</li><li class="jcDateColor">20</li><li class="jcDateColor">21</li><li class="jcDateColor">22</li><li class="jcDateColor visited">23</li><li class="jcDateColor">24</li><li class="jcDateColor">25</li><li class="jcDateColor">26</li><li class="jcDateColor">27</li><li class="jcDateColor">28</li><li class="jcDateColor">29</li><li class="jcDateColor">30</li><li class="jcDateColor">31</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li></ul><ul><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li><li class="jcDateColor">1</li><li class="jcDateColor">2</li><li class="jcDateColor">3</li><li class="jcDateColor">4</li><li class="jcDateColor">5</li><li class="jcDateColor">6</li><li class="jcDateColor">7</li><li class="jcDateColor">8</li><li class="jcDateColor">9</li><li class="jcDateColor">10</li><li class="jcDateColor">11</li><li class="jcDateColor">12</li><li class="jcDateColor">13</li><li class="jcDateColor">14</li><li class="jcDateColor">15</li><li class="jcDateColor">16</li><li class="jcDateColor">17</li><li class="jcDateColor">18</li><li class="jcDateColor">19</li><li class="jcDateColor">20</li><li class="jcDateColor">21</li><li class="jcDateColor">22</li><li class="jcDateColor">23</li><li class="jcDateColor">24</li><li class="jcDateColor">25</li><li class="jcDateColor">26</li><li class="jcDateColor">27</li><li class="jcDateColor">28</li><li class="jcDateColor">29</li><li class="jcDateColor">30</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li></ul><ul><li>30</li><li class="jcDateColor">1</li><li class="jcDateColor">2</li><li class="jcDateColor">3</li><li class="jcDateColor">4</li><li class="jcDateColor">5</li><li class="jcDateColor">6</li><li class="jcDateColor">7</li><li class="jcDateColor">8</li><li class="jcDateColor">9</li><li class="jcDateColor">10</li><li class="jcDateColor">11</li><li class="jcDateColor">12</li><li class="jcDateColor">13</li><li class="jcDateColor">14</li><li class="jcDateColor">15</li><li class="jcDateColor">16</li><li class="jcDateColor">17</li><li class="jcDateColor">18</li><li class="jcDateColor">19</li><li class="jcDateColor">20</li><li class="jcDateColor">21</li><li class="jcDateColor">22</li><li class="jcDateColor">23</li><li class="jcDateColor">24</li><li class="jcDateColor">25</li><li class="jcDateColor">26</li><li class="jcDateColor">27</li><li class="jcDateColor">28</li><li class="jcDateColor">29</li><li class="jcDateColor">30</li><li class="jcDateColor">31</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li></ul></div><div id="jcDateBtn"><samp>今天</samp><span>清空</span><a id="d_sub">确定</a><div id="jcTimeWrap"><input type="text" value=""><label>:</label><input type="text" value=""></div></div></div></div>
+</body>
+<script type="text/javascript" src="js/tianjiayundan.js"></script>
+<script type="text/javascript">
+$(function (){
+	$("input.jcDate").jcDate({					       
+		IcoClass : "jcDateIco",
+		Event : "click",
+		Speed : 100,
+		Left : 0,
+		Top : 28,
+		format : "-",
+		Timeout : 100
+	});
+});
+</script>
+</html>
+

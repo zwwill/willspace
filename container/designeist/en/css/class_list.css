@@ -1,0 +1,8 @@
+/* CSS Document */
+#main_block .top_btn_block{height:auto; width:100%; overflow:hidden; z-index:9999; text-align:center; background:#000; font:bold 18px/45px "微软雅黑"; color:#fff;}
+#main_block .top_btn_block #btn_back{ float:left; height:35px; width:40px;  margin:5px 0 5px 10px; }
+#main_block .top_btn_block img{ width:25px; height:25px; margin:5px;}
+
+#class_block{ display:block;width:90%;padding-bottom:80px; }
+#class_block .a_class{ display:block; margin-top:10px; width:100%; height:auto; overflow:hidden; border-radius:10px; box-shadow:0px 2px 5px #000; line-height:0;}
+#class_block .a_class img{ width:100%;}

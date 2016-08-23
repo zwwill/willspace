@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>商品发布</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="../../css/com.css">
+<link rel="stylesheet" type="text/css" href="../../css/express/add_expr_order.css">
+<!--JS文件-->
+<script src="../../js/jquery-1.11.2.min.js"></script>
+<script src="../../js/com.js"></script>
+<script src="../../js/express/add_expr_order.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+ 
+	<!--main_block-->
+	<div id="main_block">
+    	<span class="top_tips"><p class="txt">召唤快递员</p><img src="../../img/app/ico_tips.png" class="ico_tips"></span>
+        <span class="line"><span class="name" id="name">联 系 人</span><input name="" type="text" id="name" placeholder="怎么称呼"></span>
+        <span class="line"><span class="name" id="phonenum">联系电话</span><input name="" type="text" id="phonenum" placeholder="预留电话"></span>
+        <span class="line"><span class="name" id="addr">派送地址</span><input name="" type="text" id="addr" placeholder="你住哪个宿舍？"></span>
+        <span class="line"><span class="name" id="phonenum">快递类型</span>
+        	<select name="">
+                <option value="0">哪家快递</option>
+                <option value="1">申通快递</option>
+                <option value="2">圆通快递</option>
+                <option value="3">中通快递</option>
+                <option value="4">韵达快递</option>
+                <option value="5">天天快递</option>
+            </select>
+        </span>
+        <span class="line"><span class="name" id="message">附近信息</span>
+        	<textarea name=""  id="message" placeholder="请复制您收到的快递取件短信到此处，以便我们可以及时的找到您的邮件，为您安排派送"></textarea>
+        </span>
+        <span class="line"><span class="name" id="urgent">是否加急</span>
+        	<div id="btn_urgent_onoff" class="btn_checkbox" on="0">
+                <div class="checkbox">
+                <span class="onoff"><label><span class="b"></span></label></span>
+                </div>
+            </div>
+        </span>
+        <span class="line"><span class="name" id="weight">物品估重</span>
+        	<select name="">
+                <option value="1">0~5kg</option>
+                <option value="2">5~10kg</option>
+                <option value="3">10kg~20kg</option>
+                <option value="4">20kg以上</option>
+            </select>
+        </span>
+        <span class="line"><span class="name" id="cost">雇 佣 费</span><p class="cost">1元</p></span>
+        <span class="line"><span class="name" id="pay">支付方式</span>
+        	<select name="">
+                <option value="0">在线支付</option>
+                <option value="1">货到付款</option>
+            </select>
+        </span>
+        <span id="btn_sub" class="bottom_btn">立 即 下 单</span>
+    </div>
+	<!--END main_block-->
+    
+	<!--sub_block-->
+    
+	<!--END sub_block-->
+</div>
+</body>
+</html>

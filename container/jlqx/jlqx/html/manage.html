@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>南大金陵青协管理系统</title>
+<link href="css/manage.css" rel="stylesheet" type="text/css" />
+<link href="css/table.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+<script type="text/javascript">
+
+window.show_main();//该页面被载入则自动调用show函数
+var role;//全局变量用于存放取得的身份
+function show_main()
+{
+	$.ajax({
+		url:"../php/getSession.php",
+		datatype:"json",
+		type:"post",
+		success:function(data){
+			role=eval("("+data+")")[1];
+			$.ajax({
+				url: '../php/user/userInfo.php',
+				datatype:"json",
+				type: "POST",
+				success:function(data){
+					var product = eval("(" + data + ")");
+					if(product=="返回登录")//没有session
+						alert(product);
+					else
+					showNav(product);
+				}
+			});
+		}
+	});
+}
+		
+</script>
+
+<body>
+
+<div id="sider"></div>
+
+<div id="continer">
+	<div id="header">
+    	<div class="mark">南京大学金陵学院青年志愿者协会管理系统</div>
+    	<div id="logo"></div>
+    	<div class="header_right">
+                    <ul>
+                      <a href="../../index.html"><li class="back_pic">&nbsp;</li></a>
+                      <li><a href="../../index.html" >返回首页</a></li>
+                   </ul>
+                    <ul>
+                      <a href="../php/logoff.php"><li class="back_pic">&nbsp;</li></a>
+                      <li><a href="../php/logoff.php" >切换账号</a></li>
+                   </ul>
+        </div>
+         <div class="low">&nbsp;</div>
+    </div>
+    <div id="main">
+    	<div id="nav">
+        	
+        </div>
+        <div id="show">
+        <div class="option"><a href="javascript:tf.window.print()"  >打印</a></div>
+        	<table id="table" >		
+            	
+            </table>
+            <iframe src="getActListNow.html" name="tf" frameborder="0" scrolling="yes" height="700px" width="100%">       
+            </iframe>
+            
+        </div>
+    </div>
+	<div id="footer"></div>
+</div>
+
+</body>
+</html>

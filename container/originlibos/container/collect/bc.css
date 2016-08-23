@@ -1,0 +1,86 @@
+/* CSS Document */
+
+
+#main{
+	width:980px;
+	height:auto;
+	margin-top:40px;
+}
+#main #bookshelf{
+	float:left;
+	clear:both;
+	width:980px;
+	height:1230px;
+	background:url(bookshelf.png) no-repeat;
+}
+#main #bookshelf .bs_top_block{
+	height:40px;
+	width:830px;
+	float:left;
+	margin:37px 0 0 65px;
+	border-radius:10px; 
+	background:#ccc;
+	box-shadow:#000 2px 2px 2px;
+}
+#main #bookshelf .bs_top_block p{
+	height:40px;
+	width:135px;
+	float:left;
+	margin-left:30px;
+	font: bold 22px "黑体";
+	color:#080;
+	line-height:40px;
+}
+#main #bookshelf .bs_top_block .page{
+	float:right;
+	width:400px;
+	height:40px;
+	line-height:40px;
+}
+#main #bookshelf .book_list{
+	float:left;
+	clear:both;
+	height:1085px;
+	overflow:hidden;
+	width:853px;
+	margin-left:56px;
+}
+#main #bookshelf .book_list li{
+	list-style:none;
+	margin:28px 0 8px 34px;
+	width:130px;
+	height:180px;
+	float:left;
+	background:url(book_ico.png) no-repeat;
+}
+#main #bookshelf .book_list a{
+	position:relative;
+	height:180px;
+	width:130px;
+	float:left;
+	z-index:10;
+}
+#main #bookshelf .book_list span{
+	position:relative;
+	float:left;
+	height:35px;
+	width:130px;
+	margin-top:-35px;
+	background:#000;
+	z-index:20;
+	opacity:0.4;
+	font:normal 14px "宋体";
+	line-height:35px;
+	overflow:hidden;
+	text-align:center;
+	color:#FFF;
+	
+}
+#main #bookshelf .book_list span:hover{
+	opacity:0.7;
+}
+
+
+
+
+

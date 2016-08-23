@@ -1,0 +1,34 @@
+/* CSS Document */
+
+#order_num{ float:left;width:95%; padding:20px 0 20px 5%; background:#666;font-weight:bold; line-height:30px; font-size:20px; color:#CCC; word-break:break-all;}
+#order_num .num{ font-size:24px;  color:#fff;}
+
+.block_tlt{ float:left; width:95%; padding-left:5%; height:25px; font-size:14px; font-weight:bold; line-height:25px;margin-left:-9px;}
+
+.single_block{ float:left; width:90%; margin:10px 5%; padding-bottom:5px; background:#eee; border-radius:0 5px 5px;}
+.single_block .line{ float:left; width:90%; margin: 0 5%; border-bottom:dashed 1px #fff;}
+.single_block .line .name{ float:left; width:60px; font-size:14px; height:40px; line-height:40px; font-weight:bold; text-align:center;}
+
+#goods_info .block_tlt{ border-left: solid 6px #09F;  color:#09F;}
+#goods_info .line .val{ float:left; width:75%;min-height:40px; font-size:14px; line-height:40px;color:#666; text-align:right;}
+
+#buyer_info .block_tlt{ border-left: solid 6px #93C; color:#93C;}
+
+#buyer_info .line .val{ float:left; width:75%;min-height:40px; text-align:right;font-size:14px;line-height:40px; word-break:break-strict; color:#666;}
+
+#express_info .block_tlt{ border-left: solid 6px #090; color:#090;}
+#express_info .line .val #btn_express_onoff{ float:right; width:40%;}
+#express_info .line .val #btn_express_onoff .onoff .b::before{content:'送货'; color:#fff;}
+#express_info .line .val #btn_express_onoff .onoff label::after{content:'自取'; color:#666;}
+
+.express_block{float:left; width:100%;}
+.express_block .val{ float:right; width:90%;}
+.express_block .val .select_expr{  width:100%; height:30px; margin:5px 0; background:none; border:none; text-align:right;}
+.express_block .line .val.expr_num{ float:right; border:0; background:none; font-size:16px; text-align:right; font-weight:bold; line-height:40px; width:73%; color:#060; overflow:hidden; white-space:nowrap;text-overflow:ellipsis;}
+.express_block .line .expr_state{ float:right; width:73%; font-size:14px; margin-top:5px; font-weight:bold; text-align:right;line-height:30px; color:#090;}
+
+.state{ float:left; width:80%; margin:0 10% 15px; height:40px; font-size:14px; font-weight:bold; line-height:40px; }
+.state .val{ float:right; width:80%; text-align:right; font-size:16px; font-weight:bold; color:#0C0;}
+
+.bottom_btn{ float:left; width:90%; margin:0 5% 15px; height:40px; font-weight:bold; color:#fff; font-size:20px; line-height:40px; text-align:center; border-radius:3px;}
+.bottom_btn[id=btn_del]{background:#F00;}

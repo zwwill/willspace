@@ -1,0 +1,248 @@
+/* CSS Document */
+
+*{
+	margin:0px auto;
+	padding:0px;
+	font-size:12px;
+	
+}
+#container{
+	width:980px;
+}
+
+#header{
+	width:980px;
+	height:134px;
+}
+#header #logo{
+	height:75px;
+	width:186px;
+	margin:10px 0px 5px 10px;
+	background:url(../images/logo.png);
+	float:left;
+}
+#header #add{
+	width:100px;
+	height:70px;
+	float:right;
+	margin-top:10px;
+	
+}
+#header #add li{
+	float:left;
+	list-style:none;
+	line-height:24px;
+	margin:4px 0px 0px 6px;
+}
+#add li.add0{
+	width:20px;
+	background:url(../images/logo_l.png) no-repeat;
+	clear:right;
+}
+#add a{
+	text-decoration:none;
+	font-size:13px;
+	color:#999;
+}
+#add a:hover{
+	color: #F90;
+	text-decoration:underline;
+}
+
+#header #nav{
+	height:auto;
+	width:600px;
+	float:right;
+	margin-top:50px;
+}
+#header #nav li{
+	float:left;
+	list-style:none;
+	width:110px;
+	line-height:34px;
+	text-align:center;
+}
+#header #nav a{
+	font: bold 18px "宋体";
+	color:#666;
+	text-decoration:none;
+}
+#header #nav a:hover{
+	color: #F90;
+}
+#header .low{
+	width:100%;
+	height:auto;
+	clear:both;
+	background:url(../images/up_l.png) no-repeat;
+}
+
+
+#main{
+	width:100%;
+	height: auto;
+	color: #333;
+}
+#main #list{
+	width:100%;
+	height:1000px;
+}
+#main #list #up{
+	width:100%;
+	height:150px;
+	float:left;
+	background: #F0F0F0;
+	border-top:6px solid #FFF;
+	border-bottom:12px solid #FFF;
+}
+#main #list #up .left{
+	float:left;
+	width:160px;
+	height:150px;
+	margin-left:30px;
+}
+#main #list #up .lis{
+	float:left;
+	width:450px;
+	height:150px;
+}
+#main #list #up .lis li{
+	list-style-image:url(../images/ff.png);
+	float:left;
+	width:150px;
+	margin:30px 0px 0px 60px;
+}
+#main #list #up .lis span{
+	margin-left:20px;
+	font-size:18px;
+	color:#F30;
+}
+#main #list #up .lis a{
+	font-size:18px;
+	text-decoration:none;
+	margin-left:20px;
+	color:#666;
+}
+#main #list #up .lis a:hover{
+	color:#F30;
+	text-decoration:underline;
+}
+
+#main #list #neirong{
+	height:870px;
+	background: #FFF;
+	border:2px solid #FFF;
+} 
+#main #list #neirong #left{
+	width:670px;
+	float:left;
+	height:700px;
+	background: #F0F0F0;
+}
+#main #list #neirong #left .ll{
+	height:40px;
+	width:630px;
+	margin:15px 16px;
+	background:#FFF;
+	border:2px solid #CCC;
+}
+#main #list #neirong #left .ll p{
+	line-height:50px;
+	margin-left:20px;
+	padding-left:35px;
+	background:url(../images/logo_a.png) no-repeat;	
+}
+#main #list #neirong #left .ll p a{
+	font-size:15px;
+	text-decoration:none;
+	color: #666;
+}
+#main #list #neirong #left .ll p a:hover{
+	font-size:16px;
+	color: #F60;
+}
+#main #list #neirong #left .page{
+	width:600px;
+	height:25px;
+	background: #D9D9D9;
+	padding-top:10px;
+	text-align:center;
+}
+#main #list #neirong #left .page a{
+	text-decoration:none;
+	padding:3px 2px;
+	color:#666;
+}
+#main #list #neirong #left .page a:hover{
+	color:#F30;
+	text-decoration:underline;
+}
+
+#main #list #neirong #share{
+	margin-top:10px;
+	height:50px;
+	width:630px;
+	float:right;
+}
+#main #list #neirong #right{
+	width:300px;
+	height:700px;
+	background: #F0F0F0;
+	float:right;
+}
+
+#footer{
+	width:980px;
+	height:300px;
+}
+#footer li{
+	list-style:none;
+	text-align:center;
+}
+#footer .hr{
+	height:1px;
+	width:100%;
+	background: #BF6000;
+	clear:both;
+	margin-top:20px;
+}
+#footer .help{
+	width:250px;
+	float:left;
+}
+#footer .link{
+	width:400px;
+	margin:0px 40px;
+}
+#footer .link .ff{
+	width:200px;
+	float:left;
+}
+#footer .about{
+	width:250px;
+}
+#footer a{
+	line-height:17px;
+	list-style:none;
+	text-decoration:none;
+	color: #D26900;
+}
+#footer a:hover{
+	color:#666;
+	text-decoration:underline;
+}
+#footer #down{
+	width:100%;
+	height:70px;
+	clear:both;
+	padding-top:16px;
+}
+#footer #down p{
+	text-align:center;
+	line-height:20px;
+	color:#666;
+
+
+
+
+

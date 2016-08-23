@@ -1,0 +1,167 @@
+/* CSS Document */
+
+
+
+/*main*/
+#main{
+	width:980px;
+	margin-top:40px;
+}
+#main #search_block{
+	margin-top:15px;
+	float:left;
+	width:580px;
+	height:280px;
+	padding:10px 35px;
+	background:url(../img/paper.png) no-repeat;
+}
+#main #search_block label{
+	width:100px;
+	height:37px;
+	font:bold 18px "????";
+	color:#060;
+	line-height:37px;
+}
+
+#main #search_block .a_search{
+	background:#060;
+	color:#fff;
+	text-shadow:#333 0 2px 2px;
+}
+#main #search_block a:hover{
+	background:#070;
+}
+#main #right_block{
+	display:block;
+	width:300px;
+	height:auto;
+	float:right;
+	background:#eee;
+	border-radius:8px;
+	margin-top:20px;
+	box-shadow:#000 1px 1px 3px;
+}
+#main #right_block .news_top{
+	float:left;
+	height:38px;
+	width:200px;
+	border-bottom:dashed 2px #009900;
+}
+#main #right_block .news_top p{
+	height:40px;
+	width:100px;
+	float:left;
+	font:bold 17px "????";
+	line-height:40px;
+	color:#FFF;
+	background:#090;
+	padding-left:20px;
+	border-radius:10px 0 0 0;
+}
+#main #right_block .news_top_more{
+	float:right;
+	height:38px;
+	width:100px;
+}
+#main #right_block .news_top_more a{
+	display: block;
+	height: 20px;
+	width: 50px;
+	line-height:20px;
+	float:right;
+	background: #080;
+	border-radius:5px;
+	margin: 15px 15px 0 0;
+	text-align: center;
+	color:#fff;
+	text-decoration: none;
+}
+#main #right_block .news_top_more a:hover{
+	background: #0a0;
+}
+#main #right_block #news_list{
+	display:block;
+	width:260px;
+	height:210px;
+	float:left;
+	margin:20px;
+	box-shadow:#ccc 0 0 1px;
+}
+#main #right_block #news_list li{
+	float:left;
+	clear: both;
+}
+#main #right_block #news_list li a{
+	display:block;
+	height: 25px;
+	width: 242px;
+	line-height:25px;
+	padding:5px;
+	margin:3px;
+	background:#f5f5f5;
+	text-decoration: none;
+	overflow: hidden;
+}
+#main #right_block #news_list li a:hover{
+	background:#fff;
+}
+
+#main #book_recom{
+	margin:15px 0 0 13px;
+	width:970px;
+	height:auto;
+	float:left;
+	background:#e3e3e3;
+	box-shadow:#666 2px 2px 10px;
+	border-radius:7px;
+}
+#main #book_recom .rec_top{
+	float:left;
+	clear:both;
+	height:38px;
+	width:300px;
+	border-bottom:dashed 2px #009900;
+}
+#main #book_recom .rec_top p{
+	height:40px;
+	width:100px;
+	float:left;
+	font:bold 17px "ºÚÌå";
+	line-height:40px;
+	color:#FFF;
+	background:#090;
+	padding-left:20px;
+	border-radius:10px 0 0 0;
+}
+#main #book_recom .tbody{
+	float:left;
+	clear:both;
+	margin:10px 0 10px 40px;
+}
+#main #book_recom .bodytitle{
+	color:#090;
+	font-size:14px;
+}
+#main #book_recom .Read{
+	line-height:18px;
+}
+#main #book_recom #TodayBook1{
+	position:relative;
+	z-index:2;
+	LEFT: 0px; POSITION: absolute; TOP: 0px
+}
+#main #book_recom #TodayBook2{
+	position:relative;
+	z-index:3;
+	LEFT: 360px; WIDTH: 410px; POSITION: absolute; TOP: 0px
+}
+#main #book_recom #TodayBook3{
+	position:relative;
+	z-index:4;
+	LEFT: 530px; WIDTH: 410px; POSITION: absolute; TOP: 0px
+}
+#main #book_recom #TodayBook4{
+	position:relative;
+	z-index:5;
+	LEFT: 710px; WIDTH: 410px; POSITION: absolute; TOP: 0px
+}

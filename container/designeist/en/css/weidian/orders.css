@@ -1,0 +1,20 @@
+/* CSS Document */
+
+#main_block .top_nav{ position:fixed; top:0; z-index:1000;min-width:300px; max-width:560px; width:100%; height:35px; background:#999; opacity:0.97;}
+#main_block .top_nav .btn{ float:left; width:20%; height:32px; text-align:center; font-size:14px; color:#fff;line-height:40px;border-bottom:solid 3px #999; -webkit-transition:border-bottom .7s ease; }
+#main_block{padding-top:35px;}
+
+.order_block{ display:none; float:left; width:100%; margin-bottom:20px;}
+.order_block .single_o{ float:left;height:105px; overflow:hidden; width:90%; margin:15px 5% 0 5%; background:#fafafa; box-shadow:0 1px 3px #999; border-radius:2px;}
+.order_block .single_o .order_num{ float:left;height:40px; width:90%; padding-left:5%; border-bottom:solid 1px #CCCCCC; font-size:18px; font-weight:bold; line-height:40px; overflow:hidden;white-space:nowrap;text-overflow:ellipsis; }
+.order_block .single_o .order_state{ float:right; height:20px; width:45px; text-align:right; padding-right:5px; line-height:20px; margin-top:-41px; border-radius:0 0 0 15px; background:#0C0; color:#fff; opacity:0.8; }
+.order_block .single_o .order_info{ float:left;height:60px; width:85%; padding-left:5%; }
+.order_block .single_o .order_info .name{ float:left;height:30px; width:65%; font-size:14px; line-height:30px;  overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.order_block .single_o .order_info .buyer{ float:left;height:30px; width:65%; font-size:14px; line-height:30px;    text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.order_block .single_o .order_info .price{ float:right;height:60px; width:35%; margin-top:-30px; font-size:14px; font-size:16px;line-height:60px; color:#0C0; text-align:right;  font-weight:bold;  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.order_block .single_o .btn_edit{ float:right;height:60px; width:25px; }
+.order_block .single_o .btn_edit img{ width:100%; height:100%;}
+
+
+
+

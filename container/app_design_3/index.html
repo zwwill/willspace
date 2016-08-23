@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Just Do 8</title>
+</head>
+<style>
+*{ margin:0 auto; padding:0;}
+#container{ display:block; height:800px; width:600px;background:url(phone.png) no-repeat; background-size:contain; background-position:center;}
+.in_scr{ margin:69px 0px 0px 112px;border: 0; border-radius:2px;height: 669px;width: 376px;}
+#btn_g{ width:300px; height:40px; margin-top:-55px;}
+#btn_g .btn{ float:left;height:40px; width:24%; font:bold 30px "黑体"; text-align:center; line-height:40px;}
+#btn_g .btn:hover{ background-color:#333; border-radius:3px; cursor:pointer;}
+.btn[id=btn_l]{ background:url(arrow_l.png) no-repeat; background-position:center; background-size:contain;}
+.btn[id=btn_u]{ background:url(arrow_u.png) no-repeat; background-position:center; background-size:contain;}
+.btn[id=btn_d]{ background:url(arrow_d.png) no-repeat; background-position:center; background-size:contain;}
+.btn[id=btn_r]{ background:url(arrow_r.png) no-repeat; background-position:center; background-size:contain;}
+.tips{ position:fixed; z-index:-1; left:100px; top:80px; width:400px; line-height:1.5; padding:10px; border:solid 1px #999; border-radius:5px;}
+/*--IE--*/
+body{
+scrollbar-arrow-color: #fff; /*三角箭头的颜色*/
+scrollbar-face-color: #fff; /*立体滚动条的颜色（包括箭头部分的背景色）*/
+scrollbar-3dlight-color: #ccc; /*立体滚动条亮边的颜色*/
+scrollbar-highlight-color: #fff; /*滚动条的高亮颜色（左阴影？）*/
+scrollbar-shadow-color: #999; /*立体滚动条阴影的颜色*/
+scrollbar-darkshadow-color: #666; /*立体滚动条外阴影的颜色*/
+scrollbar-track-color: #999; /*立体滚动条背景颜色*/
+scrollbar-base-color:#000; /*滚动条的基色*/
+}
+/*---滚动条默认显示样式--*/  
+::-webkit-scrollbar-thumb{ background-color:#ccc;  -webkit-border-radius:4px;  border:0px solid #fff;  } 
+/*---鼠标点击滚动条显示样式--*/  
+::-webkit-scrollbar-thumb:hover{background-color:#aaa; } 
+/*---滚动条大小--*/  
+::-webkit-scrollbar{ width:0px; } 
+/*---滚动框背景样式--*/  
+::-webkit-scrollbar-track-piece{ background-color:#fff; -webkit-border-radius:0;  }  
+
+</style>
+<body>
+<div id="container">
+<iframe src="../justdo8/index.html" name="phoneFrame" id="phoneFrame" class="in_scr" ></iframe></div>
+<div id="btn_g">
+<span id="btn_l" onClick="phoneFrame.window.in_move_left()" class="btn"></span>
+<span id="btn_u" onClick="phoneFrame.window.in_move_up()" class="btn"></span>
+<span id="btn_d" onClick="phoneFrame.window.in_move_down()" class="btn"></span>
+<span id="btn_r" onClick="phoneFrame.window.in_move_right()" class="btn"></span>
+</div>
+<div class="tips"><span style="color:#0C0;">Tips:</span><br/>1、此小游戏为H5手机游戏，为了方便演示，做此处理。<br/>2、如果窗口无法完全显示或者模型太小，可以按住<span style="background-color:#ccc; padding:2px 5px; border:solid 1px #000; border-radius:5px;">Ctrl</span>键组合滚动<span style="background-color:#ccc; padding:2px 5px; border:solid 1px #000; border-radius:5px;">鼠标滚轮</span>进行调整。<br/>
+<span style="color:#0C0;">试玩方法：</span><br/><span style="color:#03F;">方法一：</span>使用键盘方向键或提供的虚拟按键操作<br/><span style="color:#03F;">方法二：</span>手机访问网页[<a href="../justdo8/index.html">zwspace.sinaapp.com/justdo8</a>]进行试玩</div>
+</body>
+</html>
+
+<script>
+	window.onselectstart=function()   {return   false;}       //禁用选择
+	window.oncopy=function()   {return   false;}       //禁止复制
+	//禁止查看源代码
+	function stop(){
+	return false;
+	}
+	document.oncontextmenu=stop;
+	document.onmousedown=stop;
+	
+	document.onkeydown=function(){ 
+	
+		//键盘操作
+		var kc=window.event.keyCode;
+		if(kc==39) { 
+			phoneFrame.window.in_move_right();
+		}else if(kc==37){
+			phoneFrame.window.in_move_left();
+		}else if(kc==40){
+			phoneFrame.window.in_move_down();
+		}else if(kc==38){
+			phoneFrame.window.in_move_up();
+		}
+		
+		if(window.event && window.event.keyCode >= 113&&window.event.keyCode<=123&&window.event.keyCode!=116) { 
+		return false;
+		};
+		
+	}
+	
+
+</script>

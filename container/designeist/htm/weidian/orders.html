@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>订单管理</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="../../css/com.css">
+<link rel="stylesheet" type="text/css" href="../../css/weidian/orders.css">
+<!--JS文件-->
+<script src="../../js/jquery-1.11.2.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../../js/com.js"></script>
+<script src="../../js/weidian/orders.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+ 
+	<!--main_block-->
+	<div id="main_block">
+      	<div class="top_nav">
+       	 	<span class="btn" id="chuli">待处理</span>
+        	<span class="btn" id="fahuo">待发货</span>
+        	<span class="btn" id="shouhuo">待收货</span>
+        	<span class="btn" id="wancheng">已完成</span>
+        	<span class="btn" id="all">全部</span>
+      	</div>
+      <!-- order_chuli 待处理-->
+    	<div class="order_block" id="order_chuli">
+        	<div class="single_o"><a href="order_edit.html">
+            	<span class="order_num">订单号：1001200009</span>
+                <span class="order_state">待处理</span>
+                <div class="order_info">
+                	<span class="name">商品：iWatch</span>
+                    <span class="buyer">买家：z200000002</span>
+                    <span class="price">￥2399.00</span>
+                </div>
+                <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+            </a></div>
+            
+            <div class="single_o"><a href="order_edit.html">
+            	<span class="order_num">订单号：1001200008</span>
+                <span class="order_state">待处理</span>
+                <div class="order_info">
+                	<span class="name">商品：iPhone 6 Plus</span>
+                    <span class="buyer">买家：z200000106</span>
+                    <span class="price">￥2399.00</span>
+                </div>
+                <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+            </a></div>
+            
+            
+            
+        </div>
+      <!-- END order_chuli 待处理-->
+        
+        <!-- order_fahuo 待发货-->
+    	<div class="order_block" id="order_fahuo">
+        	<div class="single_o"><a href="order_fahuo.html">
+            	<span class="order_num">订单号：1001200007</span>
+                <span class="order_state">待发货</span>
+                <div class="order_info">
+                	<span class="name">商品：iWatch</span>
+                    <span class="buyer">买家：z200000000</span>
+                    <span class="price">￥2399.00</span>
+                </div>
+                <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+            </a></div>
+            
+        </div>
+      <!-- END order_fahuo 待发货-->
+        
+        <!-- order_fahuo 待收货-->
+    	<div class="order_block" id="order_shouhuo">
+        	<div class="single_o"><a href="order_state.html">
+            	<span class="order_num">订单号：1001200017</span>
+                <span class="order_state">待收货</span>
+                <div class="order_info">
+                	<span class="name">商品：iWatch</span>
+                    <span class="buyer">买家：z200000000</span>
+                    <span class="price">￥2399.00</span>
+                </div>
+                <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+            </a></div>
+            
+        	<div class="single_o"><a href="order_state.html">
+            	<span class="order_num">订单号：1001200021</span>
+                <span class="order_state">待收货</span>
+                <div class="order_info">
+                	<span class="name">商品：iWatch</span>
+                    <span class="buyer">买家：z200000000</span>
+                    <span class="price">￥2399.00</span>
+                </div>
+                <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+            </a></div>
+            
+            
+        </div>
+      <!-- END order_fahuo 待收货-->
+      
+        <!-- order_wancheng 已完成-->
+    	<div class="order_block" id="order_wancheng">
+        	<div class="single_o"><a href="order_state.html">
+            	<span class="order_num">订单号：1001200006</span>
+                <span class="order_state">已完成</span>
+                <div class="order_info">
+                	<span class="name">商品：iWatch</span>
+                    <span class="buyer">买家：z200000000</span>
+                    <span class="price">￥2399.00</span>
+                </div>
+                <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+            </a></div>
+            
+        	<div class="single_o"><a href="order_state.html">
+            	<span class="order_num">订单号：1001200005</span>
+                <span class="order_state">已完成</span>
+                <div class="order_info">
+                	<span class="name">商品：iWatch</span>
+                    <span class="buyer">买家：z200000000</span>
+                    <span class="price">￥2399.00</span>
+                </div>
+                <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+            </a></div>
+            
+        	<div class="single_o"><a href="order_state.html">
+            	<span class="order_num">订单号：1001200004</span>
+                <span class="order_state">已完成</span>
+                <div class="order_info">
+                	<span class="name">商品：iWatch</span>
+                    <span class="buyer">买家：z200000000</span>
+                    <span class="price">￥2399.00</span>
+                </div>
+                <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+            </a></div>
+            
+        	<div class="single_o"><a href="order_state.html">
+            	<span class="order_num">订单号：1001200003</span>
+                <span class="order_state">已完成</span>
+                <div class="order_info">
+                	<span class="name">商品：iWatch</span>
+                    <span class="buyer">买家：z200000000</span>
+                    <span class="price">￥2399.00</span>
+                </div>
+                <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+            </a></div>
+        </div>
+      <!-- END order_wancheng 已完成-->
+        
+        <!-- order_all 全部-->
+    	<div class="order_block" id="order_all">
+        	<div class="single_o"><a href="order_state.html">
+            	<span class="order_num">订单号：1001200002</span>
+                <span class="order_state">已关闭</span>
+                <div class="order_info">
+                	<span class="name">商品：iWatch</span>
+                    <span class="buyer">买家：z200000000</span>
+                    <span class="price">￥2399.00</span>
+                </div>
+                <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+            </a></div>
+            
+            
+        	<div class="single_o"><a href="order_state.html">
+            	<span class="order_num">订单号：1001200001</span>
+                <span class="order_state">已关闭</span>
+                <div class="order_info">
+                	<span class="name">商品：iWatch</span>
+                    <span class="buyer">买家：z200000000</span>
+                    <span class="price">￥2399.00</span>
+                </div>
+                <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+            </a></div>
+        </div>
+      <!-- END order_all 全部-->
+        
+      
+    </div>
+	<!--END main_block-->
+	
+	<!--sub_block-->
+	<!--END sub_block-->
+</div>
+</body>
+</html>

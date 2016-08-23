@@ -1,0 +1,47 @@
+/* CSS Document */
+
+
+*{
+	margin:0px auto;
+	padding:0px;
+	font-size:14px;
+}
+#container{
+	height:auto;
+}
+#main{
+	width:712px;
+}
+#tel_logo_bg{
+	padding-top:60px;
+	width:auto;
+	height:	440px;
+}
+
+#tel_logo_bg #left{
+	width:300px;
+	height:430px;
+	float:left;
+	border-right: dashed 2px #009900;
+	background:url(../images/logo_big.png) no-repeat;
+	background-position:30px 40px;
+}
+#tel_logo_bg #right{
+	width:400px;
+	height:430px;
+	float: left;
+	padding-top:0px;
+}
+
+#tel_logo_bg #right li{
+	float:left;
+	margin-left:70px;
+	line-height:35px;
+	height:35px;
+	color:#000;
+	font: normal 19px "微软雅黑";
+}
+#tel_logo_bg #right .li_tel{
+	clear:right;
+	list-style:none;
+}

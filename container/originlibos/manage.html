@@ -1,0 +1,667 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>OriginLib OS</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/hf.css"/>
+<link rel="shortcut icon" href="img/origin_logo.ico"/>
+
+<link rel="stylesheet" type="text/css" href="container/manage/manage.css"/>
+<script type="text/javascript" src="js/hf.js"></script>
+<!--link-->
+<script type="text/javascript" src="container/manage/manage.js"></script>
+<script type="text/javascript" src="container/manage/m_f.js"></script>
+</head>
+
+<body>
+<div id="l_r">
+  <div id="lr_mask"></div>
+  <div id="login" >
+    <form>
+      <table width="350" border="0">
+        <tr>
+          <td colspan="2" class="lr_title">用户登录</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:15px;"></td>
+        </tr>
+        <tr>
+          <td width="55">账号：</td>
+          <td width="279"><input type="text" name="account" class="inport1" id="account"  placeholder="在此输入账号"/></td>
+        </tr>
+        <tr>
+          <td>密码：</td>
+          <td><input name="pwd" id="pwd" class="inport1" type="password"  placeholder="在此输入密码"/></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:10px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><div data-role="controlgroup" data-type="vertical"> <a href="#" id="btn_login" data-role="button" data-icon="check" class="btn1">
+              <p>登 录</p>
+              </a> <a href="#" id="btn_back" data-role="button" data-icon="back" class="btn1">
+              <p>返 回</p>
+              </a> </div></td>
+            </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <div id="reg">
+    <form>
+      <table width="350" border="0">
+        <tr>
+          <td colspan="2" class="lr_title">用户注册</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:15px;"></td>
+        </tr>
+        <tr>
+          <td width="90" align="right">账号：</td>
+          <td width="236"><input type="text" data-icon="home" name="account" class="inport1" id="account" placeholder="在此输入账号"/></td>
+        </tr>
+        <tr>
+          <td align="right">密码：</td>
+          <td><input name="pwd" id="pwd" class="inport1" type="password"  placeholder="在此输入密码"/></td>
+        </tr>
+        <tr>
+          <td align="right">密码确认：</td>
+          <td><input name="pwd2" id="pwd2" class="inport1" type="password" placeholder="再次输入密码" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:10px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><div data-role="controlgroup" data-type="vertical"> <a href="#" id="btn_login" data-role="button" data-icon="plus" class="btn1">
+              <p>注 册</p>
+              </a> <a href="#" id="btn_back" data-role="button" data-icon="back" class="btn1">
+              <p>返 回</p>
+              </a> </div></td>
+          <td width="1"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+<div style="height:4px; background: #0a5; width:100%;" ></div>
+<div id="header"> <a href="index.jsp" target="_parent">
+  <div id="logo"></div>
+  </a>
+  <div id="header_right">
+    
+    <!-- 登陆后 -->
+    <div id="login_af">
+      <span id="wel">欢迎你，<span id="user_id">1</span><span id="user_nickname">Admin01</span><span id="user_level">1</span></span>
+      <div data-role="controlgroup" data-type="horizontal">
+      	
+      	<a href="pspace.html" rel="external" id="btn_pspace" data-role="button"><p>个人空间</p></a>
+      	<a href="#" rel="external" id="btn_manage" data-role="button"><p>管理</p></a>
+        <a href="index.html" id="btn_cancel" data-role="button"><p>注 销</p></a>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+<div id="middle" style="margin-top:-50px; ">
+  <div id="main">
+    <div id="manage"> <span class="top_tlt">平台管理</span>
+      <div id="func_block" class="info_block"> 
+          <span class="title">功能权限</span> 
+          <span id="func_parent"> 
+            <a href="#" id="p1_func" class="p_func pfunc_f">源点平台模块</a> 
+            <a href="#" id="p2_func" class="p_func">图书馆模块</a> 
+            <a href="#" id="p3_func" class="p_func">书店模块</a> 
+          </span>
+          <div id="s1" class="func_son"> 
+            <a href="#" id="s1_func1" class="s_func sfunc_f">书评管理</a> 
+            <a href="#" id="s1_func2" class="s_func">共享资源管理</a> 
+            <a href="#" id="s1_func3" class="s_func">平台用户管理</a> 
+          </div>
+          <div id="s2" class="func_son"> 
+            <a href="#" id="s2_func1" class="s_func">管理图书馆</a> 
+            <a href="#" id="s2_func2" class="s_func">新增图书馆</a> 
+          </div>
+          <div id="s3" class="func_son"> 
+            <a href="#" id="s3_func1" class="s_func">书店管理</a> 
+            <a href="#" id="s3_func2" class="s_func">新增书店</a> 
+            <a href="#" id="s3_func3" class="s_func">书店广告</a> 
+          </div>
+      </div>
+      <div id="s_manager_block" class="info_block"> <span class="title">书评管理</span>
+        
+        <!--书评管理-->
+        <div id="mf_s1f1" class="manager_frame"  style="display:block;">
+          <div class="m_table" >
+            <table border="0">
+              <tr>
+                <td class="td_40 t_head t_head_left">编号</td>
+                <td class="td_200 t_head">题名</td>
+                <td class="td_100 t_head">读者</td>
+                <td class="td_50 t_head">评级 (1-5)</td>
+                <td class="td_200 t_head">评论</td>
+                <td class="td_100 t_head">时间</td>
+                <td class="td_50 t_head">状态</td>
+                <td class="td_200 t_head t_head_right">操作</td>
+              </tr>
+              <tr id="tr1">
+                <td>1</td>
+                <td>更优秀的APP</td>
+                <td>测试者01</td>
+                <td>5</td>
+                <td>测试评论。。。。。。。。。。</td>
+                <td>2014-08-02 08:47:45</td>
+                <td>开放中</td>
+                <td>
+                  <a href="#" id="btn1" class="btn shield">屏蔽</a>
+                  <a href="#" id="del1" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>软件工程</td>
+                <td>测试者01</td>
+                <td>4</td>
+                <td>测试评论。。。。</td>
+                <td>2014-08-02 08:42:40</td>
+                <td id="state2">开放中</td>
+                <td>
+                  <a href="#" id="btn2" class="btn shield">屏蔽</a>
+                  <a href="#" id="del2" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Python基础教程</td>
+                <td>测试者01</td>
+                <td>1</td>
+                <td>测试评论........</td>
+                <td>2014-08-02 08:41:05</td>
+                <td id="state3">已屏蔽</td>
+                <td>
+                  <a href="#" id="btn3" class="btn">开放</a>
+                  <a href="#" id="del3" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>JavaScript启示录</td>
+                <td>测试者01</td>
+                <td>5</td>
+                <td>测试评论。。。。。。</td>
+                <td>2014-08-02 08:38:41</td>
+                <td>开放中</td>
+                <td>
+                  <a href="#" id="btn4" class="btn shield">屏蔽</a>
+                  <a href="#" id="del4" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>更优秀的APP</td>
+                <td>测试者03</td>
+                <td>4</td>
+                <td>测试评论3。。。。。。。</td>
+                <td>2014-08-02 08:37:15</td>
+                <td>开放中</td>
+                <td>
+                  <a href="#" id="btn5" class="btn shield">屏蔽</a>
+                  <a href="#" id="del5" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>更优秀的APP</td>
+                <td>测试者07</td>
+                <td>5</td>
+                <td>测试评论7。。。。。。</td>
+                <td>2014-08-02 08:30:42</td>
+                <td>开放中</td>
+                <td>
+                  <a href="#" id="btn6" class="btn shield">屏蔽</a>
+                  <a href="#" id="del6" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>JavaScript启示录</td>
+                <td>测试者03</td>
+                <td>5</td>
+                <td>测试评论。。</td>
+                <td>2014-08-02 08:27:25</td>
+                <td>已屏蔽</td>
+                <td>
+                  <a href="#" id="btn7" class="btn">开放</a>
+                  <a href="#" id="del7" class="btn del">删除</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!--End 书评管理-->
+        
+        <!--资源共享-->
+        <div id="mf_s1f2" class="manager_frame">
+          <div class="m_table" >
+            <table border="0">
+              <tr>
+                <td class="td_40 t_head t_head_left">编号</td>
+                <td class="td_100 t_head">分享者</td>
+                <td class="td_200 t_head">资源名</td>
+                <td class="td_200 t_head">简介</td>
+                <td class="td_100 t_head">时间</td>
+                <td class="td_50 t_head">状态</td>
+                <td class="td_200 t_head t_head_right">审核</td>
+              </tr>
+              <tr id="tr1">
+                <td>1</td>
+                <td>管理者01</td>
+                <td>C++学习视频</td>
+                <td>C++学习视频</td>
+                <td>2014-08-12 08:43:49</td>
+                <td>待审核</td>
+                <td>
+                  <a href="#" id="update" class="btn">审核</a>
+                  <a href="#" id="del1" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>管理者01</td>
+                <td>苹果系统ISO安装包</td>
+                <td>苹果系统ISO安装包</td>
+                <td>2014-08-12 08:47:45</td>
+                <td id="state2">待审核</td>
+                <td>
+                  <a href="#" id="update2" class="btn">审核</a>
+                  <a href="#" id="del2" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>管理者01</td>
+                <td>社会实践表</td>
+                <td>暑期社会实践表</td>
+                <td>2014-08-12 08:50:06</td>
+                <td>已审核</td>
+                <td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="del" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>测试者01</td>
+                <td>XshateTest</td>
+                <td>XshateTest01</td>
+                <td>2014-08-11 09:01:51</td>
+                <td>已审核</td>
+                <td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="del" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>测试者01</td>
+                <td>WshateTest5</td>
+                <td>WshateTest5</td>
+                <td>2014-08-11 09:11:51</td>
+                <td>已审核</td>
+                <td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="del" class="btn del">删除</a>
+                </td>
+              </tr>
+              
+            </table>
+          </div>
+        </div>
+        <!--End 书评管理-->
+        
+        <!--平台用户信息-->
+        <div id="mf_s1f3" class="manager_frame" >
+          <div class="m_table" >
+            <table border="0">
+              <tr>
+                <td class="td_40 t_head t_head_left">编号</td>
+                <td class="td_100 t_head">账号</td>
+                <td class="td_150 t_head">昵称</td>
+                <td class="td_100 t_head">等级</td>
+                <td class="td_50 t_head">积分</td>
+                <td class="td_150 t_head">信箱</td>
+                <td class="td_150 t_head">创建时间</td>
+                <td class="td_150 t_head t_head_right">操作</td>
+              </tr>
+              <tr id="tr1">
+                <td>1</td>
+                <td>test01</td>
+                <td>测试者01</td>
+                <td>普通用户</td>
+                <td>20</td>
+                <td>test01@mail.com</td>
+                <td>2014-07-23 09:37:58</td>
+                <td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="del1" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>admin01</td>
+                <td>开发者01</td>
+                <td>管理员</td>
+                <td>990</td>
+                <td>admin01@mail.com</td>
+                <td>2014-07-23 09:30:02</td>
+                <td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="del" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>store01</td>
+                <td>店长01</td>
+                <td>书店管理用户</td>
+                <td>90</td>
+                <td>store01@mail.com</td>
+                <td>2014-07-26 16:03:28</td>
+                <td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="del" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>test03</td>
+                <td>测试者03</td>
+                <td>普通用户</td>
+                <td>120</td>
+                <td>test03@mail.com</td>
+                <td>2014-07-30 20:31:22</td>
+                <td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="del" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>test21</td>
+                <td>测试者21</td>
+                <td>普通用户</td>
+                <td>260</td>
+                <td>test21@mail.com</td>
+                <td>2014-08-03 12:57:01</td>
+                <td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="del" class="btn del">删除</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!--End 平台信息-->
+        
+         
+        <!--管理图书馆-->
+        <div id="mf_s2f1" class="manager_frame" >
+          <div class="m_table" >
+            <table border="0" id="table">
+              <tr>
+                <td class="td_40 t_head t_head_left">编号</td>
+                <td class="td_100 t_head">名称</td>
+                <td class="td_250 t_head">地址</td>
+                <td class="td_300 t_head">简介</td>
+                <td class="td_200 t_head">连接</td>
+                <td class="td_200 t_head t_head_right">操作</td>
+              </tr>
+              <tr id="tr1">
+              	<td>1</td>
+              	<td>南京大学仙林校区杜厦图书馆</td>
+              	<td>南京市仙林大学城南京大学</td>
+              	<td>360度无死角图书馆，全国高校图书馆的现代化楷模</td>
+              	<td>lib.nju.edu.cn</td>
+              	<td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="del1" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+              	<td>2</td>
+              	<td>南京大学金陵学院思源图书馆</td>
+              	<td>南京市浦口区南京大学金陵学院</td>
+              	<td>金陵学子的阅读圣地</td>
+              	<td>lib.jily.nju.edu.cn</td>
+              	<td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="del" class="btn del">删除</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!--End 管理图书馆-->
+        
+        <!-- 新增图书馆-->
+        <div id="mf_s2f2" class="manager_frame">
+          <span class="span_top">新增图书馆</span>
+          <div id="addlib_frame">
+          	<form method="post" action="">
+			  <div data-role="fieldcontain">
+    			<label for="name">名称：*</label>
+    			<input type="text" name="name" id="name" value="" placeholder="图书馆全称">
+    		  </div>
+			  <div data-role="fieldcontain">
+    			<label for="addr">地址：*</label>
+    			<input type="text" name="addr" id="addr" value="" placeholder="图书馆地址">
+    		  </div>
+			  <div data-role="fieldcontain">
+    			<label for="link">链接：*</label>
+    			<input type="text" name="link" id="link" value="" placeholder="图书馆链接">
+    		  </div>
+			  <div data-role="fieldcontain">
+    			<label for="intro">简介：</label>
+    			<input type="text" name="intro" id="intro" value="" placeholder="图书馆简介">
+    		  </div>
+			  <div data-role="fieldcontain">
+    			<label for="file_logo">Logo：</label>
+    			<input type="file" id="file_logo" name="file_logo" />
+    		  </div>
+			  <div data-role="fieldcontain">
+    			<label for="file_codescript">代码脚本：*</label>
+                <input type="file" id="file_codescript" name="file_codescript" />
+    		  </div>
+     		  
+              
+   			</form>
+          </div>
+          <a href="#" id="submit" class="submit">提交</a>
+        </div>
+        <!-- End 新增图书馆-->
+
+        
+        <!--书店管理-->
+        <div id="mf_s3f1" class="manager_frame" >
+          <div class="m_table" >
+            <table border="0" id="table">
+              <tr>
+                <td class="td_40 t_head t_head_left">编号</td>
+                <td class="td_100 t_head">名称</td>
+                <td class="td_250 t_head">地址</td>
+                <td class="td_300 t_head">简介</td>
+                <td class="td_200 t_head">连接</td>
+                <td class="td_200 t_head t_head_right">操作</td>
+              </tr>
+              <tr id="tr1">
+              	<td>1</td>
+              	<td>大众书局南京新街口店</td>
+              	<td>江苏南京新街口</td>
+              	<td>全南京最大图书连锁店</td>
+              	<td>http://www.dazo.com.cn/</td>
+              	<td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="del1" class="btn del">删除</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!--End 书店管理-->
+                
+        <!-- 新增书店-->
+        <div id="mf_s3f2" class="manager_frame">
+          <span class="span_top">新增书店</span>
+          <div id="addlib_frame">
+          	<form method="post" action="">
+			  <div data-role="fieldcontain">
+    			<label for="name2">名称：</label>
+    			<input type="text" name="name2" id="name2" value="" placeholder="书店全称">
+    		  </div>
+              <div data-role="fieldcontain">
+    			<label for="manager_account">管理员账号：</label>
+    			<input type="text" name="manager_account" id="manager_account" value="" placeholder="书店管理员账号">
+    		  </div>
+			  <div data-role="fieldcontain">
+    			<label for="file_logo2">Logo：</label>
+    			<input type="file" id="file_logo2" name="file_logo2" />
+    		  </div>
+			  <div data-role="fieldcontain">
+    			<label for="link2">链接：</label>
+    			<input type="text" name="link2" id="link2" value="" placeholder="书店链接">
+    		  </div>
+			  <div data-role="fieldcontain">
+    			<label for="addr2">地址：</label>
+    			<input type="text" name="addr2" id="addr2" value="" placeholder="书店地址">
+    		  </div>
+			  <div data-role="fieldcontain">
+    			<label for="addrmap2">坐标或地图连接：</label>
+    			<input type="text" name="addrmap2" id="addrmap2" value="" placeholder="书店的地图坐标或地图连接">
+    		  </div>
+			  <div data-role="fieldcontain">
+    			<label for="intro2">简介：</label>
+    			<input type="text" name="intro2" id="intro2" value="" placeholder="书店简介">
+    		  </div>
+			  
+     		  
+              
+   			</form>
+          </div>
+          <a href="#" id="submit" class="submit">提交</a>
+        </div>
+        <!-- End 新增图书馆-->
+        
+        <!--书店广告管理-->
+        <div id="mf_s3f3" class="manager_frame" >
+          <div class="m_table" >
+            <table border="0">
+              <tr>
+                <td class="td_40 t_head t_head_left">编号</td>
+                <td class="td_200 t_head">书店</td>
+                <td class="td_200 t_head">书籍</td>
+                <td class="td_100 t_head">ISBN</td>
+                <td class="td_100 t_head">报价</td>
+                <td class="td_50 t_head">状态</td>
+                <td class="td_200 t_head t_head_right">操作</td>
+              </tr>
+              <tr id="tr1">
+              	<td>1</td>
+              	<td>大众书局南京新街口店</td>
+              	<td>JSP & Servlet学习笔记</td>
+                <td>9787302283669</td>
+              	<td>CNY58.00 (含光盘)</td>
+              	<td id="state1">推广中</td>
+              	<td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="btn1" class="btn">取消</a>
+                  <a href="#" id="del1" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+              	<td>2</td>
+              	<td>大众书局南京新街口店</td>
+              	<td>疯狂Android讲义</td>
+                <td>9787121194856</td>
+              	<td>CNY99.00 (含光盘)</td>
+              	<td id="state2">取消中</td>
+              	<td>
+                  <a href="#" id="update2" class="btn">更新</a>
+                  <a href="#" id="btn2" class="btn">推广</a>
+                  <a href="#" id="del" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+              	<td>3</td>
+              	<td>大众书局南京新街口店</td>
+              	<td>微信公众平台应用开发实战</td>
+                <td>9787111438618</td>
+              	<td>CNY59.00</td>
+              	<td id="state3">推广中</td>
+              	<td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="btn3" class="btn">取消</a>
+                  <a href="#" id="del" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+              	<td>4</td>
+              	<td>大众书局南京新街口店</td>
+              	<td>心理学统治世界</td>
+                <td>9787515508610</td>
+              	<td>CNY32.00</td>
+              	<td>推广中</td>
+              	<td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="cancel" class="btn">取消</a>
+                  <a href="#" id="del" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+              	<td>5</td>
+              	<td>大众书局南京新街口店</td>
+              	<td>消费心理学</td>
+                <td>9787300180106</td>
+              	<td>CNY68.00</td>
+              	<td>推广中</td>
+              	<td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="cancel" class="btn">取消</a>
+                  <a href="#" id="del" class="btn del">删除</a>
+                </td>
+              </tr>
+              <tr>
+              	<td>6</td>
+              	<td>大众书局南京新街口店</td>
+              	<td>变态心理学</td>
+                <td>9787111429975</td>
+              	<td>CNY79.00</td>
+              	<td>推广中</td>
+              	<td>
+                  <a href="#" id="update" class="btn">更新</a>
+                  <a href="#" id="cancel" class="btn">取消</a>
+                  <a href="#" id="del" class="btn del">删除</a>
+                </td>
+              </tr>
+              
+            </table>
+          </div>
+        </div>
+        <!--End 书店广告管理-->
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div id="down">
+    <p id="cpy_right"><a href="index.jsp" target="_parent"><img src="img/logo_l.png" />源点图书平台</a> CopyRight <span style="font-size:18px; vertical-align:bottom;">&copy;</span> 2014-2014 All Right Reserved</p>
+    <p id="author">Designed By Origin Studio From NJU JLC </p>
+  </div>
+</div>
+</body>
+
+</html>

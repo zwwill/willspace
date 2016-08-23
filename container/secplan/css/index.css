@@ -1,0 +1,57 @@
+/* CSS Document */
+
+/*广告touchslider*/
+#container #main_block #adds_block .touchslider{position:relative;}
+#container #main_block #adds_block .touchslider .touchslider-viewport{overflow:hidden; height:100px;}
+#container #main_block #adds_block .touchslider .touchslider-viewport .touchslider-item a{z-index:1;width:100%;display:block;}
+#container #main_block #adds_block .touchslider .touchslider-viewport .touchslider-item img{ width:100%;}
+#container #main_block #adds_block .touchslider .touchslider-navtag{position:relative;text-align:center;z-index:2;display:block;vertical-align:middle;margin-top:-20px;width:100%}
+#container #main_block #adds_block .touchslider .touchslider-navtag span{width:7px;height:7px;background:#c1c1c1; border-radius:50px;overflow:hidden;display:inline-block; }
+#container #main_block #adds_block .touchslider .touchslider-navtag .touchslider-nav-item-current{background:#48A375;}
+
+/*导航NAV*/
+#container #main_block #nav_block{ display:block; width:100%; height:auto; background:#fafafa; }
+#container #main_block #nav_block .sigle_nav{ display:inline-block; width:24%; text-align:center;}
+#container #main_block #nav_block .sigle_nav a{ display:inline-block; width:100%; height:100%; padding:20px 0 10px;}
+#container #main_block #nav_block .sigle_nav .nav_pic{ width:50%;}
+#container #main_block #nav_block .sigle_nav .nav_p{;}
+
+/*校园微店*/
+#container #main_block #weidian_block{ display:block; margin-top:10px; width:100%; height:auto; background:#fafafa;}
+#container #main_block #weidian_block .top_p{border-left:solid 6px #ec6941;}
+#container #main_block #weidian_block .btn_more{ background-color:#ec6941;}
+#container #main_block #weidian_block .list_x{ }
+/*好店推荐touchslider*/
+#container #main_block #weidian_block .touchslider{position:relative;}
+#container #main_block #weidian_block .touchslider .touchslider-viewport{overflow:hidden; position:relative; width:100%;}
+#container #main_block #weidian_block .touchslider .store_block{width:100%;}
+#container #main_block #weidian_block .touchslider .single_store{ float:left;width:50%;}
+#container #main_block #weidian_block .touchslider .single_store .store1{float:left; width:65%; margin:1.5% 1% 0 1%;}
+#container #main_block #weidian_block .touchslider .single_store .store2{float:left; width:32%; margin:1.5% 0 0 0.5%;}
+#container #main_block #weidian_block .touchslider .single_store .store3{float:left; width:32%; margin:0 0 0 0.5%;}
+#container #main_block #weidian_block .touchslider .single_store img{width:100%;border-radius:5px;}
+#container #main_block #weidian_block .touchslider .single_store .txt_store{width:100%; float:left; clear:both; padding-left:4px; text-align:left; overflow:hidden; word-wrap:break-word; white-space:nowrap;text-overflow: ellipsis;}
+#container #main_block #weidian_block .touchslider .touchslider-navtag{position:relative;text-align:center;z-index:2;display:block;vertical-align:middle;width:100%;}
+#container #main_block #weidian_block .touchslider .touchslider-navtag span{width:7px;height:7px;background:#c1c1c1; border-radius:50px;overflow:hidden;display:inline-block;  }
+#container #main_block #weidian_block .touchslider .touchslider-navtag .touchslider-nav-item-current{background:#48A375;}
+/*校园微店/活动长条广告*/
+#container #main_block #weidian_block #ad{ display:block; width:100%;}
+#container #main_block #weidian_block #ad a{ display:block;width:100%;}
+#container #main_block #weidian_block #ad .img_ad{ width:100%;}
+
+/*erhuo_block*/
+#container #main_block #erhuo_block{display:block; margin-top:10px; width:100%; height:auto; }
+#container #main_block #erhuo_block .tlt_and_more{background:#fafafa; }
+#container #main_block #erhuo_block .top_p{border-left:solid 6px #00b7ee;}
+#container #main_block #erhuo_block .btn_more{ background-color:#00b7ee;}
+#container #main_block #erhuo_block .list_x{ display:block;width:100%; height:auto; }
+#container #main_block #erhuo_block .single_goods{ display:inline-block; width:45%; margin:2% 0% 1% 2.5%; background:#fafafa; border:solid 1px #ccc; border-radius:4px; box-shadow:0 2px 2px #ccc;}
+#container #main_block #erhuo_block .single_goods .a_2huo{ display:block; width:100%;height:100%;}
+#container #main_block #erhuo_block .single_goods .img_2huo{ display:block; width:100%;border-radius:4px 4px 0 0;}
+#container #main_block #erhuo_block .single_goods .info_2huo{ display:block; widows:90%; margin:0 5% 0; overflow:hidden; word-break:keep-all;height:32px; padding:2px 0 4px 0;; line-height:17px; border-bottom:dotted 1px #ccc;}
+#container #main_block #erhuo_block .single_goods .price_2huo{display:block; widows:90%; margin:0 5% 0; font-size:14px; padding:3px 0 2px 0; color:#F30;}
+#container #main_block #erhuo_block .loading{ display:block;height:50px; width:100%; text-align:center; line-height:50px; color:#999; font-size:14px;}
+#container #main_block #erhuo_block .loading .img_loading{ display:inline-block; height:20px; width:20px; padding:0 7px;}
+
+
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>拯旧计划互动墙</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<!--JS文件-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.scrollTo-min.js"></script>
+<script src="js/jquery.localscroll-min.js"></script>
+<script src="js/init.js"></script>
+<script src="js/index.js"></script>
+<script src="js/signin.js"></script>
+<script src="js/wall.js"></script>
+<script src="js/vote.js"></script>
+<script src="js/award.js"></script>
+</head>
+
+<body>
+<div id="container">
+
+	<!--top_block 顶部长显-->
+	<div id="top_block">
+		<img src="img/logo.png" class="logo_big">
+        <span class="logo_tlt">微信互动墙</span>
+        <img src="img/qr_code_logo.jpg" id="qr_code_logo" class="qr_code_logo">
+        <div class="tips">
+        <span class="line">搜索关注<span class="light">拯旧计划</span></span>
+        <span class="line">发送<span class="light">我要上墙</span>即可参与</span>
+        </div>
+	</div>
+	<!--END top_block 顶部长显-->
+    
+    
+	<!--main_block -->
+	<div id="main_block">
+    	<div class="mess_shangqiang_block" id="mess_shangqiang_block">
+       		<img src="img/qr_code_logo.jpg" class="qr_code_logo_big">
+            <div class="right">
+        		<span class="line">搜索关注<span class="light">拯旧计划</span></span>
+        		<span class="line">或<span class="light">zhengjiujihua</span></span>
+        		<span class="line">发送<span class="light">我要上墙</span>即可参与</span>
+        		<span class="line">南大金陵--拯旧计划网络有限公司</span>
+            	
+            </div>
+        </div>
+    	<div class="block_container">
+			<!--signin_block 签到-->
+			<div class="single_block" id="signin_block">
+            	<div class="signin_container" id="signin_container">
+                	<div class="single_signin_item" id="signin_item_0">
+                    	<img src="img/logo.png" class="pic_head" />
+                        <span class="num"></span>
+                        <span class="name">拯旧计划</span>
+                    </div>
+                </div>
+            </div>
+			<!--END signin_block签到-->
+            
+			<!--wall_block 微信墙 -->
+			<div class="single_block" id="wall_block" name="wall_block">
+            	<div class="wall_list" id="wall_list">
+            	<div class="show_block" id="show_block" show="0">
+                	<img src="img/pic_head.jpeg" class="pic_head" />
+                    <span class="name"></span>
+                    <span class="num"></span>
+                    <span class="txt"></span>
+                </div>
+                <!--demo-->
+                	<div class="single_wall_item" id="item_0" large="0">
+                    	<img src="img/logo.png" class="pic_head" />
+                        <span class="name">【测试数据】拯旧计划</span>
+                        <span class="num">1</span>
+                        <span class="txt">【测试数据】欢迎使用拯旧计划微信互动墙，关注微信公众号"拯旧计划"即可参与互动！</span>
+                    </div>
+                	
+                </div>
+            </div>
+			<!--END wall_block微信墙-->
+            
+			<!--vote_block 投票 -->
+			<div class="single_block" id="vote_block">
+            	<div class="vote_container" id="vote_container">
+                	<div class="single_vote_item" id="vote_item_0" style="display:;">
+                    	<span class="num">NO.0</span>
+                    	<img src="img/logo.png" class="pic_head" />
+                        <span class="name">拯旧计划</span>
+                        <span class="bar_container"><span class="bar"></span></span>
+                        <span class="vote_num">101票</span>
+                    </div>
+                </div>
+            </div>
+			<!--END vote_block投票-->
+            
+			<!--award_block 抽奖-->
+			<div class="single_block" id="award_block">
+            	<div class="award_container" id="award_container">
+                	<div class="left">
+                    	<span class="total_p_num">360人参与抽奖</span>
+                    	<span class="award_head_zone" id="award_head_zone">
+                        	<img src="img/pic_head.jpeg" class="img" />
+                            <span class="txt">^_^</span>
+                        </span>
+                        <span class="btn_start" isready='0' started='0'>EMPTY</span>
+                    </div>
+                    <div class="right">
+                      <span class="tlt">获奖名单</span>
+                      <div id="award_list">
+                    	<div class="single_award_item" id="award_item_0">
+                        	<img src="img/pic_head.jpeg" class="head_pic" />
+                            <span class="name">拯旧计划网络有限公司</span>
+                        </div>
+                    	
+                      </div>
+                    </div>
+                </div>
+                <div id="h_img_b" style="display:none;"></div>
+            </div>
+			<!--END award_block抽奖-->
+            
+			<!--blank_hash -->
+			<div class="single_block" style="float:right;" id="blank_hash_block"></div>
+			<!--END blank_hash-->
+        </div>
+	</div>
+	<!--END main_block-->
+
+	<!--bottom_block-->
+	<div id="bottom_block">
+    	<!--签到-->
+    	<div class="fonc_b" id="func_signin_block" >
+            <span class="btn" id="show_btn" started="0">开始签到</span>
+        </div>
+    	<!--签到-->
+        
+    	<!--微信墙-->
+    	<div class="fonc_b" id="func_wall_block" >
+            <span class="btn" id="start_btn" started="0">开始</span>
+            <span class="btn" id="scroll_btn" move="1">冻结滚动</span>
+            <span class="looading_speed">
+            	<span id="looading_speed_sub" class="btn">-</span>
+            	<span id="looading_speed_num">3000</span>
+            	<span id="looading_speed_plus" class="btn">+</span>
+            </span>
+            <span class="btn" id="jump_btn">跳过</span>
+        </div>
+    	<!--END微信墙-->
+        
+    	<!--投票-->
+    	<div class="fonc_b" id="func_vote_block" >
+            <span class="btn" id="show_btn" started="0">开始投票</span>
+        </div>
+    	<!--END投票-->
+        
+    	<!--抽奖-->
+    	<div class="fonc_b" id="func_award_block" >
+            <span class="btn" id="award_type_btn" type="0">模式一</span>
+            <span class="btn" id="load_btn">加载数据</span>
+            <span class="award_num">
+            	<span class="txt">一次抽取</span>
+            	<span id="award_num_sub" class="btn">-</span>
+            	<span id="award_num_num">1</span>
+            	<span id="award_num_plus" class="btn">+</span>
+            </span>
+            <span class="btn" id="award_empty_btn">清空数据</span>
+            <span id="award_datas_num">
+            	<span class="txt">号码上限：</span>
+                <input type="text" class="num" value="0" />
+            </span>
+        </div>
+    	<!--END 抽奖-->
+        
+		<div class="btns_g" id="btns_g">
+        	<a href="#signin_block"><span class="single_btn" id="signin" hash="signin_block"></span></a>
+        	<a href="#wall_block"><span class="single_btn" id="wall" hash="wall_block"></span></a>
+        	<a href="#vote_block"><span class="single_btn" id="vote" hash="vote_block"></span></a>
+        	<a href="#award_block"><span class="single_btn" id="award" hash="award_block"></span></a>
+        	<span class="single_btn" id="fullscreen" full=0></span>
+        </div>
+	</div>
+    <span id="bottom_show_btn" show="1"><img class="bottom_show_btn_img" src="img/arrow_down.png"></span>
+	<!--END bottom_block-->
+</div>
+</body>
+
+<script>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+//禁止查看源代码
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+document.onkeydown=function(){ 
+if(window.event && window.event.keyCode >= 113&&window.event.keyCode<=123&&window.event.keyCode!=116&&window.event.keyCode!=122) { 
+return false;
+};
+}
+</script>

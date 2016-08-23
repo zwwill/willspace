@@ -1,0 +1,103 @@
+/* CSS Document */
+
+*{
+	margin:0px auto;
+	font-size:12px;	
+	padding:0px;
+	background:#e3e3e3;
+}
+#sider{
+	background:#bbb;
+	height:8px;
+	width:auto;
+}
+
+#continer{
+	width:1200px;
+	height:auto;	
+}
+#header{
+	height:120px;
+	width:1190px;
+}
+#header .mark{
+	float:right;
+	background:#bbb;
+	font-size:18px;
+	letter-spacing:1px;
+	color:#fff;
+	padding:0px 4px 0px 26px;
+	font-family:"Adobe 黑体 Std R";
+}
+#logo{
+	height:80px;
+	width:230px;
+	margin:20px 0px 0px 20px;
+	background:url(../images/logo_qx.png) no-repeat;
+	float:left;
+	clear:left;
+}
+#header .header_right{
+	clear:right;
+	float:right;
+	height:30px;
+	width:100px;
+	margin-top:55px;
+}
+#header .header_right li{
+	float:left;
+	list-style:none;
+	line-height:24px;
+	margin:4px 0px 0px 6px;
+}
+#header .header_right .back_pic{
+	width:20px;
+	background:url(../images/logo_b.png) no-repeat;
+	clear:right;
+}
+#header .header_right a{
+	text-decoration:none;
+	font-size:13px;
+	color:#999;
+}
+#header .header_right a:hover{
+	color:#06F;
+	text-decoration:underline;
+}
+#header .low{
+	width:100%;
+	height:auto;
+	clear:both;
+	background:url(../images/up_b.png) no-repeat;
+}
+
+#main{
+	border-left-color:#FFF;
+	border-left-width:2px;
+	margin-top:5px;
+	height:auto;
+	width:1190px;
+	background:#e3e3e3;
+}
+#main #nav{
+	width:160px;
+	height:500px;;
+	border-right:solid 3px #FFF;
+	clear:left;
+	background:#ccc;
+	float:left;
+}
+
+#main #show{
+	width:990px;
+	height:auto;
+	float:right;
+	clear:right;
+}
+
+#footer{
+	clear:both;
+	height:266px;
+	width:1200px;
+	background:url(../images/pic_footer.png) no-repeat;
+}

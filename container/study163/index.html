@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>微专业WEB前端开发作业</title>
+    <!-- css reset -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- js -->
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.md5.js"></script>
+</head>
+<body>
+	<div id="container">
+    	<!-- START top_msg 顶部信息栏 -->
+		<div id="top_msg" class="m-top_msg">
+			<div class="con">
+            	<div class="left">网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势！ <a href="#">立即查看></a></div>
+            	<div id="btn_top_msg_hidden" class="right"><span class="ico_x">×</span> 不再提示</div>
+            </div>
+		</div>
+    	<!-- END top_msg 顶部信息栏 -->
+        
+    	<!-- START header 头部 -->
+		<div class="m-header">
+			<div class="con">
+            	<div class="logo_t">EDU</div>
+                <span class="logo_m">|</span><span class="logo_t2">网易教育产品部</span>
+                <div id="focus_default">
+                	<span id="btn_focus" class="btn_focus"><span class="add">+</span><span class="txt">关注</span></span>
+                	<span class="b-fans">粉丝<span class="fans_num">45</span></span>
+                </div>
+                <div id="focus_alter" style="display:none;">
+                	<span class="btn_focus"><span class="add">√</span><span class="txt">已关注</span><span>&nbsp;|&nbsp;</span><span class="btn_cancel">取消</span></span>
+                	
+                </div>
+                <div class="u-nav">
+                	<a href="http://open.163.com/" target="_blank">网易公开课</a>
+                	<a href="http://study.163.com/" target="_blank">云课堂</a>
+                	<a href="http://www.icourse163.org/" target="_blank">中国大学MOOC</a>
+                    <a href="#" class="btn_search"></a>
+                </div>
+            </div>
+		</div>
+    	<!-- END header 头部 -->
+        
+    	<!-- START m-banner 滚动横幅 -->
+		<div class="m-banner">
+        	<div id="banner_con">
+                <a href="http://open.163.com/" target="_blank" class="item" show_state="1" id="item1"><img src="img/banner1.jpg"></a>
+                <a href="http://study.163.com/" target="_blank" class="item" show_state="0" style="display:none;opacity:0;" id="item2"><img src="img/banner2.jpg"></a>
+                <a href="http://www.icourse163.org/" target="_blank" class="item" show_state="0" style="display:none;opacity:0;" id="item3"><img src="img/banner3.jpg"></a>
+            </div>
+            <div id="banner_i" class="banner_i">
+            	<span id="i1" class="item_i on"></span>
+            	<span id="i2" class="item_i"></span>
+            	<span id="i3" class="item_i"></span>
+            </div>
+		</div>
+    	<!-- END m-banner 滚动横幅 -->
+        
+        <!-- START bag_nav 大导航 -->
+		<div class="m-bag_nav">
+			<div class="con">
+            	<div class="i-nav">
+                	<span class="nav_img img_open" ></span>
+                    <div class="msg">
+                    	<span class="tlt">网易公开课</span>
+                    	<span class="info">推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</span>
+                    	<a href="http://open.163.com/" target="_blank" class="more">了解更多 ></a>
+                    </div>
+                </div>
+                <div class="i-nav">
+                	<span class="nav_img img_study" ></span>
+                    <div class="msg">
+                    	<span class="tlt">云课堂</span>
+                    	<span class="info">网易旗下大型在线学习平台，该平台面向学习者提供海量免费、优质课程,创新的个性化学习体验，自由开放的交流互动环境。</span>
+                    	<a href="http://study.163.com/" target="_blank" class="more">了解更多 ></a>
+                    </div>
+                </div>
+                <div class="i-nav">
+                	<span class="nav_img img_icourse" ></span>
+                    <div class="msg">
+                    	<span class="tlt">中国大学MOOC</span>
+                    	<span class="info">是爱课程网携手云课堂打造的在线学习平台，每一个有提升愿望的人,都可以在这里学习中国最好的大学课程，学完还能获得认证证书。</span>
+                    	<a href="http://www.icourse163.org/" target="_blank" class="more">了解更多 ></a>
+                    </div>
+                </div>
+            </div>
+		</div>
+    	<!-- END bag_nav 大导航 -->
+        
+    	<!-- START m-show_imgs 滚动图片 -->
+		<div class="m-show_imgs">
+        	<div class="con">
+                <span class="i_img" style="background-image:url(img/surroundings1.png)"></span>
+                <span class="i_img" style="background-image:url(img/surroundings2.png)"></span>
+                <span class="i_img" style="background-image:url(img/surroundings3.png)"></span>
+                <span class="i_img" style="background-image:url(img/surroundings4.png)"></span>
+                <span class="i_img" style="background-image:url(img/surroundings5.png)"></span>
+                <span class="i_img" style="background-image:url(img/surroundings1.png)"></span>
+                <span class="i_img" style="background-image:url(img/surroundings2.png)"></span>
+                <span class="i_img" style="background-image:url(img/surroundings3.png)"></span>
+                <span class="i_img" style="background-image:url(img/surroundings4.png)"></span>
+                <span class="i_img" style="background-image:url(img/surroundings5.png)"></span>
+                <span class="i_img" style="background-image:url(img/surroundings1.png)"></span>
+                <span class="i_img" style="background-image:url(img/surroundings2.png)"></span>
+                <span class="i_img" style="background-image:url(img/surroundings3.png)"></span>
+                <span class="i_img" style="background-image:url(img/surroundings4.png)"></span>
+                <span class="i_img" style="background-image:url(img/surroundings5.png)"></span>
+            </div>
+		</div>
+    	<!-- END m-show_imgs 滚动图片 -->
+        
+    	<!-- START m-course 课程 -->
+		<div class="m-course">
+        	<div class="con clearfix">
+                <div class="left">
+                	<div class="tab">
+                    	<span class="tab_i on">产品设计</span>
+                    	<span class="tab_i">汇编语言</span>
+                    </div>
+    				<!-- START c_list 课程列表 -->
+                    <div id="c_list" class="c_list">
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price">￥800.00</span>
+                        </div>
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price" style="color:#39a030;">免费</span>
+                        </div>
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price">￥800.00</span>
+                        </div>
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price" style="color:#39a030;">免费</span>
+                        </div>
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price">￥800.00</span>
+                        </div>
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price" style="color:#39a030;">免费</span>
+                        </div>
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price">￥800.00</span>
+                        </div>
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price" style="color:#39a030;">免费</span>
+                        </div>
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price">￥800.00</span>
+                        </div>
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price" style="color:#39a030;">免费</span>
+                        </div>
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price">￥800.00</span>
+                        </div>
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price" style="color:#39a030;">免费</span>
+                        </div>
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price">￥800.00</span>
+                        </div>
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price" style="color:#39a030;">免费</span>
+                        </div>
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price">￥800.00</span>
+                        </div>
+                    	<div class="c_item">
+                        	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                            <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                            <span class="class_name">测试数据</span>
+                            <span class="menber"><img src="img/ico_head_l.png"/>510</span>
+                            <span class="price" style="color:#39a030;">免费</span>
+                        </div>
+                        
+                    </div>
+                    <div id="course_popup" class="course_popup">
+                    	<span class="c_img" style="background-image:url(img/course.png)"></span>
+                        <span class="tlt">测试数据 测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                        <span class="menber"><img src="img/ico_head_l.png"/><span id="learner_count">510</span>在线学</span>
+                        <span class="class_name" id="provider">发布者：测试数据</span>
+                        <span class="class_name" id="category_name">分类：测试数据</span>
+                        <span class="info">
+                        	<span class="info_con">生活中不乏有很多美好的画面，何不用画笔记录下来呢？那么就跟几分钟网一起来记录美好画面吧！</span>
+                        </span>
+                    </div>
+    				<!-- END c_list 课程列表 -->
+                    <div class="b_page">
+                      <div class="page_con">
+                    	<i id="btn_page_sub" class="btn_row row_left"></i>
+                        <i class="page_i on">1</i>
+                        <i class="page_i">2</i>
+                        <i class="page_i">3</i>
+                        <i class="page_i">4</i>
+                        <i class="page_i">5</i>
+                        <i class="page_i">6</i>
+                        <i class="page_i">7</i>
+                        <i class="page_i">8</i>
+                    	<i id="btn_page_plus" class="btn_row row_right"></i>
+                      </div>
+                    </div>
+                </div>
+                <div class="right">
+                	<div class="b-institution">
+                    	<span class="tlt">机构介绍</span>
+                        <span class="msg">观看下面的视频来了解吧：</span>
+                    	<img id="btn_show_video" class="btn_show_video" src="img/img_video.png"/>
+                    </div>
+                    <div class="b-rank clearfix">
+                    	<span class="tlt">最热排行</span>
+                        <div class="list_con">
+                          <div id="rank_list" class="rank_list">
+                          
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            <div class="item">
+                                <span class="c_img" style="background-image:url(img/course.png)"></span>
+                                <span class="c_tlt">测试数据 测试数据 测试数据 测试数据 测试数据 </span>
+                                <span class="menber"><img src="img/ico_head_l.png"/>21567</span>
+                            </div>
+                            
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+    	<!-- END m-course 课程 -->
+        
+    	<!-- START footer 头部 -->
+		<div class="m-footer clearfix">
+			<div class="con">
+            	<div class="b-info">
+            		<div class="logo_t">EDU</div>
+                	<span class="logo_m">|</span><span class="logo_t2">网易教育产品部</span>
+                    <span class="i-right">©2014 icourse163.org 浙ICP备08114786号-1</span>
+                    <span class="i-right">icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2</span>
+                </div>
+                <div class="b-links">
+                	<p class="tlt">友情连接：</p>
+                    <a href="http://open.163.com/" target="_blank">网易公开课</a>
+                	<a href="http://study.163.com/" target="_blank">云课堂</a>
+                	<a href="http://www.icourse163.org/" target="_blank">中国大学MOOC</a>
+                </div>
+                <div class="b-us">
+                	<p class="tlt">我们：</p>
+                    <a href="#">关于</a>
+                	<a href="#">联系</a>
+                	<a href="#">关注</a>
+                </div>
+                <div class="b-more">
+                	<p class="tlt">更多：</p>
+                    <a href="#">产检问题</a>
+                	<a href="#">意见反馈</a>
+                </div>
+            </div>
+		</div>
+    	<!-- END footer部 -->
+	</div>
+    <!-- START mask 全局遮罩层 -->
+    <div id="m-mask" class="m-mask"></div>
+    
+    <!-- START login 登录 -->
+    <div id="m-login" class="m-login">
+    	<p class="tlt">登录网易云课堂</p>
+        <input id="login_account" class="login_account" type="" placeholder="帐号" />
+        <input id="login_pwd" class="login_pwd" type="" placeholder="密码" />
+        <span id="btn_login" class="btn_login">登 录</span>
+        <span id="btn_close" class="btn_close">×</span>
+    </div>
+    <!-- END login 登录 -->
+    
+    <!-- START video 视频 -->
+    <div id="m-video" class="m-video">
+    	<p class="tlt">请观看下面的视频</p>
+        <div class="video_con">
+        	<video id="my_video" controls>
+              <source src="http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4" type="video/mp4">
+              您的浏览器不支持 HTML5 video 标签。
+            </video>
+        </div>
+        <span id="btn_close" class="btn_close">×</span>
+    </div>
+    <!-- END video 视频 -->
+    
+<script src="js/index.js"></script>
+</body>
+</html>

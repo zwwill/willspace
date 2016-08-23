@@ -1,0 +1,64 @@
+/* CSS Document */
+* {
+	padding: 0px;
+	margin: 0px auto;
+	word-wrap: break-word;
+}
+#con {
+	width: 770px;
+	height: 390px;
+	padding:0 10px;
+}
+.outside
+{
+	margin:10px 0 0 10px;
+	float:left;
+	position:relative;
+    overflow:hidden;
+}
+.div_size_1x1
+{
+    height:180px;
+	width:180px;
+}
+.div_size_2x1
+{
+    height:180px;
+	width:370px;
+}
+.div_size_2x2
+{
+    height:370px;
+	width:370px;
+}
+.new_pic
+{
+	float:left;
+    position:relative;
+}
+.new_txt
+{
+	text-indent: 32px;
+	float:left;
+    background:#069;
+    color:#fff;
+	opacity:0.8;
+}
+.txt_size_1x1{
+    padding:10px;
+    width:160px;
+    height:160px;
+	
+}
+.txt_size_2x1{
+    padding:10px 20px;
+    width:350px;
+    height:160px;
+	
+}
+.txt_size_2x2{
+    padding:20px;
+    width:350px;
+    height:350px;
+	
+}

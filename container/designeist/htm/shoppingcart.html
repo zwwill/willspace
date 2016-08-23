@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>购物车</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="../css/com.css">
+<link rel="stylesheet" type="text/css" href="../css/shoppingcart.css">
+<!--JS文件-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/com.js"></script>
+<script src="../js/shoppingcart.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+ 
+	<!--main_block-->
+	<div id="main_block">
+    	
+    	<!--shoppingcart-->
+    	<div id="shoppingcart_block">
+        	
+            <div class="group_block" id="store2">
+            	<div class="top_b">
+                	<span class="btn_select btn_select_group" s_group='0' sid="store2"></span>
+                    <a href="store.html" class="btn_store_in"><p class="txt_tlt">设计师：Ansen</p><img src="../img/app/ico_row_b.png" class="img_in" /></a>
+                    <span class="btn_edit info_hidden_show">编辑</span>
+                    <span class="btn_ok edit_hidden_show">完成</span>
+                </div>
+                <div class="single_goods"> 
+                	<span class="btn_select btn_select_this" s='0'></span>
+                    <a class="btn_block_in" href="info_goods.html">
+                    	<div class="block_left" >
+                    		<img src="../img/d/d4_work10.jpg" class="img_goods" />
+                        </div>
+                        <div class="block_middle info_hidden_show">
+                        	<p class="txt_tlt">{转运珠}【按粒出售】</p>
+                        	<p class="txt_info">【Ansen工作室】手工纯银｛转运珠｝系列。手工镂空打造。由印度工作室制作完成。</p>
+                        </div>
+                    	<div class="block_right info_hidden_show" >
+                    		<p class="txt_xianjia">￥<span class="nums">100.0</span></p>
+                    		<p class="txt_yuanjia">￥<span class="nums">260.0</span></p>
+                    		<p class="txt_nums">x<span class="nums">8</span></p>
+                        </div>
+                    </a>
+                    <div class="edit_block edit_hidden_show">
+                      <div class="left">
+                    	<span class="edit_minus">-</span><input name="nums" class="edit_nums" type="num" value="8" /><span class="edit_plus">+</span>
+                      </div>
+                      <div class="right"><span  class="edit_del">删除</span></div>
+                    </div>
+                </div>
+                
+                <div class="single_goods"> 
+                	<span class="btn_select btn_select_this" s='0'></span>
+                    <a class="btn_block_in" href="info_goods.html">
+                    	<div class="block_left" >
+                    		<img src="../img/d/d4_work40.jpg" class="img_goods" />
+                        </div>
+                        <div class="block_middle info_hidden_show">
+                        	<p class="txt_tlt">{小情趣}24K金牛皮手环</p>
+                        	<p class="txt_info">【Ansen工作室】手工纯银｛小情趣｝系列。</p>
+                        </div>
+                    	<div class="block_right info_hidden_show" >
+                    		<p class="txt_xianjia">￥<span class="nums">950.0</span></p>
+                    		<p class="txt_yuanjia">￥<span class="nums">1390.0</span></p>
+                    		<p class="txt_nums">x<span class="nums">1</span></p>
+                        </div>
+                    </a>
+                    <div class="edit_block edit_hidden_show">
+                      <div class="left">
+                    	<span class="edit_minus">-</span><input name="nums" class="edit_nums" type="num" value="1" /><span class="edit_plus">+</span>
+                      </div>
+                      <div class="right"><span  class="edit_del">删除</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="group_block" id="store1">
+            	<div class="top_b">
+                	<span   class="btn_select btn_select_group" s_group='0' sid="store1"></span>
+                    <a href="store.html" class="btn_store_in"><p class="txt_tlt">设计师：靈曦</p><img src="../img/app/ico_row_b.png" class="img_in" /></a>
+                    <span class="btn_edit info_hidden_show">编辑</span>
+                    <span class="btn_ok edit_hidden_show">完成</span>
+                </div>
+                <div class="single_goods"> 
+                	<span class="btn_select btn_select_this" s='0'></span>
+                    <a class="btn_block_in" href="info_goods.html">
+                    	<div class="block_left" >
+                    		<img src="../img/d/d5_work13.jpg" class="img_goods" />
+                        </div>
+                        <div class="block_middle info_hidden_show">
+                        	<p class="txt_tlt">｛青春｝卡通插画</p>
+                        	<p class="txt_info">【插画师】靈曦亲情打造青春卡通插画，讲述我们的青春。</p>
+                        </div>
+                    	<div class="block_right info_hidden_show" >
+                    		<p class="txt_xianjia">￥<span class="nums">120.0</span></p>
+                    		<p class="txt_yuanjia">￥<span class="nums">230.0</span></p>
+                    		<p class="txt_nums">x<span class="nums">1</span></p>
+                        </div>
+                    </a>
+                    <div class="edit_block edit_hidden_show">
+                      <div class="left">
+                    	<span class="edit_minus">-</span><input name="nums" class="edit_nums" type="num" value="1" /><span class="edit_plus">+</span>
+                      </div>
+                      <div class="right"><span class="edit_del">删除</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    	<!--END shoppingcart-->
+        
+    </div>
+	<!--END main_block-->
+    
+	<!--sub_block-->
+    <span class="menu_padding_block"></span>
+
+	<div id="sub_block">
+      <span  id="btn_selectall">
+    	<div class="btn_select btn_selectall" s_all="0"></div>
+        <p class="txt_quanxuan">全选</p>
+      </span>
+      <div class="sub_right">
+        <span id="btn_sub" >结算(0)</span>
+        <div class="sub_info">
+        	<p class="txt_totle">合计:<span class="price">￥0.00</span></p>
+        	<p class="txt_rem">不含运费</p>
+        </div>
+      </div>
+    </div>
+	<!--END sub_block-->
+    
+	<!--menu_block-->
+    <span class="menu_padding_block"></span>
+    <div id="menu_block">
+       <a href="../index.html" class="a_del_back"><div class="single_menu">
+        	<img src="../img/app/ico_cycle.png" class="menu_pic" />
+            <p class="menu_p menu_p">首页</p>
+      </div></a>
+      
+      <a href="designer.html" class="a_del_back"><div class="single_menu">
+        	<img src="../img/app/ico_d.png" class="menu_pic" />
+            <p class="menu_p">设计师</p>
+      </div></a>
+      
+      <a href="find.html" class="a_del_back"><div class="single_menu">
+        	<img src="../img/app/ico_find.png" class="menu_pic" />
+            <p class="menu_p">发现</p>
+      </div></a>
+      
+      <a href="mine.html" class="a_del_back"><div class="single_menu">
+        	<img src="../img/app/ico_mine.png" class="menu_pic" />
+            <p class="menu_p">我</p>
+      </div></a>
+      
+      
+    </div>
+	<!--END menu_block-->
+</div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>订单详情</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="../css/com.css">
+<link rel="stylesheet" type="text/css" href="../css/orderinfo.css">
+<!--JS文件-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/com.js"></script>
+<script src="../js/orderinfo.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+ 
+	<!--main_block-->
+	<div id="main_block">
+      	<div class="order_state">
+      		<span class="state">订单状态：待收货</span>
+      		<span class="order_num">订单号：1205000001</span>
+      	</div>
+        <div class="info_wuliu">
+        	<p>物流信息</p>
+            <ul><li>拯旧物流派送中</li></ul>
+        </div>
+        <div class="info_buyer">
+        	<span class="name">收货人：张三三</span><span class="phonenum">13000000001</span>
+            <span class="addr_line"><p>收货地址：</p><span class="addr">南京大学浦口校区学生宿舍19栋205室</span></span>
+        </div>
+    	<div class="order_block">
+            <div class="group_block" >
+            	<div class="top_b">
+                    <a href="store.html" class="btn_store_in"><p class="txt_tlt">【测试数据】Apple旗舰店005</p><img src="../img/app/ico_row_b.png" class="img_in" /></a>
+                </div>
+                <div class="single_goods"> 
+                    <a class="btn_block_in" href="info_2huo.html">
+                    	<div class="block_left" >
+                    		<img src="../img/stores/s10.jpg" class="img_goods" />
+                        </div>
+                        <div class="block_middle info_hidden_show">
+                        	<p class="txt_tlt">【测试数据】iWatch</p>
+                        	<p class="txt_info">【测试数据】拯旧计划推荐产品，热卖中。。。</p>
+                        </div>
+                    	<div class="block_right info_hidden_show" >
+                    		<p class="txt_xianjia">￥<span class="nums">2800.0</span></p>
+                    		<p class="txt_yuanjia">￥<span class="nums">3899.0</span></p>
+                    		<p class="txt_nums">x<span class="nums">2</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="sumup">
+                    <p class="yunfei">运费<span>￥10.0</span></p>
+                    <p class="shuliang">共<span>2</span>件商品</p>
+                	<p class="jiesheng">节省<span>￥2198.0</span></p>
+                	<p class="shifu">实付（含运费）<span>￥5610.0</span></p>
+                </div>
+                <div class="info_seller">
+                	<p class="seller">卖家：【测试数据】拯旧计划</p>
+                    <span class="phonenum">13000000001</span>
+            		<a href="chatblock/chatboard.html"><span class="btn_sixin">私信卖家</span></a>
+            		<span class="btn_shownum">联系电话</span>
+                </div>
+            </div>
+        </div>
+      	<div class="info_order">
+        	<p>订&nbsp;&nbsp;单&nbsp;&nbsp;号：1205000001</p>
+        	<p>交易时间：2015.01.01 12:00:00</p>
+        	<p>成交时间：2015.01.01 12:10:00</p>
+        </div>
+    </div>
+	<!--END main_block-->
+	
+	<!--sub_block-->
+    <span class="menu_padding_block"></span>
+    <div id="sub_block"  class="foot_block">
+      <div class="btn_group">
+          <span class="btn btn_sub">确认收货</span>
+          <span class="btn btn_wuliu">查看物流</span>
+      </div>
+    </div>
+	<!--END sub_block-->
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+/* CSS Document */
+*{color:#fff;}
+body{ background:#222;}
+/*tlt_block*/
+#tlt_block{ float:left; width:100%; margin-top:15px;}
+#tlt_block .sub_tlt{ float:left; margin-left:8%; color:#F00; font-size:3vw;}
+#tlt_block .main_tlt{ float:left; width:84%; margin:0 8%; border-color:#ccc; border-style:solid; border-width:3px 0; clear:both; font-size:12vw; font-weight:bold; text-align:center;}
+#tlt_block .main_tlt .font_red{ color:#f00;font-size:12vw;}
+@media (min-width:560px) {
+	#tlt_block .main_tlt{font-size:67px;}
+	#tlt_block .main_tlt .font_red{font-size:67px;}
+	#tlt_block .sub_tlt{font-size:17px;}
+}
+/*d_list*/
+#d_list{float:left; clear:both; width:84%; margin:0 8%;  }
+#d_list .single_d{ float:left; width:100%; height:150px; margin-top:8px; border-bottom:solid 2px #666;}
+#d_list .single_d:hover{ background-color:#444;}
+#d_list .d_photo{ float:left; width:50%; height:100%; background-position:center; background-size:cover;}
+#d_list .red_line{ float:left; height:100%; width:2%; background-color:#f00;}
+#d_list .d_info{ float:left; height:100%; width:46%; padding-left:2%; overflow:hidden;}
+#d_list .d_info .d_name{ float:left; width:100%; padding:5% 0; font-size:5.5vw; overflow:hidden;white-space:nowrap;text-overflow:ellipsis; font-weight:bold;}
+#d_list .d_info .d_district{ float:left; width:100%; padding:5% 0; font-size:3vw; text-align:right;}
+#d_list .d_info .d_profession{ float:left; width:100%; padding:5% 0; font-size:3vw;text-align:right;}
+@media (min-width:560px) {
+	#d_list .d_info .d_name{font-size:30px;}
+	#d_list .d_info .d_district{font-size:18px;}
+	#d_list .d_info .d_profession{font-size:18px;}
+}
+
+
+#main_block .loading{ display:block; float:left;height:50px; width:100%; text-align:center; line-height:50px; color:#999; font-size:14px;}
+#main_block .loading .img_loading{ display:inline-block; height:20px; width:20px; padding:0 7px;}
+
+

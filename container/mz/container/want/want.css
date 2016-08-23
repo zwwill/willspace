@@ -1,0 +1,50 @@
+/* CSS Document */
+
+* {
+	padding: 0px;
+	margin: 0px;
+}#con {
+	margin: 0px auto;
+	width: 800px;
+	height: 390px;
+	background-position:320px 0;
+}
+
+#left{
+	width:530px;
+	height:400px;
+	float:left;
+	background:url(pad_white.png) no-repeat;
+	background-position:-11px 10px;
+}
+#right{
+	width:270px;
+	background:url(paper.png) no-repeat;
+	background-position:-15px -8px;
+	height:400px;
+	float:left;
+}
+#right table{ width:150px; height:auto; margin:95px 0 0 85px; }
+#right table td{ height:47px; }
+#right .input_name{ height:25px; width:100px; font:normal 16px "Adobe 黑体 Std R"; color:#009; border:0px; border-bottom: solid 1px #000066; background:inherit;}
+#right .input_other{ margin-left:50px; height:25px; width:100px; font:normal 16px "Adobe 黑体 Std R"; color:#009; border:0px; border-bottom: solid 1px #000066; background:inherit;}
+#right .input_file{ position:absolute;  width:100px; z-index:99; height:27px; margin:-27px 0 0 50px; filter:alpha(opacity=0); opacity:0; cursor: pointer}
+#right .btn_sub{
+	border:0;
+}
+
+
+ .wantCard_side{width:405px; height:304px; margin:45px 0 0 45px; float:left;overflow:hidden; }
+ .wantCard{ width:auto; height:auto;}
+ .wantCard #wantInfor{ margin:5px 5px 5px 5px; width:395px; height:294px; overflow:hidden; color:#FFF;}
+  .wantCard #wantInfor span{color:#09F;}
+ .wantCard p{padding:0px 10px 0px 13px;line-height:18px; font-size:12px;word-wrap: break-word; font-family:'微软雅黑',"Microsoft YaHei",\5fae\8f6f\96c5\9ed1,arial,\5b8b\4f53;color:#fff;text-shadow: 1px 1px 1px rgba(0,0,0,0.15);}
+ .wantCard p.wanttitle{color:#0094eb; font-size:22px; line-height:36px; text-shadow: 1px 1px 1px rgba(0,0,0,0.15);}
+
+ .wantControl{width:30px; height:30px; margin-top:0px; float:left;}
+ .wantControl span {height:30px;display:block; float:left;-moz-transition: all 0.4s ease-in-out 0s;-webkit-transition: all 0.4s ease-in-out 0s;-o-transition: all 0.4s ease-in-out 0s; transition: all 0.4s ease-in-out 0s;}
+ .wantControl span.txt{ line-height:30px;overflow:hidden; width:30px; text-align:center;   font-size:16px; font-family:'微软雅黑',"Microsoft YaHei",\5fae\8f6f\96c5\9ed1,arial,\5b8b\4f53; color:#fff;}
+ .wantControl span.up{width:30px; background:url(up.png) no-repeat;cursor:pointer;margin-top:150px;}
+ .wantControl span.up:hover{ background:url(up-on.png) no-repeat;}
+ .wantControl span.down{width:30px; background:url(down.png) no-repeat;cursor:pointer;}
+ .wantControl span.down:hover{ background:url(down-on.png) no-repeat;}

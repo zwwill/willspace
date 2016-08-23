@@ -1,0 +1,212 @@
+/* CSS Document */
+
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+#con {
+	margin: 0px 0px;
+	width: 504px;
+	height: auto;
+	overflow:hidden;
+	color:#eee;
+}
+
+/*浮动标*/
+#float_bar{
+	position:absolute;
+	z-index:1001;
+	height:50px;
+	width:33px;
+	background:#e2e2e2;
+	opacity:0.5;
+	right:0;
+}
+#float_bar a{
+	width:33px;
+	height:20px;
+	display:block;
+	text-align:center;
+	font:normal 13px "黑体";
+	text-decoration:none;
+	color:#e2e2e2;
+	line-height:20px;
+}
+#float_bar a:hover{
+	color:#000;
+}
+#float_bar .css_a_top{
+	width:33px;
+	height:30px;
+	border-top:solid 1px #FFFFFF;
+	background:url(up.png);
+}
+#float_bar .css_a_top:hover{
+	background:url(up-on.png);
+}
+
+
+/*历史留言记录*/
+#show_mess_h{
+	height:auto;
+	width:100%;
+	background:#fff;
+}
+#show_mess_h .mess_block{
+	width:100%;
+	height:auto;
+	float:left;
+	background:#fafbfc;
+	overflow:hidden;
+	border-bottom:dashed 1px #CCCCCC;
+}
+#show_mess_h .mess_block #user{
+	height:100%;
+	width:100px;
+	float:left;
+	text-align:center;
+	color:#00F;
+	background:#fafbfc;
+}
+#show_mess_h .mess_block #user img{
+	height:70px;
+	width:70px;
+	margin:15px;
+}
+#show_mess_h .mess_block #mess_con{
+	height:auto;
+	width:382px;
+	float:left;
+	background:#fff;
+}
+#show_mess_h .mess_block #mess_con #mess_txt{
+	height:auto;
+	width:340px;
+	float:left;
+	margin:10px 30px 10px 10px;
+	overflow:hidden;
+	word-break:break-strict; 
+	font:normal 15px "宋体";
+	color:#000;
+}
+#show_mess_h .mess_block #mess_con #mess_time{
+	font:normal 13px "宋体";
+	height:20px;
+	width:auto;
+	float:right;
+	color:#999;
+	margin-right:30px;
+}
+
+#show_mess_h .mess_block #mess_con #mess_reply{
+	height:auto;
+	width:320px;
+	margin:0px 30px 10px 10px;
+	padding:10px;
+	float:left;
+	overflow:hidden;
+	word-break:break-strict; 
+	background:#f7f8fa;
+	font:normal 15px "宋体";
+}
+#show_mess_h .mess_block #mess_con #mess_reply #reply_block{
+	width:320px;
+	height:auto;
+	float:left;
+	word-break:break-strict;
+	border-bottom: dotted 1px #CCCCCC;
+	
+}
+#show_mess_h .mess_block #mess_con #mess_reply #reply_block img{
+	width:20px;
+	height:20px;
+	float:left;
+	clear:left;
+	margin:0 5px 5px 0;
+}
+#show_mess_h .mess_block #mess_con #mess_reply #reply_block #mess_p{
+	height:auto;
+	color:#000;
+	width:295px;
+	float:left;
+	font:normal 11px "宋体";
+	line-height:16px;
+}
+#show_mess_h .mess_block #mess_con #mess_reply #reply_block #reply_time{
+	font:normal 13px "宋体";
+	height:20px;
+	width:auto;
+	float:right;
+	color:#999;
+}
+#show_mess_h .mess_block #mess_con #mess_reply .reply_sub{
+	float:left;
+	height:auto;
+	display:none;
+}
+
+#show_mess_h .mess_block #mess_con #mess_reply .reply_ta{
+	margin:5px 0 0 0;
+	resize:none;
+	height:30px;
+	width:260px;
+	float:left;
+	font:normal 13px "宋体";
+}
+#show_mess_h .mess_block #mess_con #mess_reply a{
+	height:23px;
+	width:50px;
+	text-decoration:none;
+	font:normal 13px "黑体";
+	text-align:center;
+	line-height:23px;
+	display:block;
+	color:#fff;
+	float:left;
+	margin:10px 0 0 5px;
+	background:url(btn.png) no-repeat;
+}
+#show_mess_h .mess_block #mess_con #mess_reply a:hover{
+	background:url(btn-on.png) no-repeat;
+}
+
+/*留言板*/
+
+#title_mess{
+	background:#e2e2e2;
+	height:28px;
+	width:100%;
+	font:bold 20px 'Adobe 黑体 Std R'; 
+	float:left;
+	clear:both;
+	color:#00a;
+}
+#leave_a_mess{
+	float:left;
+	height:268px;
+	width:470px;
+	background:url(bac.png);
+	border: solid 8px #e2e2e2;
+}
+#leave_a_mess .input_tlt{ height:25px; width:400px; margin:15px 0 0 30px; font:normal 15px "Adobe 黑体 Std R"; color:#009;  background:#fff;border: solid 1px #e3e3e3;}
+
+#leave_a_mess .input_txt{ resize:none; height:165px; width:400px; margin:15px 0 0 30px; font:normal 13px "Adobe 黑体 Std R"; color:#003;  background:#fff; border: solid 1px #e3e3e3;}
+#leave_a_mess .input_btn_sub{ 
+	font:normal 13px "黑体";
+	text-align:center;
+	line-height:23px;
+}
+#leave_a_mess a{
+	height:23px;
+	margin:10px 0 0 30px;
+	width:50px;
+	text-decoration:none;
+	display:block;
+	color:#fff;
+	background:url(btn.png) no-repeat;
+}
+#leave_a_mess a:hover{
+	background:url(btn-on.png) no-repeat;
+}
+

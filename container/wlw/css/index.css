@@ -1,0 +1,433 @@
+/* CSS Document */
+*{
+	margin:0px auto;
+	padding:0px;
+	width:auto;
+	font-family:"宋体";
+}
+body{
+	overflow-y:hidden; /*隐藏滚动条*/
+}
+
+#cover{
+	display:none;
+	overflow:hidden;
+}
+#cover #mask{
+	position:absolute;
+	z-index:1000;
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0.5;
+}
+
+#cover .iframe_block{
+	width:100%;
+	height:100%;
+	border:0px;
+	overflow-y:hidden;
+}
+#cover #detail{
+	display:none;
+	padding:30px 50px;
+	width:550px;
+	height:580px;
+	background:#fff;
+	left:50px;
+	position:absolute;
+	z-index:1001;
+	top:110px;
+	box-shadow:#000 0 3px 10px;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;            /* W3C syntax */
+
+}
+#cover #detail #create_yundan{
+	width:100%;
+	height:100%;
+}
+
+#create_yundan .close_ifrm{
+	position:relative;
+	display:block;
+	height:30px;
+	width:30px;
+	float:right;
+	top:-605px;
+	right:-40px;
+	z-index:1019;
+	background:url(../pic/close.png) no-repeat;
+	background-size:100% 100%;	
+}	
+#create_yundan .close_ifrm:hover{
+	background-image:url(../pic/close_on.png);
+}
+/*登陆注册模块*/
+#cover #login_block{
+	display:none;
+	padding:30px 50px;
+	width:360px;
+	height:250px;
+	background:#fff;
+	left:50px;
+	position:absolute;
+	z-index:1001;
+	top:110px;
+	box-shadow:#000 0 3px 10px;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;            /* W3C syntax */
+}
+#login_block .close_ifrm{
+	position:relative;
+	display:block;
+	height:30px;
+	width:30px;
+	float:right;
+	top:-275px;
+	right:-40px;
+	z-index:1019;
+	background:url(../pic/close.png) no-repeat;
+	background-size:100% 100%;	
+}	
+#login_block .close_ifrm:hover{
+	background-image:url(../pic/close_on.png);
+}
+#cover #regist_block{
+	display:none;
+	padding:30px 50px;
+	width:430px;
+	height:440px;
+	background:#fff;
+	left:50px;
+	position:absolute;
+	z-index:1001;
+	top:110px;
+	box-shadow:#000 0 3px 10px;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;            /* W3C syntax */
+}
+#regist_block .close_ifrm{
+	position:relative;
+	display:block;
+	height:30px;
+	width:30px;
+	float:right;
+	top:-465px;
+	right:-40px;
+	z-index:1019;
+	background:url(../pic/close.png) no-repeat;
+	background-size:100% 100%;	
+}	
+#regist_block .close_ifrm:hover{
+	background-image:url(../pic/close_on.png);
+}
+
+#container{
+	width:100%;
+	height:100%;
+	min-width:900px;
+	margin:0;
+}
+
+
+/*上面的导航*/
+#nav{
+	width:100%;
+	height:auto;
+	border-bottom:solid #6CF 1px;
+}
+#nav .nav_up{
+	height:110px;
+	width:100%;
+
+}
+
+#nav .nav_up .img_con{
+	margin:0px;
+	width:150px;
+	height:100px;
+	float:left;
+}
+
+#nav .nav_up .img_con img{
+	width:100%;
+	height:100%;
+}
+#nav .nav_up .search{
+	margin:0;
+	width:90%;
+	height:80px;
+	padding:15px 15px 0;
+	background:#fff;
+	float:left;
+
+}
+#nav .nav_up .search .inpt{
+	float:left;
+	width:72%;
+	height:30px;
+	margin:10px 0 0 0;
+	border:solid #3385ff 1px;
+	font-size:16px;
+}
+#nav .nav_up .search .btn_search{
+	width:22%;
+	height:32px;
+	float:left;
+	border:none;
+	margin-top:10px;
+	background:#03F;
+	color:#fff;
+	font:normal 14px "宋体";
+	letter-spacing:2px;
+	cursor:pointer;
+}
+#nav .nav_up .search .btn_search2{
+	cursor:pointer;
+	float:left;
+	margin-right:1px;
+	width:100px;
+	height:30px;
+	border:none;
+	background:#ccc;
+	color:#fff;
+	font:normal 14px "宋体";
+	letter-spacing:2px;
+}
+#nav .nav_up .nav_left{
+	float:left;
+	width:500px;
+	height:100%;
+	
+}
+#nav .nav_up #login_info{
+	height:50px;
+	width:auto;
+	margin:20px 20px 0 0 ;
+	float:right;
+}
+#nav .nav_up #login_info a{
+	margin-right:10px;
+	color:#666;
+}
+#nav .nav_up #login_info a:hover{
+	color:#03F;
+}
+#nav .nav_up #login_before{
+	display:block;
+}
+#nav .nav_up #login_after{
+	display:none;
+}
+
+/*左边功能导航块*/
+#body_left{
+	width:auto;
+	height:0;
+	float:left;
+	clear:left;
+	border:solid #efefef 0px;
+	overflow:hidden;
+}
+#body_left #nav_block{
+	height:100%;
+	width:50px;
+	float:left;
+	background:#003;
+}
+#body_left #nav_block .nav_btn{
+	display:block;
+	width:50px;
+	height:50px;
+	float:left;
+	clear:both;
+	font-size:20px;
+	color:#FFF;
+	line-height:50px;
+	text-align:center;
+	margin-top:50px;
+}
+//创建运单按钮
+#body_left #nav_block #nav_f_add:hover{
+}
+#body_left #nav_block #nav_f_add{
+    background: url(../pic/add.png);
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: 50% 50%;
+}
+#body_left #nav_block #nav_f_add:hover{
+    background: url(../pic/add.png) #06C ;
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: 50% 50%;
+}	
+//正在发布按钮
+#body_left #nav_block #nav_f1:hover{}
+#body_left #nav_block #nav_f1{
+    background: url(../pic/fabuing.png);
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: 50% 50%;
+}
+#body_left #nav_block #nav_f1:hover{
+    background: url(../pic/fabuing.png) #06C ;
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: 50% 50%;
+}
+//正在执行按钮
+#body_left #nav_block #nav_f2:hover{}
+#body_left #nav_block #nav_f2{
+    background: url(../pic/zhixinging.png) no-repeat;
+    background-size: 70% 70%;
+    background-position: 50% 50%;
+}
+#body_left #nav_block #nav_f2:hover{
+    background: url(../pic/zhixinging.png) #06C ;
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: 50% 50%;
+}
+//历史订单按钮
+#body_left #nav_block #nav_f3:hover{}
+#body_left #nav_block #nav_f3{
+    background: url(../pic/history.png);
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: 50% 50%;
+}
+#body_left #nav_block #nav_f3:hover{
+    background: url(../pic/history.png) #06C ;
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: 50% 50%;
+}
+/*功能块上升*/
+#body_left #up_btn{
+	position:absolute;
+	z-index:101;
+	height:50px;
+	width:400px;
+	text-align:center;
+	background:#ccc;
+	opacity:0.6;
+}
+#body_left #up_btn:hover{
+	background:#aaa;
+}
+#body_left #up_btn a{
+	display:block;
+	height:100%;
+	width:100%;
+	text-align:center;
+	background:url(../pic/up.png) no-repeat;
+	background-position:50% 50%;
+}
+/*功能块下降*/
+#body_left #down_btn{
+	position:absolute;
+	z-index:101;
+	height:50px;
+	width:400px;
+	bottom:0;
+	left:50px;
+	text-align:center;
+	background:#ccc;
+	opacity:0.6;	
+}
+#body_left #down_btn:hover{
+	background:#aaa;
+}
+#body_left #down_btn a{
+	display:block;
+	height:100%;
+	width:100%;
+	text-align:center;
+	background:url(../pic/down.png) no-repeat;
+	background-position:50% 50%;
+}
+/*左边可收缩方法块*/
+#body_left #func_block{
+	display:none;
+	height:100%;
+	width:400px;
+	float:left;
+}
+#body_left #func_block #func_mask{
+	width:400px;
+	height:100%;
+	overflow:hidden;
+}
+#body_left #func_block #func_mask #func_container{
+	position:relative;
+	z-index:11;
+	top:0%;
+	width:100%;
+	height:100%;
+	
+}
+#body_left #func_block #func_mask #func_container .func_b{
+	width:100%;
+	height:100%;
+	
+}
+#body_left #func_block #func_mask #func_container #func_b1{
+	background:#e3e3e3;
+}
+#body_left #func_block #func_mask #func_container #func_b2{
+	background:#e3e3e3;
+}
+#body_left #func_block #func_mask #func_container #func_b3{
+	background:#e3e3e3;
+}
+/*功能分块IFrame*/
+#body_left #func_block .ifm_fb{
+	margin:50px 0;
+	border:0;
+	width:400px;
+}
+
+
+/*左边伸缩按钮*/
+#body_left #flex_btn{
+	position:absolute;
+	z-index:101;
+	height:40px;
+	width:20px;
+	margin-top:0;
+	float:left;
+	background: #003;
+	opacity:0.5;
+	border-radius:0 5px 5px 0;
+	
+}
+#body_left #flex_btn:hover{
+	background:#069;
+	cursor:pointer;
+}
+#body_left #flex_btn img{
+	width:70%;
+	height:70%;
+	margin:25% 0 0 12%;
+}
+
+#body_right{
+	width:0;
+	height:0;
+	float:left;
+}
+#body_right #allmap{
+	background:#ddd;
+	width:100%;
+	float:left;
+	height:100%;
+	overflow: auto;
+	font-family:"微软雅黑";
+}
+	
+	

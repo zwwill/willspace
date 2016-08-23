@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>明卓科技</title>
+<meta name="keywords" content="blactro template, free html css template, jquery, templatemo" />
+<meta name="description" content="Blactro is free template by templatemo.com" />
+<link href="css/templatemo_style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
+<script type="text/JavaScript" src="js/slimbox2.js"></script>
+<script type="text/JavaScript" src="js/show.js"></script>
+<script type="text/javascript" src="js/supersleight.plugin.js"></script>
+<!-- Timestamp: 1236819900 -->
+<link rel="stylesheet" href="css/index.css" type="text/css" media="screen" />
+<script type="text/JavaScript" src="js/index.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+		//页面初始化   得到滚动条状态  
+		goCenter();  
+   	     
+		//保持背景相对静止
+		//滚动条滚动  
+		$(window).scroll(  
+			function(){  
+				goCenter();  
+			}  
+		);  
+		//拖动浏览器窗口  
+		$(window).resize(  
+			function(){  
+				goCenter();  
+			}  
+		);
+});
+</script>
+</head>
+<body onload="fuc_reload();">
+<div ><img src="images/bg.png" id="bg_img" class="bg_image"/> </div>
+<div id="templatemo_header">
+		<div id="site_title"><a href="#home"><span>MZORZ</span></a>
+				<div id="display-lg-on" class="show-off float-right"> <a href="#home" class="slider_nav_btn home_btn">Home</a> <a href="#reg">个人资料</a> <a href="php/loginOff.php">注销登录</a> </div>
+				<div id="display-lg-off" class="show-off float-right"> <a href="#home" class="slider_nav_btn home_btn">Home</a> <a href="#reg" onClick="display('regDisplay');">注册</a> <a href="#login" >登录</a> </div>
+				<script>
+	getQueryString("rlt");
+</script> 
+		</div>
+</div>
+<div id="templatemo_main">
+		<div id="content"> 
+				<!--@注册-->
+				<div class="section2 section_with_padding" id="reg">
+						<div id="regDisplay" class="show-off">
+								<h2></h2>
+								<div class="back-block">
+										<div class="form">
+												<form method="post" action="php/reg.php">
+														<table>
+																<tr>
+																		<td><label>ln</label></td>
+																		<td><input class="form-control" type="text" name="r_ln" placeholder="用户名"/></td>
+																</tr>
+																<tr>
+																		<td></br></td>
+																</tr>
+																<tr>
+																		<td><label>pw</label></td>
+																		<td><input class="form-control" type="password" name="r_pw" placeholder="密码"/></td>
+																</tr>
+																<tr>
+																		<td></br></td>
+																</tr>
+																<tr>
+																		<td><label>ag</label></td>
+																		<td><input class="form-control" type="password" name="r_pw_2" placeholder="确认密码"/></td>
+																</tr>
+																<tr>
+																		<td></br></td>
+																</tr>
+																<tr>
+																		<td></td>
+																		<td><input class="btn" type="submit" value="注册" /></td>
+																</tr>
+														</table>
+												</form>
+										</div>
+								</div>
+						</div>
+				</div>
+				<div id="home" class="section">
+						<div class="flip-container">
+								<div class="flipper">
+										<div class="font"><a href="#about" onclick="show_iframe('div_about_us','container/about_us/about_us.html')">
+												<div class="home_box2 color7"></div>
+												<div class="box home_box2 ">
+														<div class="padding_30">
+																<h2>关于我们</h2>
+																<p></p>
+																<div class="img img01"></div>
+																<p></p>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+										<div class="back"><a href="#about">
+												<div class="home_box2 color7"></div>
+												<div class="box home_box2 ">
+														<div class="padding_30">
+																<h2>new content</h2>
+																<p>@mzorz</p>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+								</div>
+						</div>
+						<div class="flip-container">
+								<div class="flipper ">
+										<div class="font"><a href="#news" onclick="show_iframe('div_news','container/news/news.html');">
+												<div class="home_box1 color7"></div>
+												<div class="box home_box1 no_mr ">
+														<div class="padding_30">
+																<h2>新闻</h2>
+																<div class="img img02"></div>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+										<div class="back"><a href="#news">
+												<div class="home_box1 color7"></div>
+												<div class="box home_box1 no_mr ">
+														<div class="padding_30">
+																<h2>new content</h2>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+								</div>
+						</div>
+						<div class="flip-container">
+								<div class="flipper">
+										<div class="font"><a href="#products" onclick="show_iframe('div_products','container/products/products.html');">
+												<div class="home_box1 color7"></div>
+												<div class="box home_box1 ">
+														<div class="padding_30">
+																<h2>产品</h2>
+																<div class="img img03"></div>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+										<div class="back"><a href="#products">
+												<div class="home_box1 color7"></div>
+												<div class="box home_box1 ">
+														<div class="padding_30">
+																<h2>new content</h2>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+								</div>
+						</div>
+						<div class="flip-container">
+								<div class="flipper ">
+										<div class="font"><a href="#case" onclick="show_iframe('div_case','container/case/case.html')">
+												<div class="home_box1 color7"></div>
+												<div class="box home_box1 ">
+														<div class="padding_30">
+																<h2>案例</h2>
+																<div class="img img04"></div>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+										<div class="back"><a href="#case">
+												<div class="home_box1 color7"></div>
+												<div class="box home_box1 ">
+														<div class="padding_30">
+																<h2>new content</h2>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+								</div>
+						</div>
+						<div class="flip-container">
+								<div class="flipper ">
+										<div class="font"><a href="#services" onclick="show_iframe('div_service','container/service/service.html')">
+												<div class="home_box1 color7"></div>
+												<div class="box home_box1  no_mr">
+														<div class="padding_30">
+																<h2>服务</h2>
+																<div class="img img05"></div>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+										<div class="back"><a href="#services">
+												<div class="box home_box1  no_mr">
+														<div class="padding_30">
+																<h2>new content</h2>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+								</div>
+						</div>
+						<div class="flip-container">
+								<div class="flipper ">
+										<div class="font"><a href="#want" onclick="show_iframe('div_want','container/want/want.html')">
+												<div class="home_box1 color7"></div>
+												<div class="box home_box1 ">
+														<div class="padding_30">
+																<h2>招聘</h2>
+																<div class="img img06"></div>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+										<div class="back"><a href="#want">
+												<div class="box home_box1 ">
+														<div class="padding_30">
+																<h2>new content</h2>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+								</div>
+						</div>
+						<div class="flip-container">
+								<div class="flipper ">
+										<div class="font"><a href="#link" onclick="show_iframe('div_contact','container/link/contact.html')">
+												<div class="home_box1 color7"></div>
+												<div class="box home_box1 ">
+														<div class="padding_30">
+																<h2>联系我们</h2>
+																<div class="img img07"></div>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+										<div class="back"><a href="#link">
+												<div class="box home_box1 ">
+														<div class="padding_30">
+																<h2>new content</h2>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+								</div>
+						</div>
+						<div class="flip-container">
+								<div class="flipper ">
+										<div class="font"><a href="#message"  onclick="show_iframe_mess()">
+												<div class="home_box1 color7"></div>
+												<div class="box home_box1  no_mr">
+														<div class="padding_30">
+																<h2>留言</h2>
+																<div class="img img08"></div>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+										<div class="back"><a href="#message">
+												<div class="box home_box1  no_mr">
+														<div class="padding_30">
+																<h2>new content</h2>
+														</div>
+												</div>
+												<div style="clear:both"></div>
+												</a></div>
+								</div>
+						</div>
+				</div>
+				
+				<!-- END of home --> 
+				
+				<!--@关于我们-->
+				<div class="section section_with_padding" id="about">
+						<h2></h2>
+						<a href="#home" class="slider_nav_btn home_btn">home</a> <a href="#home" class="slider_nav_btn previous_btn">Previous</a> <a href="#news" class="slider_nav_btn next_btn" onclick="show_iframe('div_news','container/news/news.html');">Next</a>
+						<div id="div_about_us"></div>
+				</div>
+				<!--@新闻-->
+				<div class="section section_with_padding" id="news">
+						<h2></h2>
+						<a href="#home" class="slider_nav_btn home_btn">home</a> <a href="#about" class="slider_nav_btn previous_btn" onclick="show_iframe('div_about_us','container/about_us/about_us.html')">Previous</a> <a href="#products" class="slider_nav_btn next_btn"   onclick="show_iframe('div_products','container/products/products.html');">Next</a>
+						<div id="div_news"></div>
+				</div>
+				<!--@产品-->
+				<div class="section section_with_padding" id="products">
+						<h2></h2>
+						<a href="#home" class="slider_nav_btn home_btn">home</a> <a href="#news" class="slider_nav_btn previous_btn" onclick="show_iframe('div_news','container/news/news.html');">Previous</a> <a href="#case" class="slider_nav_btn next_btn" onclick="show_iframe('div_case','container/case/case.html')">Next</a>
+						<div id="div_products"></div>
+				</div>
+				<div class="section section_with_padding" id="case"> 
+						<!--@案例-->
+						<h2></h2>
+						<a href="#home" class="slider_nav_btn home_btn">home</a> <a href="#products" class="slider_nav_btn previous_btn"  onclick="show_iframe('div_products','container/products/products.html');">Previous</a> <a href="#services" class="slider_nav_btn next_btn" onclick="show_iframe('div_service','container/service/service.html')">Next</a>
+						<div id="div_case"></div>
+				</div>
+				<div class="section section_with_padding" id="services"> 
+						<!--@服务-->
+						<h2></h2>
+						<a href="#home" class="slider_nav_btn home_btn">home</a> <a href="#case" class="slider_nav_btn previous_btn" onclick="show_iframe('div_case','container/case/case.html')">Previous</a> <a href="#want" class="slider_nav_btn next_btn" onclick="show_iframe('div_want','container/want/want.html')">Next</a>
+						<div id="div_service"></div>
+				</div>
+				<!--@招聘-->
+				<div class="section section_with_padding" id="want">
+						<h2></h2>
+						<a href="#home" class="slider_nav_btn home_btn">home</a> <a href="#services" class="slider_nav_btn previous_btn" onclick="show_iframe('div_service','container/service/service.html')">Previous</a> <a href="#link" class="slider_nav_btn next_btn" onclick="show_iframe('div_contact','container/link/contact.html')">Next</a>
+						<div id="div_want"></div>
+				</div>
+				<!--@联系我们-->
+				<div class="section section_with_padding" id="link">
+						<h2></h2>
+						<a href="#home" class="slider_nav_btn home_btn">home</a> <a href="#want" class="slider_nav_btn previous_btn" onclick="show_iframe('div_want','container/want/want.html')">Previous</a> <a href="#message" class="slider_nav_btn next_btn" onclick="show_iframe_mess()">Next</a>
+						<div id="div_contact"></div>
+				</div>
+				<!--@留言-->
+				<div class="section section_with_padding" id="message">
+						<h2></h2>
+						<a href="#home" class="slider_nav_btn home_btn">home</a> <a href="#link" class="slider_nav_btn previous_btn" onclick="show_iframe('div_contact','container/link/contact.html')">Previous</a> 
+						<!--<a href="#home" class="slider_nav_btn next_btn">Next</a> -->
+						<div id="div_message_con" style="background:url(images/macbook.png) 0px -10px no-repeat; width:900px; height:500px; ">
+								<div id="div_message" style="float:left; width:502px; height:311px; margin:41px 0 0 160px;"></div>
+						</div>
+				</div>
+				<!--@登陆-->
+				<div class="section2 section_with_padding" id="login">
+						<h2></h2>
+						<div class="back-block">
+								<form method="post" action="php/login.php" class="form">
+										<table>
+												<tr>
+														<td><label>ln</label></td>
+														<td><input class="form-control" type="text" name="l_ln"  placeholder="用户名"/></td>
+												</tr>
+												<tr>
+														<td></br></td>
+												</tr>
+												<tr>
+														<td><label>pw</label></td>
+														<td><input class="form-control" type="password" name="l_pw"   placeholder="密码"/></td>
+												</tr>
+												<tr>
+														<td></br></td>
+												</tr>
+												<tr>
+														<td></td>
+														<td><input class="btn"  type="submit" value="登陆" /></td>
+												</tr>
+										</table>
+								</form>
+						</div>
+				</div>
+		</div>
+</div>
+<div id="templatemo_footer">
+		<p>Copyright © 2013 南京明卓信息科技有限公司</p>
+</div>
+<script type="text/javascript"> 
+   //--------auto reversal-------
+    $(".flipper").each(function(){
+       var that = this;
+       var reversal = function(){
+            $(that).toggleClass("reversal");
+           // setTimeout(reversal,getTime());
+       } 
+       // setTimeout(reversal,getTime());
+    }); 
+
+    //get time
+    function getTime(){
+        //min
+        var min = 10;
+        var max = 60;
+        return parseFloat((Math.random()*(max-min) + min).toFixed("0.000"))* 1000;
+    }
+
+    $(".back").hide();
+
+    $(".img").each(function(n,m){
+
+        $(m).supersleight({
+            shim:'../images/icon_'+(n+1)+'.png'
+        });
+            
+    });
+</script>
+</body>
+</html>

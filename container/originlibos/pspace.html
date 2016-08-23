@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>OriginLib OS</title>
+<!--Jquery Web
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+-->
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.2.min.css"/>
+<script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/hf.css"/>
+<link rel="stylesheet" type="text/css" href="container/pspace/pspace.css" />
+<link rel="shortcut icon" href="img/origin_logo.ico"/>
+<script type="text/javascript" src="js/hf.js"></script>
+</script><script type="text/javascript" src="container/pspace/pspace.js"></script>
+	<script type="text/javascript" src="container/pspace/pspace_f.js"></script>
+</head>
+
+<body>
+<div id="l_r">
+  <div id="lr_mask"></div>
+  <div id="login" >
+    <form>
+      <table width="350" border="0">
+        <tr>
+          <td colspan="2" class="lr_title">用户登录</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:15px;"></td>
+        </tr>
+        <tr>
+          <td width="55">账号：</td>
+          <td width="279"><input type="text" name="account" class="inport1" id="account"  placeholder="在此输入账号"/></td>
+        </tr>
+        <tr>
+          <td>密码：</td>
+          <td><input name="pwd" id="pwd" class="inport1" type="password"  placeholder="在此输入密码"/></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:10px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><div data-role="controlgroup" data-type="vertical"> <a href="#" id="btn_login" data-role="button" data-icon="check" class="btn1">
+              <p>登 录</p>
+              </a> <a href="#" id="btn_back" data-role="button" data-icon="back" class="btn1">
+              <p>返 回</p>
+              </a> </div></td>
+            </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <div id="reg">
+    <form>
+      <table width="350" border="0">
+        <tr>
+          <td colspan="2" class="lr_title">用户注册</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:15px;"></td>
+        </tr>
+        <tr>
+          <td width="90" align="right">账号：</td>
+          <td width="236"><input type="text" data-icon="home" name="account" class="inport1" id="account" placeholder="在此输入账号"/></td>
+        </tr>
+        <tr>
+          <td align="right">密码：</td>
+          <td><input name="pwd" id="pwd" class="inport1" type="password"  placeholder="在此输入密码"/></td>
+        </tr>
+        <tr>
+          <td align="right">密码确认：</td>
+          <td><input name="pwd2" id="pwd2" class="inport1" type="password" placeholder="再次输入密码" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:10px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><div data-role="controlgroup" data-type="vertical"> <a href="#" id="btn_reg" data-role="button" data-icon="plus" class="btn1">
+              <p>注 册</p>
+              </a> <a href="#" id="btn_back" data-role="button" data-icon="back" class="btn1">
+              <p>返 回</p>
+              </a> </div></td>
+          <td width="1"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+<div style="height:4px; background: #0a5; width:100%;" ></div>
+<div id="header"> <a href="index.html" target="_parent">
+  <div id="logo"></div>
+  </a>
+  <div id="header_right">
+
+    <div id="login_af">
+      <span id="wel">欢迎你，<span id="user_nickname">Admin01</span><span id="user_level"></span></span>
+      <div data-role="controlgroup" data-type="horizontal">
+      	
+      	<a href="pspace.html" rel="external" id="btn_pspace" data-role="button"><p>个人空间</p></a>
+      	<a href="manage.html" rel="external" id="btn_manage" data-role="button"><p>管理</p></a>
+        <a href="index.html" rel="external" id="btn_cancel" data-role="button"><p>注 销</p></a>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+<div id="nav">
+  <div id="nav_list">
+    <ul>
+      <li><a href="index.html" rel="external" id="nav1">首页</a></li>
+      <li><a href="container/booksearch.html" rel="external" id="nav2">图书检索</a></li>
+      <li><a href="container/booklending.html"  rel="external" id="nav3">借阅信息</a></li>
+      <li><a href="container/share.html"  rel="external" id="nav4">资源共享</a></li>
+      <li><a href="container/collect.html"  rel="external" id="nav5">我的收藏</a></li>
+      <li><a href="container/stroll.html"  rel="external" id="nav6">随便逛逛</a></li>
+      <li><a href="container/about.html"  rel="external" id="nav7">关于我们</a></li>
+    </ul>
+  </div>
+</div>
+<div id="middle">
+  <div id="main">
+			<div id="pspace">
+				<span class="top_tlt">个人空间</span>
+				<div id="self_info" class="info_block">
+					<span class="title">个人信息</span> <a href="#" id="btn_alter">修改个人信息</a>
+					<span class="img"><a href="#" class="a_img"></a></span>
+					<div class="info_list"></div>
+				</div>
+				<div id="libcard_block" class="info_block">
+					<span class="title">我的借书证</span> <a href="#" id="btn_addcard">新增图书证</a>
+					<div class="card_list">
+						<div class="card" id="card1">
+							<img src="container/pspace/img/nju_sy.png" alt="" />
+							<div class="card_info">
+								<span class="lib_name">南京大学浦口校区思源图书馆</span> <span class="owner">持卡人（OWNER）：<br />张威
+								</span> <span class="card_account">卡号（ID）：<br />2012020100051
+								</span>
+							</div>
+							<a href="#" id="alter" class="c_btn">修改</a> <a href="#" id="del"
+								class="c_btn">删除</a>
+						</div>
+						<div class="card" id="card2" style="display:;">
+							<img src="container/pspace/img/nju_dx.png" alt="" />
+							<div class="card_info">
+								<span class="lib_name">南京大学仙林校区杜厦图书馆</span> <span class="owner">持卡人（OWNER）：<br />张威
+								</span> <span class="card_account">卡号（ID）：<br />2012020100051
+								</span>
+							</div>
+							<a href="#" id="alter" class="c_btn">修改</a> <a href="#" id="del"
+								class="c_btn">删除</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- 修改个人信息 -->
+			<div id="alert">
+		    </div>
+			<!--END 修改个人信息 -->
+
+			<!-- 新增图书证块 -->
+			<div id="add_libcard">
+				<form>
+					<table width="450" border="0">
+						<tr>
+							<td colspan="2" class="lr_title">新增图书证</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="height: 15px;"></td>
+						</tr>
+						<tr>
+							<td width="120" align="right">图书馆：</td>
+							<td width="206"><select name="libCard" data-role="none"
+								id="libCard">
+									<option value="0">请选择已经开放的图书馆</option>
+									<option value="c1">南京大学浦口校区思源图书馆</option>
+									<option value="c2">南京大学仙林校区杜厦图书馆</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td width="90" align="right">卡号(ID)：</td>
+							<td><input type="text" data-icon="home" name="account"
+								class="inport1" id="account" placeholder="在此输入账号" /></td>
+						</tr>
+						<tr>
+							<td align="right">通行口令：</td>
+							<td><input name="pwd" id="pwd" class="inport1"
+								type="password" placeholder="在此输入密码" /></td>
+						</tr>
+						<tr>
+							<td align="right">口令确认：</td>
+							<td><input name="pwd2" id="pwd2" class="inport1"
+								type="password" placeholder="再次输入密码" /></td>
+						</tr>
+						<tr>
+							<td colspan="2" style="height: 10px;"></td>
+						</tr>
+						<tr>
+							<td colspan="2"><div data-role="controlgroup"
+									data-type="vertical">
+									<a href="#" id="btn_sub" data-role="button" data-icon="plus"
+										class="btn1">
+										<p>确 认</p>
+									</a> <a href="#" id="btn_back" data-role="button" data-icon="back"
+										class="btn1">
+										<p>返 回</p>
+									</a>
+								</div></td>
+							<td width="1"></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<!--END 新增图书证块 -->			</div>
+</div>
+<div id="footer">
+  <div id="down">
+    <p id="cpy_right"><a href="index.html" target="_parent"><img src="img/logo_l.png" />源点图书平台</a> CopyRight <span style="font-size:18px; vertical-align:bottom;">&copy;</span> 2014-2014 All Right Reserved</p>
+    <p id="author">Designed By Origin Studio From NJU JLC </p>
+  </div>
+</div>
+</body>
+</html>

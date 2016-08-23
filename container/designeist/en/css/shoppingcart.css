@@ -1,0 +1,45 @@
+/* CSS Document */
+
+#main_block #shoppingcart_block{ float:left;width:100%;}
+#main_block #shoppingcart_block .group_block{ float:left; width:100%; margin-bottom:10px; background:#fafafa;border-top:solid 1px #CCC;border-bottom:solid 1px #CCC;}
+#main_block #shoppingcart_block .group_block .top_b{ float:left; width:90%; height:40px; margin:0 5%; border-bottom:solid 1px #CCCCCC; display:block; line-height:40px;}
+#main_block #shoppingcart_block .group_block .top_b .btn_select{background:#fff; float:left; width:20px; height:20px; margin-top:9px; border:solid 1px #999;border-radius:25px;}
+#main_block #shoppingcart_block .group_block .top_b .btn_store_in{ float:left; width:70%; height:40px; line-height:40px; margin-left:10px;}
+#main_block #shoppingcart_block .group_block .top_b .btn_store_in .txt_tlt{ float:left; max-width:85%; overflow:hidden; font-size:14px;}
+#main_block #shoppingcart_block .group_block .top_b .btn_store_in .img_in{ float:left; height:18px; margin-top:11px;}
+#main_block #shoppingcart_block .group_block .top_b .btn_edit{float:right; width:15%; height:25px; line-height:25px; margin-top:7px; border:solid 1px #999; text-align:center; border-radius:5px;}
+#main_block #shoppingcart_block .group_block .top_b .btn_ok{float:right; width:15%; height:25px; line-height:25px; margin-top:7px; border:solid 1px #999; text-align:center; border-radius:5px;}
+#main_block #shoppingcart_block .group_block .single_goods{ float:left; width:90%; height:81px;  margin:0 5%;  display:block; overflow:hidden;}
+#main_block #shoppingcart_block .group_block .single_goods .btn_select{background:#fff; float:left; width:20px; height:20px; margin-top:30px; border:solid 1px #999;border-radius:25px;}
+#main_block #shoppingcart_block .group_block .single_goods .btn_block_in{float:right; width:90%; margin:5px 0 0 5px; height:70px; overflow:hidden;border-bottom:solid 1px #CCCCCC; padding-bottom:5px; }
+#shoppingcart_block .group_block .single_goods .block_left{ float:left; width:70px; }
+#shoppingcart_block .group_block .single_goods .img_goods{width:70px; height:70px;}
+#shoppingcart_block .group_block .single_goods .block_middle{ float:left;height:70px; width:47%; overflow:hidden;}
+#shoppingcart_block .group_block .single_goods .block_middle .txt_tlt{ display:block; width:90%; margin-left:5%; word-break:break-all; overflow:hidden; font-size:12px; height:35px; line-height:18px;}
+#shoppingcart_block .group_block .single_goods .block_middle .txt_info{ display:block; width:90%; margin-left:5%; word-break:break-all; overflow:hidden; font-size:10px; height:30px; line-height:15px; color:#666;}
+#shoppingcart_block .group_block .single_goods .block_right{ float:right;height:70px; width:24%; overflow:hidden; text-align:right;}
+#shoppingcart_block .group_block .single_goods .block_right p{display:block; width:100%; white-space:nowrap; overflow:hidden; word-wrap:break-word;text-overflow: ellipsis; line-height:20px; }
+#shoppingcart_block .group_block .single_goods .block_right .txt_xianjia{ color:#000; font-weight:bold;}
+#shoppingcart_block .group_block .single_goods .block_right .txt_yuanjia{ text-decoration:line-through; color:#999;}
+#shoppingcart_block .group_block .single_goods .block_right .txt_yuanjia .nums{color:#999;}
+#shoppingcart_block .group_block .single_goods .block_right .txt_nums{ color:#000; font-weight:bold;}
+#shoppingcart_block .single_goods .edit_block{ float:right;height:70px; width:63%; margin-top:-75px;}
+#shoppingcart_block .single_goods .left{ float:left;height:50px; text-align:center; padding-top:20px; width:65%; overflow:hidden;}
+#shoppingcart_block .single_goods .left .edit_minus{ float:left;height:25px; width:25px; border:solid 1px #999; border-radius:5px 0 0 5px; font-size:40px; text-align:center; line-height:18px;}
+#shoppingcart_block .single_goods .left .edit_nums{ border-left:0; border-right:0; float:left;height:25px; width:46%; border-top:solid 1px #999; border-bottom:solid 1px #999; background:#fafafa; color:#00F; font-size:20px; text-align:center; line-height:25px;}
+#shoppingcart_block .single_goods .left .edit_plus{ float:left;height:25px; width:25px; border:solid 1px #999; border-radius:0 5px 5px 0; font-size:25px; font-weight:bold; text-align:center; line-height:23px;}
+#shoppingcart_block .single_goods .right{ float:right;height:70px; width:35%;overflow:hidden; }
+#shoppingcart_block .single_goods .right .edit_del{ float:right;height:35px; width:80%; background:#F00;;overflow:hidden;text-align:center; line-height:35px; margin-top:16px; font-size:14px; color:#fff; border-radius:5px;}
+#shoppingcart_block .info_hidden_show{ display:block;}
+#shoppingcart_block .edit_hidden_show{ display:none;}
+
+#sub_block{position:fixed;z-index:99;bottom:50px;width:100%;height:50px;background:#aaa; border-top:solid 1px #999; opacity:0.96; overflow:hidden;}
+#sub_block #btn_selectall{ float:left; height:50px; padding-left:10px;}
+#sub_block .btn_select{background:#fff; float:left; width:20px; height:20px; margin-top:15px; border:solid 1px #999;border-radius:25px;}
+#sub_block .txt_quanxuan{ float:left; height:50px; font-size:16px; font-weight:bold; margin-left:10px; line-height:50px;}
+#sub_block .sub_right{ float:right;}
+#sub_block .sub_right #btn_sub{ float:right; height:35px; margin:7.5px 10px 0 0; padding:0 10px;min-width:50px; max-width:70px; overflow:hidden; background:#F40; font-size:15px; color:#fff; text-align:center; line-height:35px; font-weight:bold; border-radius:5px;}
+#sub_block .sub_right .sub_info{ float:right; height:35px; margin:7.5px 10px 0 0; max-width:110px; overflow:hidden; text-align:right;}
+#sub_block .sub_right .txt_totle{ float:right; max-width:110px; height:18px;  white-space:nowrap; overflow:hidden; word-wrap:break-word;text-overflow: ellipsis; color:#000;}
+#sub_block .sub_right .sub_info .txt_totle span{ font-size:14px; font-weight:bold; color:#FF0;}
+#sub_block .sub_right .sub_info .txt_rem{ color:#333;}

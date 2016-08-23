@@ -1,0 +1,408 @@
+/* CSS Document */
+
+
+#main{
+	width:980px;
+	height:auto;
+	margin-top:40px;
+}
+
+#main #bl_block_top{
+	margin-top:15px;
+	float:left;
+	width:970px;
+	height:60px;
+	padding:10px;
+	border:solid 1px #060;
+	border-radius:10px;
+	background:#eee;
+	box-shadow:#888 0px 2px 4px;
+}
+#main #bl_block_top ul{
+	float:right;
+}
+#main #bl_block_top li{
+	list-style:none;
+	float:left;
+}
+#main #bl_block_top a{
+	display:block;
+	height:40px;
+	width:100px;
+	margin:10px 5px;
+	font:normal 16px "黑体";
+	line-height:40px;
+	text-align:center;
+	text-decoration:none;
+	color:#FFF;
+	background:#070;
+	border-radius:10px;
+	box-shadow:#888 1px 2px 4px;
+	text-shadow:#888 0px 2px 2px;
+}
+#main #bl_block_top a:hover{
+	background:#090;
+}
+
+#main .bl_show{
+	height:auto;
+	width:950px;
+	float:left;
+	padding:10px 20px 30px;
+	border:solid 1px #060;
+	border-radius:10px; 
+	margin-top:10px;
+	background:#eee;
+	box-shadow:#888 0px 2px 4px;
+}
+#main .bl_show #bl_info{
+	margin-top:10px;
+	float:left;
+	height:40px;
+	width:100%;
+	background:#fff;
+	border-radius:10px;
+	box-shadow:#999 1px 2px 2px;
+}
+#main .bl_show #bl_info #bl_on{
+	display:block;
+	height:40px;
+	width:100px;
+	font:normal 16px "黑体";
+	line-height:40px;
+	text-align:center;
+	text-decoration:none;
+	float:left;
+	color:#FFF;
+	background:#080;
+	border-radius:10px 0 0 10px ;
+	text-shadow:#888 0px 2px 2px;
+}
+#main .bl_show #bl_info .info{
+	float:left;
+	margin-left:30px;
+	color:#999;
+	height:40px;
+	font:bold 15px "宋体";
+	width:auto;
+	line-height:40px;
+}
+#main .bl_show #bl_info .page{
+	float:right;
+	width:auto;
+	height:40px;
+	margin-right:30px;
+	line-height:40px;
+}
+#main .bl_show #bl_info .page td{
+	font-size:15px;
+}
+#main .bl_show #bl_info .info .light{
+	font:bold 16px "宋体";
+	color:#C90;
+}
+#main .bl_show .bl_table{
+	margin-top:10px;
+	height:auto;
+	width:100%;
+	display:block;
+	float:left;
+}
+#main #bl1{
+	
+}
+#main #bl1 .bl_table .t_head{
+	font: bold 16px "宋体";
+	color:#000;
+	background:#CCC;
+}
+
+#main #bl1 .bl_table .td1{
+	border-radius:10px 0 0 0;
+	width:90px;
+}
+#main #bl1 .bl_table .td2{
+	width:360px;
+	border-radius:0px;
+}
+#main #bl1 .bl_table .td3{
+	width:80px;
+	border-radius:0px;
+}
+#main #bl1 .bl_table .td4{
+	width:80px;
+	border-radius:0px;
+}
+#main #bl1 .bl_table .td5{
+	width:55px;
+	border-radius:0px;
+}
+#main #bl1 .bl_table .td6{
+	width:150px;
+	border-radius:0px;
+}
+#main #bl1 .bl_table .td7{
+	border-radius:0 10px 0 0;
+	width:50px;
+}
+#main #bl1 .bl_table td{
+	height:60px;
+	background:#fff;
+	padding:0px 5px;
+	text-shadow:#000 0px 0 0;
+	border-radius:7px;
+}
+#main #bl1 .bl_table a{
+	
+}
+#main #bl1 .bl_table .btn{
+	display:block;
+	height:25px;
+	width:40px;
+	background:#070;
+	color:#FFF;
+	border-radius:7px;
+	text-align:center;
+	line-height:25px;
+	text-decoration:none;
+}
+#main #bl1 .bl_table .btn:hover{
+	background:#090;
+}
+
+
+#main #bl2{
+	display:none;
+}
+#main #bl2 .lib_selt{
+	height:40px;
+	width:380px;
+	float:left;
+	clear:both;
+}
+#main #bl2 .bl_table .t_head{
+	font: bold 16px "宋体";
+	color:#000;
+	background:#CCC;
+}
+#main #bl2 .bl_table .td0{
+	border-radius:10px 0 0 0;
+	width:20px;
+}
+#main #bl2 .bl_table .td1{
+	width:80px;
+	border-radius:0px;
+}
+#main #bl2 .bl_table .td2{
+	width:300px;
+	border-radius:0px;
+}
+#main #bl2 .bl_table .td3{
+	width:100px;
+	border-radius:0px;
+}
+#main #bl2 .bl_table .td4{
+	width:70px;
+	border-radius:0px;
+}
+#main #bl2 .bl_table .td5{
+	width:70px;
+	border-radius:0px;
+}
+#main #bl2 .bl_table .td6{
+	width:110px;
+	border-radius:0;
+}
+#main #bl2 .bl_table .td7{
+	width:80px;
+	text-align:center;
+	border-radius:0 10px 0 0;
+}
+#main #bl2 .bl_table td{
+	height:60px;
+	background:#fff;
+	padding:0px 5px;
+	text-shadow:#000 0px 0 0;
+	border-radius:7px;
+}
+#main #bl2 .bl_table a{
+	
+}
+#main #bl2 .bl_table .btn{
+	display:block;
+	height:25px;
+	width:80px;
+	background:#070;
+	color:#FFF;
+	border-radius:7px;
+	text-align:center;
+	line-height:25px;
+	text-decoration:none;
+}
+#main #bl2 .bl_table .btn_rv{
+	display:block;
+	height:25px;
+	width:80px;
+	background:#999;
+	color:#FFF;
+	border-radius:7px;
+	text-align:center;
+	line-height:25px;
+	text-decoration:none;
+}
+#main #bl2 .bl_table .btn:hover{
+	background:#090;
+}
+
+#main #bl2 .bl_table .btn_rv:hover{
+	background:#070;
+}
+
+
+
+#main #bl3{
+	display:none;
+}
+#main #bl3 .bl_table .t_head{
+	font: bold 16px "宋体";
+	color:#000;
+	background:#CCC;
+}
+
+#main #bl3 .bl_table .td1{
+	width:100px;
+	border-radius:10px 0 0 0;
+}
+#main #bl3 .bl_table .td2{
+	width:100px;
+	border-radius:0px;
+}
+#main #bl3 .bl_table .td3{
+	width:350px;
+	border-radius:0px;
+}
+#main #bl3 .bl_table .td4{
+	width:70px;
+	border-radius:0px;
+}
+#main #bl3 .bl_table .td5{
+	width:35px;
+	border-radius:0px;
+}
+#main #bl3 .bl_table .td6{
+	width:30px;
+	text-align:center;
+	border-radius:0px;
+}
+#main #bl3 .bl_table .td7{
+	width:30px;
+	text-align:center;
+	border-radius:0px;
+}
+#main #bl3 .bl_table .td8{
+	width:50px;
+	border-radius:0 10px 0 0;
+}
+#main #bl3 .bl_table td{
+	height:60px;
+	background:#fff;
+	padding:0px 5px;
+	text-shadow:#000 0px 0 0;
+	border-radius:7px;
+}
+#main #bl3 .bl_table a{
+	
+}
+#main #bl3 .bl_table .color_red{
+	color:#F00;
+}
+
+#main #bl3 .bl_table .color_green{
+	color:#090;
+}
+
+
+#main #bl4{
+	display:none;
+}
+#main #bl4 .bl_table .t_head{
+	font: bold 16px "宋体";
+	color:#000;
+	background:#CCC;
+}
+#main #bl4 .bl_table .td0{
+	border-radius:10px 0 0 0;
+	width:20px;
+}
+#main #bl4 .bl_table .td1{
+	width:300px;
+	border-radius:0px;
+}
+#main #bl4 .bl_table .td2{
+	width:100px;
+	border-radius:0px;
+}
+#main #bl4 .bl_table .td3{
+	width:70px;
+	border-radius:0px;
+}
+#main #bl4 .bl_table .td4{
+	width:110px;
+	border-radius:0px;
+}
+#main #bl4 .bl_table .td5{
+	width:200px;
+	border-radius:0px;
+}
+#main #bl4 .bl_table .td6{
+	width:80px;
+	text-align:center;
+	border-radius:0 10px 0 0;
+}
+#main #bl4 .bl_table td{
+	height:70px;
+	background:#fff;
+	padding:0px 5px;
+	text-shadow:#000 0px 0 0;
+	border-radius:7px;
+}
+#main #bl4 .bl_table a{
+	
+}
+#main #bl4 .bl_table .btn{
+	display:block;
+	height:25px;
+	width:80px;
+	background:#070;
+	color:#FFF;
+	border-radius:7px;
+	text-align:center;
+	line-height:25px;
+	text-decoration:none;
+	margin-bottom:5px;
+}
+#main #bl4 .bl_table .btn_del{
+	display:block;
+	height:25px;
+	width:80px;
+	background:#999;
+	color:#FFF;
+	font-weight:normal;
+	border-radius:7px;
+	text-align:center;
+	line-height:25px;
+	text-decoration:none;
+}
+#main #bl4 .bl_table .btn:hover{
+	background:#090;
+}
+
+#main #bl4 .bl_table .btn_del:hover{
+	background:#993;
+}
+
+
+
+
+
+

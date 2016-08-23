@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>上货失败</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="../css/com.css">
+<!--JS文件-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/com.js"></script>
+</head>
+<style>
+.top_info{ float:left; width:100%;}
+.btn{ float:left; height:60px; width:100%; margin-top:20px; background:#999; border:none; font-size:25px; color:#fff; text-align:center; line-height:60px;}
+.btn[id=btn_back]{ background-color:#F33;}
+.btn[id=btn_manage]{ background-color:#06C;}
+#blank_block{ float:left; height:30px; width:100%;}
+</style>
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+ 
+	<!--main_block-->
+	<div id="main_block">
+    	<img class="top_info" src="../img/app/ico_false.png" >
+        <a id="btn_back" class="btn" href="add.html">返回修改</a>
+        <a id="btn_manage" class="btn" href="weidian/weidian.html">货架管理</a>
+        <a id="btn_home" class="btn" href="index.html">返回首页</a>
+        <span id="blank_block"></span>
+    </div>
+	<!--END main_block-->
+	
+	<!--menu_block-->
+    	
+	<!--END menu_block-->
+</div>
+</body>
+</html>

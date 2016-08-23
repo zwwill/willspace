@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/hf.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>OriginLib OS</title>
+<!-- InstanceEndEditable -->
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/hf.css"/>
+<link rel="shortcut icon" href="img/origin_logo.ico"/>
+<script type="text/javascript" src="js/hf.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<!--link-->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div id="l_r">
+  <div id="lr_mask"></div>
+  <div id="login" >
+    <form>
+      <table width="350" border="0">
+        <tr>
+          <td colspan="2" class="lr_title">用户登录</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:15px;"></td>
+        </tr>
+        <tr>
+          <td width="55">账号：</td>
+          <td width="279"><input type="text" name="account" class="inport1" id="account"  placeholder="在此输入账号"/></td>
+        </tr>
+        <tr>
+          <td>密码：</td>
+          <td><input name="pwd" id="pwd" class="inport1" type="password"  placeholder="在此输入密码"/></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:10px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><div data-role="controlgroup" data-type="vertical"> <a href="pspace.html"  data-role="button" rel="external"  data-icon="check" class="btn1">
+              <p>登 录</p>
+              </a> <a href="#" id="btn_back" data-role="button" data-icon="back" class="btn1">
+              <p>返 回</p>
+              </a> </div></td>
+            </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <div id="reg">
+    <form>
+      <table width="350" border="0">
+        <tr>
+          <td colspan="2" class="lr_title">用户注册</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:15px;"></td>
+        </tr>
+        <tr>
+          <td width="90" align="right">账号：</td>
+          <td width="236"><input type="text" data-icon="home" name="account" class="inport1" id="account" placeholder="在此输入账号"/></td>
+        </tr>
+        <tr>
+          <td align="right">密码：</td>
+          <td><input name="pwd" id="pwd" class="inport1" type="password"  placeholder="在此输入密码"/></td>
+        </tr>
+        <tr>
+          <td align="right">密码确认：</td>
+          <td><input name="pwd2" id="pwd2" class="inport1" type="password" placeholder="再次输入密码" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height:10px;"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><div data-role="controlgroup" data-type="vertical"> <a href="pspace.html" id="" data-role="button" rel="external"  data-icon="plus" class="btn1">
+              <p>注 册</p>
+              </a> <a href="#" id="btn_back" data-role="button" data-icon="back" class="btn1">
+              <p>返 回</p>
+              </a> </div></td>
+          <td width="1"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+<div style="height:4px; background: #0a5; width:100%;" ></div>
+<div id="header"> <a href="index.html" target="_parent">
+  <div id="logo"></div>
+  </a>
+  <div id="header_right">
+    <div data-role="controlgroup" data-type="horizontal"> <a href="#" id="btn_login" data-role="button">
+      <p>登 录</p>
+      </a> <a href="#" id="btn_reg" data-role="button">
+      <p>注 册</p>
+      </a> </div>
+    </td>
+  </div>
+</div>
+<div id="nav">
+  <div id="nav_list">
+    <ul>
+      <li><a href="index.html" rel="external" id="nav1">首页</a></li>
+      <li><a href="container/booksearch.html" rel="external" id="nav2">图书检索</a></li>
+      <li><a href="container/booklending.html"  rel="external" id="nav3">借阅信息</a></li>
+      <li><a href="container/share.html"  rel="external" id="nav4">资源共享</a></li>
+      <li><a href="container/collect.html"  rel="external" id="nav5">我的收藏</a></li>
+      <li><a href="container/stroll.html"  rel="external" id="nav6">随便逛逛</a></li>
+      <li><a href="container/about.html"  rel="external" id="nav7">关于我们</a></li>
+    </ul>
+  </div>
+</div>
+<div id="middle">
+  <div id="main"> 
+	<!-- InstanceBeginEditable name="middle" -->
+     
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<script type="text/javascript" src="js/index.js"></script>
+    <!--检索块-->
+    <div id="search_block">
+      <form method="get" action="">
+        <table border="0">
+          <tr>
+            <td colspan="3" style="padding:30px 0 0 0; "><fieldset data-role="fieldcontain">
+                <label for="libCard">借书证：</label>
+                <select name="libCard" id="libCard">
+                  <option value="0">请选择您要检索的图书馆</option>
+                  <option value="c1">南京大学金陵学院2012020100051</option>
+                  <option value="c2">南京大学2012020100051</option>
+                  <option value="c3">南京图书馆201200112</option>
+                </select>
+              </fieldset></td>
+          </tr>
+          <tr>
+            <td width="350" height="90px"><input type="search" name="search" id="search" placeholder="请输入搜索条件" style="border-radius:0px;"/></td>
+            <td width="100"><select name="con1" id="con1">
+                <option value="001">题名</option>
+                <option value="002">负责者</option>
+                <option value="003">主题词</option>
+                <option value="004">ISBN/ISSN</option>
+                <option value="005">订阅号</option>
+                <option value="006">搜书号</option>
+                <option value="007">出版社</option>
+              </select></td>
+            <td width="100"><select name="con2" id="con2">
+                <option value="001">所有书刊</option>
+                <option value="002">中文图书</option>
+                <option value="003">西文图书</option>
+                <option value="004">中文期刊</option>
+                <option value="005">西文期刊</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="container/booksearch.html" rel="external" data-icon="search" data-role="button" class="a_search" >检索</a></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <!--右功能块-->
+    <!--右功能块-->
+    <div id="right_block">
+    	<span class="news_top"><p>新闻公告</p></span>
+    	<span class="news_top_more"><a href="#">More</a></span>
+    	<div id="news_list">
+    		<ul>
+    			<li><a href="#">平台维护通知</a></li>
+    			<li><a href="#">新图书馆扩充公告</a></li>
+    			<li><a href="#">第一届源点图书节连接</a></li>
+    			<li><a href="#">源点图书平台Android端发布通知</a></li>
+    			<li><a href="#">源点图书平台IOS端开发通知</a></li>
+    		</ul>
+    	</div>
+    </div>
+    
+    <!--图书推荐-->
+    <div id="book_recom">
+    <span class="rec_top">
+      <p>好书推荐</p>
+      </span> <span class="tbody">
+      <TBODY>
+        <TR>
+          <TD style="PADDING-RIGHT: 10px" vAlign=top width=566><DIV id=TodayBookContainer 
+                        style="Z-INDEX: 1; LEFT: 0px; BACKGROUND: url(img/bg_tb.gif) no-repeat; OVERFLOW: hidden; WIDTH: 900px; POSITION: relative; TOP: 0px; HEIGHT: 249px">
+              <DIV id=TodayBook1>
+                <TABLE id=Table1 height=249 cellSpacing=0 
+                          cellPadding=0>
+                  <TBODY>
+                    <TR>
+                      <TD vAlign=top width=369><TABLE id=Table2 
+                              style="MARGIN-TOP: 10px; MARGIN-LEFT: 10px" 
+                              cellSpacing=0 cellPadding=0>
+                          <TBODY>
+                            <TR>
+                              <TD><a 
+                                href="container/bookinfo.html" rel="external"><img 
+                                src="http://img3.douban.com/lpic/s27123141.jpg" 
+                                width=138 
+                                height=180 border="0"></a></TD>
+                              <TD  style="PADDING: 15px 10px 0 25px; " vAlign=top rowSpan=2><SPAN class=bodytitle>Java核心技术<br />
+                                .Volume I.fundamentals</SPAN><br />
+                                <br />
+                                <SPAN class=Read>Java领域最有影响力和价值的著作之一，拥有20多年教学与研究经验的资深Java技术专家撰写（获Jolt大奖），与《Java编程思想》齐名，10余年全球畅销不衰，广受好评。 </SPAN></TD>
+                            </TR>
+                            <TR>
+                              <TD style="PADDING:10px 0 0 6px; "><A 
+                                class=pdname 
+                                href="container/bookinfo.html" rel="external">Java核心技术</A><BR>
+                                Java技术权威指南</TD>
+                            </TR>
+                          </TBODY>
+                        </TABLE></TD>
+                    </TR>
+                  </TBODY>
+                </TABLE>
+              </DIV>
+              <DIV id=TodayBook2>
+                <TABLE id=Table2 height=249 cellSpacing=0 
+                          cellPadding=0>
+                  <TBODY>
+                    <TR>
+                      <TD><IMG id=todayBookImg1 style="CURSOR: hand" 
+                              height=249 
+                              src="img/b_tbLeft.gif" 
+                              width=17></TD>
+                      <TD vAlign=top width=379 
+                            background="img/bg_tbup.gif"><TABLE id=Table2 
+                              style="MARGIN-TOP: 10px; MARGIN-LEFT: 10px" 
+                              cellSpacing=0 cellPadding=0>
+                          <TBODY>
+                            <TR>
+                              <TD><A 
+                                href="container/bookinfo.html"><IMG 
+                                src="http://img3.douban.com/lpic/s27112236.jpg" 
+                                width=138 
+                                height=175 border="0"></A></TD>
+                              <TD 
+                                style="PADDING-RIGHT: 10px; PADDING-LEFT: 25px; PADDING-BOTTOM: 0px; PADDING-TOP: 15px" 
+                                vAlign=top rowSpan=2><SPAN class=bodytitle>更优秀的APP<br /></SPAN><BR>
+                                <SPAN 
+                                class=Read>本书深入讲解了智能手机APP用户界面(UI)设计最常用样式的完整设计思路，和用Photoshop与Illustrator制作的详细过程。 </SPAN></TD>
+                            </TR>
+                            <TR>
+                              <TD 
+                                style="PADDING-RIGHT: 0px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; PADDING-TOP: 10px"><A 
+                                class=pdname 
+                                href="container/bookinfo.html">更优秀的APP</A><BR>
+                                APP用户界面(UI)设计的完整设计思路</TD>
+                            </TR>
+                          </TBODY>
+                        </TABLE></TD>
+                    </TR>
+                  </TBODY>
+                </TABLE>
+              </DIV>
+               <DIV id=TodayBook3>
+                <TABLE id=Table3 height=249 cellSpacing=0 
+                          cellPadding=0>
+                  <TBODY>
+                    <TR><TD><IMG id=todayBookImg2 style="CURSOR: hand" 
+                              height=249 
+                              src="img/b_tbLeft2.gif" 
+                              width=17></TD>
+                      <TD vAlign=top width=369 background="img/bg_tb.gif"><TABLE id=Table2 
+                              style="MARGIN-TOP: 10px; MARGIN-LEFT: 10px" 
+                              cellSpacing=0 cellPadding=0>
+                          <TBODY>
+                            <TR>
+                              <TD><a 
+                                href="container/bookinfo.html" rel="external"><img 
+                                src="http://img3.douban.com/lpic/s23121847.jpg" 
+                                width=138 
+                                height=152 border="0"></a></TD>
+                              <TD  style="PADDING: 15px 10px 0 25px; " vAlign=top rowSpan=2><SPAN class=bodytitle>美国大学研究生申请指南</SPAN><br />
+                                <br />
+                                <SPAN class=Read>《美国大学研究生申请指南》是赴美留学、在职进修必备的参考书，是各类学校、图书馆、留学顾问、各位家长的最佳参考书。 </SPAN></TD>
+                            </TR>
+                            <TR>
+                              <TD style="PADDING:10px 0 0 6px; "><A 
+                                class=pdname 
+                                href="container/bookinfo.html">美国大学研究生申请指南</A><BR>
+                                赴美留学、在职进修必备的参考书<BR></SPAN></TD>
+                            </TR>
+                          </TBODY>
+                        </TABLE></TD>
+                    </TR>
+                  </TBODY>
+                </TABLE>
+              </DIV>
+              <DIV id=TodayBook4>
+                <TABLE id=Table4 height=249 cellSpacing=0 
+                          cellPadding=0>
+                  <TBODY>
+                    <TR>
+                      <TD><IMG id=todayBookImg3 style="CURSOR: hand" 
+                              height=249 
+                              src="img/b_tbLeft.gif" 
+                              width=17></TD>
+                      <TD vAlign=top width=379 
+                            background="img/bg_tbup.gif"><TABLE id=Table2 
+                              style="MARGIN-TOP: 10px; MARGIN-LEFT: 10px" 
+                              cellSpacing=0 cellPadding=0>
+                          <TBODY>
+                            <TR>
+                              <TD><A 
+                                href="container/bookinfo.html"><IMG 
+                                src="img/t081029_2.jpg" 
+                                width=138 
+                                height=132 border="0"></A></TD>
+                              <TD 
+                                style="PADDING-RIGHT: 10px; PADDING-LEFT: 25px; PADDING-BOTTOM: 0px; PADDING-TOP: 15px" 
+                                vAlign=top rowSpan=2><SPAN class=bodytitle>鲤·嫉妒</SPAN><BR>
+                                <SPAN 
+                                class=Read>诺贝尔文学奖得主帕慕克首次为一本中国图书题词，他说：“嫉妒是一种黑暗的情绪”。继《鲤·孤独》之后，张悦然又推出《鲤》系列主题书的第二本——《鲤·嫉妒》。在以80后一代的孤独体验为主题的《鲤·孤独》中，而到了《鲤·嫉妒》，诺贝尔奖得主帕慕克的加盟，更是体现出张悦然的号召力和国际化的视野。 </SPAN></TD>
+                            </TR>
+                            <TR>
+                              <TD 
+                                style="PADDING-RIGHT: 0px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; PADDING-TOP: 10px"><A 
+                                class=pdname 
+                                href="container/bookinfo.html">鲤·嫉妒</A><BR>
+                                这是一本探讨人性深处中“嫉妒”情绪的图书<BR>
+                                <SPAN class=priceB>34,2</SPAN><BR>
+                                <SPAN class=price>(10%<IMG 
+                                src="img/i_dc.gif">+10%<IMG 
+                                src="img/i_p.gif">)</SPAN><BR>
+                              <SPAN 
+                                class=couponB></SPAN></TD>
+                            </TR>
+                          </TBODY>
+                        </TABLE></TD>
+                    </TR>
+                  </TBODY>
+                </TABLE>
+              </DIV>
+            </DIV></TD>
+          <TD vAlign=top width=187></TD>
+        </TR>
+      </TBODY>
+      </span> 
+    </div>
+    <!--ENDdiv图书推荐-->
+    
+	<!-- InstanceEndEditable -->
+  </div>
+</div>
+<div id="footer">
+  <div id="down"> 
+    <p id="cpy_right"><a href="index.html" target="_parent"><img src="img/logo_l.png" />源点图书平台</a> CopyRight <span style="font-size:18px; vertical-align:bottom;">&copy;</span> 2014-2014 All Right Reserved</p>
+    <p id="author">Designed By Zhang Wei /Jester Will From Origin Studio NJU 2014</p>
+  </div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

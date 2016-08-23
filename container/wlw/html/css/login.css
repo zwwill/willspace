@@ -1,0 +1,50 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding:0;
+}
+
+#container{
+	background:#eee;
+	width:360px;
+	height:250px;
+}
+td{
+	height:35px;
+	font:normal 18px "宋体";
+	text-align:right;
+}
+.lr_title{
+	font:normal 23px "微软雅黑";
+	text-align:center;
+	height:50px;
+	line-height:50px;
+}
+.inport{
+	width:90%;
+	font:normal 14px "宋体";
+	height:25px;
+	float:left;
+	border-radius:3px;	
+	border:solid 1px #999;
+}
+.btn{
+	display:block;
+	float:left;
+	width:70%;
+	height:30px;
+	margin-left:15%;
+	margin-bottom:10px;
+	text-decoration:none;
+	text-align:center;
+	font:normal 16px "宋体";
+	color:#333;
+	line-height:30px;
+	border:solid 1px #CCCCCC;
+	border-radius:3px;	
+}
+.btn:hover{
+	background:#CCC;
+	color:#FFF;
+}
+

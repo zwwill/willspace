@@ -1,0 +1,151 @@
+/* CSS Document */
+
+
+#main{
+	width:980px;
+	height:auto;
+	margin-top:40px;
+	box-shadow:#333 0 2px 3px;
+}
+
+#main #search_block{
+	margin-top:15px;
+	float:left;
+	width:970px;
+	height:130px;
+	padding:10px;
+	border:solid 1px #060;
+	border-radius:10px;
+	background:#eee;
+	box-shadow:#888 0px 2px 4px;
+}
+#main #search_block label{
+	width:170px;
+	height:20px;
+	color:#060;
+	font:bold 18px "黑体";
+	text-shadow:#999 1px 2px 2px;
+	line-height:20px;
+}
+
+#main #search_block .a_search{
+	background:#060;
+	color:#fff;
+	text-shadow:#333 0 2px 2px;
+}
+#main #search_block a:hover{
+	background:#070;
+}
+
+#main #booklist_block{
+	height:auto;
+	width:950px;
+	float:left;
+	padding:10px 20px 30px;
+	border:solid 1px #060;
+	border-radius:10px; 
+	margin-top:10px;
+	background:#eee;
+	box-shadow:#888 0px 2px 4px;
+}
+
+#main #booklist_block .total_block{
+	margin-top:10px;
+	float:left;
+	height:auto;
+	width:100%;
+	background:#fff;
+	border-radius:10px;
+	box-shadow:#999 1px 2px 2px;
+}
+#main #booklist_block .total_block .search_info{
+	float:left;
+	margin-left:10px;
+	font:bold 15px "宋体";
+	color:#999;
+	height:40px;
+	width:auto;
+	line-height:40px;
+}
+#main #booklist_block .total_block .search_info span{
+	font:bold 16px "宋体";
+	color:#C90;
+}
+#main #booklist_block .total_block .list_page{
+	width:auto;
+	height:40px;
+	float:right;
+	margin-right:20px;
+}
+#main #booklist_block .total_block .list_page td{
+	font:normal 15px "宋体";
+	height:40px;
+}
+
+
+#main #booklist_block .book_block{
+	float:left;
+	clear:both;
+	margin-top:10px;
+	height:110px;
+	width:100%;
+	border-bottom: dashed 1px #006600;
+	text-shadow:#fff 1px 1px 1px;
+}
+/*图书便签样式*/
+#main #booklist_block .book_block .bb_left{
+	height:100px;
+	width:80%;
+	float:left;
+}
+#main #booklist_block .book_block .bb_left .book_title{
+	font:bold 17px "宋体";
+	float:left;
+	height:40px;
+	text-decoration:none;
+	color:#060;
+	line-height:40px;
+}
+#main #booklist_block .book_block .bb_left .book_addr{
+	font:bold 17px "宋体";
+	float:left;
+	height:40px;
+	clear:right;
+	margin-left:20px;
+	color:#999;
+	line-height:40px;
+}
+#main #booklist_block .book_block .bb_left a:hover{
+	text-decoration:underline;
+}
+#main #booklist_block .book_block .bb_left  p{
+	float:left;
+	clear:left;
+	color:#666;
+	margin-left:20px;
+	height:30px;
+	font:bold 15px "宋体";
+	line-height:30px;
+}
+
+#main #booklist_block .book_block .bb_right{
+	height:110px;
+	width:19%;
+	float:right;
+}
+#main #booklist_block .book_block .bb_right .book_type{
+	float:right;
+	clear:right;
+	color:#666;
+	height:40px;
+	font:bold 15px "宋体";
+	line-height:40px;
+}
+#main #booklist_block .book_block .bb_right p{
+	float:right;
+	clear:right;
+	color:#999;
+	height:30px;
+	font:bold 15px "宋体";
+	line-height:30px;
+}

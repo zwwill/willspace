@@ -1,0 +1,174 @@
+/* CSS Document */
+
+* {
+	margin: 0px auto;
+	padding: 0px;
+	font-size: 12px;
+}
+#container {
+	width: 980px;
+}
+#header {
+	width: 980px;
+	height: 134px;
+}
+#header #logo {
+	height: 75px;
+	width: 240px;
+	margin: 20px 0px 0px 10px;
+	background: url(../images/logo.png) no-repeat;
+	float: left;
+}
+#header .title {
+	width: 290px;
+	color: #fff;
+	font: bold 15px "微软雅黑";
+	text-align: center;
+	line-height: 35px;
+	vertical-align: bottom;
+	height: 30px;
+	float: right;
+	background: #22905e;
+}
+#header #nav {
+	height: 30px;
+	width: 110px;
+	clear: right;
+	float: right;
+	margin: 65px 0px 5px 0px;
+}
+#header #nav li {
+	float: left;
+	list-style: none;
+	width: 110px;
+	line-height: 34px;
+	text-align: center;
+}
+#header #nav a {
+	font: bold 17px "宋体";
+	color: #666;
+	text-decoration: none;
+}
+#header #nav a:hover {
+	color: #22905e;
+	border-bottom: solid 2px #090;
+}
+#header .low {
+	width: 100%;
+	height: auto;
+	clear: both;
+	background: url(../images/up_l.png) no-repeat;
+}
+#main {
+	width: 100%;
+	height: auto;
+	color: #333;
+}
+#header #nav .index_l {
+	color: #22905e;
+	border-bottom: solid 2px #090;
+}
+#main #show {
+	width: 100%;
+	height: 590px;
+}
+#main #show #link_left {
+	width: 210px;
+	height: 600px;
+	float: left;
+	list-style: none;
+}
+#main #link_left .ljk a {
+	width: 210px;
+	height: 30px;
+	font: normal 18px "微软雅黑";
+	padding-top: 5px;
+	margin-top: 10px;
+	background: #137C3F;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	color: #eee;
+}
+#main #link_left .ljk a:hover {
+	background: #136C3F;
+}
+#main .class_float_list {
+	width: 300px;
+	position: absolute;
+	visibility: hidden;
+	margin-left: 211px;
+	margin-top: -35px;
+	height: auto;
+	border: solid 2px #fff;
+	background: #F0F0F0;
+	z-index: 100;
+}
+#main #show #link_l {
+	float: left;
+	height: auto;
+}
+#main #show #link_l .title li {
+	width: auto;
+	height: 35px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 35px;
+	list-style: none;
+	float: left;
+	vertical-align: bottom;
+	margin: 5px 10px 0px 5px;
+	color: #22905e;
+}
+#main #show #link_l .title li a {
+	font-size: 18px;
+	background: 0000;
+	text-decoration: none;
+	color: #666;
+}
+#main #show #link_l .title li a:hover {
+	color: #22905e;
+	text-decoration: underline;
+}
+#main #show #link_l .ll {
+	width: 280px;
+	height: 38px;
+	line-height: 38px;
+	overflow: hidden;
+	border-bottom: 1px dashed #999;
+}
+#main #show #link_l .ll a {
+	width: 280px;
+	padding-left: 20px;
+	font-size: 16px;
+	vertical-align: middle;
+	background:#F0F0F0;
+	text-decoration: none;
+	color: #090;
+	border: 0px;
+	line-height: 38px;
+}
+#main #show #link_l .ll a:hover {
+	color: #333;
+	border-left: 3px solid #080;
+}
+#main #browser {
+	margin-top: 10px;
+	width: 760px;
+	height: 580px;
+	float: left;
+}
+#back_mark {
+	background: url(../images/bac.png) no-repeat;
+	margin: 20px auto;
+	height: 0px;
+	width: 1230px;
+	clear: both;
+}
+#info {
+	height: 30px;
+	width: auto;
+	float: right;
+	color: #333;
+	font: normal 15px "微软雅黑";
+}

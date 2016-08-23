@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>拯旧计划</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="../css/com.css">
+<link rel="stylesheet" type="text/css" href="../css/reg.css">
+<!--JS文件-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/com.js"></script>
+<script src="../js/reg.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+ 
+	<!--main_block-->
+	<div id="main_block">
+    	<div id="login_block">
+        	<img class="img_tlt" src="../img/app/ico_reg.png" />
+            <p class="txt_tlt">快速注册</p>
+            <input class="in" id="in_account" type="text" placeholder="请输入帐号" />
+            <input class="in" id="in_pwd"  type="password" placeholder="请输入密码" />
+            <input class="in" id="in_pwd2"  type="password" placeholder="密码确认" />
+            <span id="btn_login" class="btn_reg">注册</span>
+            
+            <span id="btn_reg" class="btn_login">返回登录</span>
+        </div>
+    </div>
+	<!--END main_block-->
+	
+	<!--menu_block-->
+    	
+	<!--END menu_block-->
+</div>
+</body>
+</html>

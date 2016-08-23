@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>人员搜索</title>
+
+</head>
+
+<style>
+*{
+	margin:0px auto;
+	padding:0px;
+	font-size:14px;
+}
+.title{
+	margin:10px 0px;
+	font:bold 18px "Adobe 黑体 Std R";
+	color:#069;
+	text-align:center;
+}
+#add{
+	width:500px;
+	height:auto;
+	background:#e3e3e3;
+	margin-top:50px;
+}
+table{
+	line-height:30px;
+	border-top:2px solid #fff;
+}
+.sub{
+	border-top:1px solid #aaa;
+	text-align:center;
+}
+</style>
+
+<body style="background:#e3e3e3">
+<div id="add">
+<p class="title">人&nbsp;员&nbsp;搜&nbsp;索</p>
+	<form action="../php/user/searchStu.php" method="post" >
+    	<table width="500px" border="0" >
+        	<tr>
+            	<td width="152" align="right">学号</td>
+            	<td width="338">
+                <input name="studentID" type="text" class="text" />
+                </td>
+            </tr>
+            <tr>
+            	<td align="right">姓名</td>
+            	<td>
+                <input name="userName" type="text" class="text" />
+                </td>
+            </tr>
+            <tr>
+            	<td colspan="2" class="sub">
+                	<input type="submit" value="提交" name="button" />
+                	<input type="reset" value="重置" name="reset" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

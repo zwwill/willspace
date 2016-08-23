@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>货代公司首页</title>
+<link rel="stylesheet" href="css/index.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script src="js/init.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=lNFGQXgi4nbQILzdcySYHQU8"></script>
+</head>
+
+<body>
+<div id="cover">
+  <div id="mask" onClick="hide_cover()"></div>
+  <div id="detail">
+    <div id="create_yundan">
+    <iframe id="ifm_add_yd" class="iframe_block" src="" scrolling="no"></iframe>
+    <a href="#" id="close_ifrm" class="close_ifrm"  onClick="hide_cover()"></a>
+    </div>
+  </div>
+  <div id="login_block">
+  	<iframe id="ifm_login" class="iframe_block" src="" scrolling="no"></iframe>
+    <a href="#" id="close_ifrm" class="close_ifrm"  onClick="hide_cover()"></a>
+  </div>
+  <div id="regist_block">
+  	<iframe id="ifm_regist" class="iframe_block" src="" scrolling="no"></iframe>
+    <a href="#" id="close_ifrm" class="close_ifrm"  onClick="hide_cover()"></a>
+  </div>
+</div>
+<div id="container">
+  <div id="nav">
+    <div class="nav_up">
+    <div class="img_con"><img src="pic/wuliu_logo.png"></div>
+      <div class="nav_left">
+        <div class="search">
+          <input type="text" name="search" class="inpt" />
+          <input type="button" value="搜索" class="btn_search" id="btn_search" onMouseOver="hello('btn_search')" onMouseOut="bye('btn_search')" />
+          <input type="button" value="车辆" class="btn_search2" id="carid" onMouseOver="hello('carid')" onMouseOut="bye('carid')"  />
+          <input type="button" value="订单" class="btn_search2" id="order" onMouseOver="hello('order')" onMouseOut="bye('order')"  />
+          </div>
+      </div>
+    <div id="login_info">
+    <span id="login_before">
+    	<a href="#" id="btn_login">登陆</a>
+    	<a href="#" id="btn_regist">注册</a>
+    </span>
+    <span id="login_after">
+    	<a href="#" id="btn_userinfo">当前登录用户：用户01</a>
+    	<a href="#" id="btn_logout">注销</a>
+    </span>
+    	
+    </div>
+    </div>
+  </div>
+  <div id="body_left">
+  	<div id="nav_block">
+    	<a href="#func_add" id="nav_f_add" class="nav_btn"></a>
+    	<a href="#func_b1" id="nav_f1" class="nav_btn"></a>
+    	<a href="#func_b2" id="nav_f2" class="nav_btn"></a>
+    	<a href="#func_b3" id="nav_f3" class="nav_btn"></a>
+    </div>
+  	<div id="func_block">
+    <span id="up_btn"><a href="#func_b"></a></span>
+    <div id="func_mask">
+    	<div id="func_container">
+        	<div id="func_b1" class="func_b">
+            	<iframe id="ifm_b1" class="ifm_fb" src="html/frm1.html" scrolling="yes"></iframe>
+            </div>
+        	<div id="func_b2" class="func_b">
+            	<iframe id="ifm_b1" class="ifm_fb" src="html/frm2.html" scrolling="yes"></iframe>
+            </div>
+        	<div id="func_b3" class="func_b">
+            	<iframe id="ifm_b1" class="ifm_fb" src="html/frm3.html" scrolling="yes"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <span id="down_btn"><a href="#func_b2"></a></span>
+    </div>
+    <span id="flex_btn"><img src="pic/row_right.png" /></span>
+  </div>
+  <div id="body_right">
+    <div id="allmap"></div>
+  </div>
+</div>
+</body>
+</html>
+<script src="js/map.js"></script>
+<script>
+////////
+
+  
+	
+</script>

@@ -1,0 +1,34 @@
+﻿<?php
+session_start();
+require_once(dirname(__file__).'/../../lib/function.php');
+
+$studentID = $_SESSION["studentID"];
+$userLevel = $_SESSION["userLevel"];
+
+$searchStudentID = $_POST["studentID"];
+$searchUserName = $_POST["userName"];
+	
+if($searchStudentID && !$searchUserName)
+{
+	$searchStudentID = $_POST["studentID"];
+	$searchUserName = null;
+	$datas = f_searchStu($searchStudentID,$searchUserName);
+}
+else if(!$searchStudentID && $searchUserName)
+{
+	$searchUserName = $_POST["userName"];
+	$searchStudentID = null;
+	$datas = f_searchStu($searchStudentID,$searchUserName);
+}
+else if($searchStudentID && $searchUserName)
+{
+	$searchStudentID = $_POST["studentID"];
+	$searchUserName = $_POST["userName"];
+	$datas = f_searchStu($searchStudentID,$searchUserName);
+}
+else if(!$searchStudentID && !$searchUserName)
+{
+	$datas = -1;
+}
+echo json_encode($datas);
+?>

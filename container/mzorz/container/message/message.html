@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Message</title>
+<link rel="stylesheet" type="text/css" href="message.css"/>
+<script type="text/javascript" src="../../js/jquery-1.11.js"></script>
+<script type="text/javascript" src="message.js"></script>
+<script>
+$(document).ready(function() {
+    $('a[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({
+                    scrollTop: targetOffset
+                },
+                1000);
+                return false;
+            }
+        }
+    });
+	
+});
+//滚动条滚动  
+	$(window).scroll(  
+		function(){  
+			goCenter();  
+		}  
+	);  
+	//拖动浏览器窗口  
+	$(window).resize(  
+		function(){  
+			goCenter();  
+		}  
+	);  
+
+function goCenter()  
+{  
+	var h = $(window).height();  
+	var w = $(window).width();  
+	var st = $(window).scrollTop();  
+	var sl = $(window).scrollLeft();  
+  
+	$("#float_bar").css("top", (0)+st);  
+	$("#float_bar").css("left",(w-33)+sl);  
+}  
+</script>
+</head>
+
+<body>
+<div id="con" >
+		<!--<div id="float_bar"> <a href="#txt_mess">留言</a> <a href="#con" class="css_a_top"></a> </div>-->
+		<div id="mess_con"> 
+				<!--留言-->
+				<div id="leave_a_mess">
+						<form method="post">
+								<input type="text" border="0"  name="u_name" id="u_name" class="input_tlt" placeholder="姓名" />
+								<input type="text" border="0"  name="u_contact" id="u_contact" class="input_tlt" placeholder="联系方式" value="" />
+								<label for="txt_mess"></label>
+								<textarea name="txt_mess" id="txt_mess"  class="input_txt" placeholder="留言区" ></textarea>
+								<a id="sub">
+								<div class="input_btn_sub">留 言</div>
+								</a>
+						</form>
+				</div>
+		</div>
+</div>
+</body>
+</html>

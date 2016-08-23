@@ -1,0 +1,153 @@
+/* CSS Document */
+
+
+#main{
+	width:980px;
+	height:auto;
+	margin-top:40px;
+}
+
+#main #recom_clock{
+	margin-top:15px;
+	float:left;
+	width:100%;
+	height:auto;
+	padding:10px;
+	border:solid 1px #060;
+	border-radius:10px;
+	background:#eee;
+	box-shadow:#888 0px 2px 4px;
+}
+#main #recom_clock #recom_info1{
+	margin:10px 0 10px 80px;
+	float:left;
+	height:40px;
+	width:350px;
+	background:#fff;
+	border-radius:10px;
+	box-shadow:#999 1px 2px 2px;
+	font:bold 17px "黑体";
+	color:#090;
+	text-align:center;
+	line-height:40px;
+	text-shadow:#000 1px 1px 1px;
+}
+
+#main #recom_clock #recom_info2{
+	margin:10px 80px 10px 0px;
+	float:right;
+	height:40px;
+	width:350px;
+	background:#fff;
+	border-radius:10px;
+	box-shadow:#999 1px 2px 2px;
+	font: bold 17px "黑体";
+	color:#090;
+	text-align:center;
+	line-height:40px;
+	text-shadow:#000 1px 1px 1px;
+}
+#main #recom_clock #recom_list1{
+	height:auto;
+	float:left;
+	width:470px;
+	margin:10px 5px 0 15px;
+}
+#main #recom_clock #recom_list2{
+	height:auto;
+	float:right;
+	width:470px;
+	margin:10px 15px 0 5px;
+}
+#main #recom_clock .book{
+	height:200px;
+	float:left;
+	width:100%;
+	margin:0 10px 10px 0;
+	background:#FFF;
+	box-shadow:#666 1px 1px 2px;
+	border-radius:5px;
+}
+#main #recom_clock .book .book_pic{
+	height:160px;
+	width:120px;
+	margin:20px 20px 20px 10px;
+	float:left;
+}
+#main #recom_clock .book .book_pic img{
+	height:160px;
+	width:120px;
+}
+#main #recom_clock .book .book_name{
+	height:30px;
+	width:300px;
+	margin:20px 0 0 0;
+	float:left;
+	background:#fff;
+	overflow:hidden;
+	font:normal 13px "宋体";
+	line-height:30px;
+	color:#070;
+}
+#main #recom_clock .book .book_info{
+	height:80px;
+	width:300px;
+	float:left;
+	word-break:break-strict;
+	overflow:hidden;
+	font:normal 13px "宋体";
+	color:#000;
+}
+#main #recom_clock .book .store_block{
+	height:50px;
+	width:300px;
+	float:left;
+	border-top:dashed 1px #009900;
+}
+#main #recom_clock .book .store_block .tlt{
+	float:left;
+	height:50px;
+	width:70px;
+	font: bold 14px "黑体";
+	color:#090;
+	line-height:40px;
+}
+#main #recom_clock .book .store_block .store{
+	float:left;
+	height:30px;
+	width:80px;
+	margin:10px 5px 5px 5px;
+	background:#070;
+	border-radius:5px;
+	font: normal 14px "黑体";
+	color:#fff;
+	text-align:center;
+	line-height:30px;
+	
+}
+#main #recom_clock .book .store_block .store:hover{
+	cursor:pointer;
+	border-radius:5px 5px 0 0;
+}
+#main #recom_clock .book .store_block .store .store_info{
+	cursor:auto;
+	display:none;
+	background:#070;
+	height:120px;
+	width:200px;
+	position:relative;
+	float:left;
+	text-align:left;
+	line-height:30px;
+	padding-top:10px;
+	border-radius:0 5px 5px 5px;
+}
+
+
+
+
+
+
+
+
+

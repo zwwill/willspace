@@ -1,0 +1,124 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding:0;
+}
+#container{
+	width:1150px;
+}
+.yd_form{
+	float:left;
+	width:550px;
+	height:580px;
+	background:#eee;
+}
+#launch_list{
+	width:539px;
+}
+.left_words{
+	display:block;
+	text-align:right;
+	font-size:15px;
+}
+.detail_des{
+	resize: none;
+	width:100%;
+}
+.simple_des{
+	height:20px;
+}
+.btn_submit{
+	display:block;
+	width:50%;
+	height:30px;
+	float:left;
+	font:normal 16px "微软雅黑";
+	line-height:30px;
+	text-align:center;
+	text-decoration:none;
+	color:#06C;
+	border:solid 1px RGB(167,192,224);
+	border-radius:3px;
+	margin-left:25%;
+}
+.btn_submit:hover{
+	background:RGB(167,192,224);
+	color:#FFF;
+}
+
+#province{
+	width:41%;
+	height:25px;
+}
+#city{
+	width:41%;
+	height:25px;
+}
+
+#allmap{
+	display:none;
+	float:left;
+	height:580px;
+	width:600px;
+	background:#ccc;
+}
+#map_mask{
+	display:none;
+	position:relative;
+	height:580px;
+	width:600px;
+	left:550px;
+	background:#000;
+	opacity:0.5;
+	z-index:100;
+}
+#mess_block{
+	display:none;
+	position:relative;
+	height:180px;
+	width:260px;
+	left:720px;
+	top:-350px;
+	z-index:101;
+	background:#FFF;
+}
+#mess_block .mess_info{
+	width:100%;
+	height:140px;
+	background:#eee;
+}
+#mess_block .mess_info .info_title{
+	width:auto;
+	height:auto;
+	margin:5px 0 5px 5%;
+	float:left;
+	font:normal 15px "微软雅黑";
+}
+#mess_block .mess_info .info_show{
+	width:90%;
+	height:60px;
+	padding:20px 0;
+	margin-left:5%;
+	float:left;
+	border:solid 1px RGB(167,192,224);
+	font:normal 15px "宋体";
+	border-radius:3px;
+	line-height:30px;
+	text-align:center;
+}
+#mess_block a{
+	display:block;
+	width:50%;
+	height:40px;
+	float:left;
+	font:normal 16px "微软雅黑";
+	line-height:40px;
+	text-align:center;
+	text-decoration:none;
+	color:#06C;
+	background:#ddd;
+}
+#mess_block a:hover{
+	background:RGB(167,192,224);
+	color:#FFF;
+}

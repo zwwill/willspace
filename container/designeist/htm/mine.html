@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>设计学人</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />-->
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="../css/com.css">
+<link rel="stylesheet" type="text/css" href="../css/mine.css">
+<!--JS文件-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/com.js"></script>
+<script src="../js/mine.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+ 
+	<!--main_block-->
+	<div id="main_block">
+    	<!--头像区域 top_head-->
+    	<div id="top_head">
+       		<a href="#" class="btn_pic">
+                <span class="info_block" style="background-image:url(../img/app/bac_mine.jpg);">
+                    <img src="../img/designeist.png" class="pic_head" />
+                    <p class="txt_nickname">设计学人开发者</p>
+                </span>
+                
+        	</a>
+        	<div class="btn_collect">
+            	<a href="#">设计收藏</a>
+                <a href="#" class="c_middle">关注设计师</a>
+                <a href="#">主题收藏</a>
+            </div>
+        </div>
+    	<!--END 头像区域 top_head-->
+        
+        <!--订单 order_block-->
+        <div id="order_block">
+        	<div id="tlt_btn_block">
+              <a href="myorders.html?id=quanbu" class="btn_in">
+            	<span class="left_tlt">
+                	<img src="../img/app/ico_order.png" class="ico" />
+                    <p class="txt_tlt">我的订单</p>
+                </span>
+            	<span class="right_btn">
+                	<img src="../img/app/ico_row_b.png" class="btn_ico_right" />
+                    <p class="txt">查看全部</p>
+                </span>
+              </a>
+            </div>
+            <div id="nav_block">
+            	<span class="single_nav"><a href="myorders.html?id=fukuan">
+                	<img src="../img/app/ico_fukuan.png" class="nav_ico" />
+                    <p class="txt_nav">待付款</p>
+                    <span class="rmd_num"></span>
+                </a></span>
+            	<span class="single_nav"><a href="myorders.html?id=fahuo">
+                	<img src="../img/app/ico_fahuo.png" class="nav_ico" />
+                    <p class="txt_nav">待发货</p>
+                    <span class="rmd_num">1</span>
+                </a></span>
+            	<span class="single_nav"><a href="myorders.html?id=shouhuo">
+                	<img src="../img/app/ico_shouhuo.png" class="nav_ico" />
+                    <p class="txt_nav">待收货</p>
+                    <span class="rmd_num"></span>
+                </a></span>
+            	<span class="single_nav"><a href="myorders.html?id=pingjia">
+                	<img src="../img/app/ico_pingjia.png" class="nav_ico" />
+                    <p class="txt_nav">待评价</p>
+                    <span class="rmd_num">2</span>
+                </a></span>
+            </div>
+            
+        </div>
+        <!--END 订单 order_block-->
+        
+        <!--安全与帮助-->
+        <a href="shoppingcart.html" id="shoppingcart_block">
+        	<div id="tlt_btn_block_r">
+            	<span class="right_tlt">
+                    <p class="txt_tlt">购物车</p>
+                </span>
+            </div>
+        </a>
+         <a href="#" id="addr_block">
+        	<div id="tlt_btn_block">
+            	<span class="left_tlt">
+                    <p class="txt_tlt">地址管理</p>
+                </span>
+            </div>
+        </a>
+        <a href="mystore.html" id="designer_block">
+        	<div id="tlt_btn_block_r">
+            	<span class="right_tlt">
+                    <p class="txt_tlt">我是设计师</p>
+                </span>
+            </div>
+        </a>
+        <a href="#"  id="safe_block">
+        	<div id="tlt_btn_block">
+            	<span class="left_tlt">
+                    <p class="txt_tlt">账户安全</p>
+                </span>
+            </div>
+        </a>
+        <a href="#"  id="help_block">
+        	<div id="tlt_btn_block_r">
+            	<span class="right_tlt">
+                    <p class="txt_tlt">帮助与反馈</p>
+                </span>
+            </div>
+        </a>
+        <a href="../en/htm/mine.html"  id="language_block">
+        	<div id="tlt_btn_block">
+            	<span class="left_tlt">
+                    <p class="txt_tlt">ENGLISH</p>
+                </span>
+            </div>
+        </a>
+        <!--END 安全与帮助-->
+    </div>
+	<!--END main_block-->
+	
+	<!--menu_block-->
+    <span class="menu_padding_block"></span>
+    <div id="menu_block">
+      <a href="../index.html" class="a_del_back"><div class="single_menu">
+        	<img src="../img/app/ico_cycle.png" class="menu_pic" />
+            <p class="menu_p menu_p">首页</p>
+      </div></a>
+      
+      <a href="designer.html" class="a_del_back"><div class="single_menu">
+        	<img src="../img/app/ico_d.png" class="menu_pic" />
+            <p class="menu_p">设计师</p>
+      </div></a>
+      
+      <a href="find.html" class="a_del_back"><div class="single_menu">
+        	<img src="../img/app/ico_find.png" class="menu_pic" />
+            <p class="menu_p">发现</p>
+      </div></a>
+      
+      <div class="single_menu menu_on">
+        	<img src="../img/app/ico_mine.png" class="menu_pic" />
+            <p class="menu_p">我</p>
+      </div>
+      
+    </div>
+	<!--END menu_block-->
+</div>
+</body>
+</html>

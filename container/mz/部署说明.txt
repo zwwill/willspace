@@ -1,0 +1,1 @@
+对于lib/function.php和php/admin/del_data.php两个文件中的文件路径一定要根据服务器默认编码方式进行配置然后才能部署，否则数据传输会出错！

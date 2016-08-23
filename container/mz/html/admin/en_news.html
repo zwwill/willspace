@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>发布新闻</title>
+</head>
+
+<body>
+<h1>发布新闻</h1>
+<div id="form">
+		<form method="post" action="../../php/admin/en_news.php" enctype="multipart/form-data">
+				<table>
+						<tr>
+								<td>nt</td>
+								<td><input type="text" placeholder="新闻标题" name="news_title" /></td>
+						</tr>
+						<tr>
+								<td>pic</td>
+								<td><input type="file" placeholder="新闻图片" name="news_picurl" /></td>
+						</tr>
+						<tr>
+								<td>nc</td>
+								<td><textarea rows="10" cols="50" placeholder="新闻内容" name="news_content">
+</textarea></td>
+						</tr>
+						
+						<tr>
+								<td></td>
+								<td><button type="submit" >提交</button></td>
+						</tr>
+				</table>
+		</form>
+</div>
+</body>
+</html>

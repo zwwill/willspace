@@ -1,0 +1,36 @@
+/* CSS Document */
+
+#main_block #preview_block{width:100%; padding-bottom:15px; background-color:#aaa;overflow:hidden;}
+#main_block #preview_block .single_pic{width:80px;height:80px;overflow:hidden; background:#fff;float:left;margin:15px 0 0 15px; font-size:50px; color:#aaa; font-weight:300;line-height:80px; text-align:center; background:#eee;}
+#main_block #preview_block .hidden_input{ position:relative; height:80px; width:80px; float:left;margin:15px 0 0 -80px; background:#eee; opacity:0; cursor:pointer;}
+#main_block #preview_block .btn_del{ display:none; position:relative; height:30px; width:25px; background:#F00; float:left;margin:15px 0 0 -28px; font-size:20px; color:#fff; text-align:right; padding-right:3px; line-height:25px; border-radius:0 0 0 30px; opacity:0.7;}
+#main_block #preview_block .pic_info{ position:relative; height:25px; width:80px; float:left;margin:70px 0 0 -80px; background:#000; color:#fff; font-size:14px; line-height:25px; text-align:center; opacity:0.5;}
+#main_block #preview_block .tips_info{ float:left;width: 74%; margin:10px 0 0 20px; color:#fff; font-size:14px;}
+#main_block #preview_block .tips_info span{font:bold 14px "微软雅黑";color:#0F3;}
+#main_block #goods_name_block{ float:left; background:#fafafa; width:90%; margin:20px 0 0 5%;}
+#main_block #goods_name_block .tlt{ float:left; width:95%; padding-left:5%; height:30px; font-size:14px; line-height:30px; font-weight:bold; border-bottom:solid 1px #CCCCCC;}
+#main_block #goods_name_block .txt_name{ float:left; width:90%; margin:5px 0 5px 5%;line-height:20px; background:#fafafa;resize: none;overflow-y:visible; height:20px; border:0;}
+
+#main_block #goods_isnew_block{ float:left; background:#fafafa; width:90%; margin:10px 0 0 5%;}
+#main_block #goods_isnew_block .tlt{ float:left; width:25%; padding-left:5%; height:40px; font-size:14px; line-height:40px; font-weight:bold; }
+#main_block #goods_isnew_block .btn_checkbox{float:right; width:65%; padding-right:5%; height:40px; }
+
+.btn_checkbox .onoff label::after{content:'CP'; color:#666;}
+.btn_checkbox .onoff .b::before{content:'FP'; color:#fff;}
+
+
+#main_block #goods_info_block{ float:left; background:#fafafa; width:90%; margin:10px 0 0 5%;}
+#main_block #goods_info_block .tlt{ float:left; width:95%; padding-left:5%; height:30px; font-size:14px; line-height:30px; font-weight:bold; border-bottom:solid 1px #CCCCCC;}
+#main_block #goods_info_block .txt_info{ float:left; width:90%; margin:5px 0 5px 5%;line-height:20px; background:#fafafa;resize: none;overflow-y:visible; height:60px; border:0;}
+
+#main_block #other_info_block{ float:left; background:#fafafa; width:90%; margin:10px 0 0 5%;}
+#main_block #other_info_block .single_i{ float:left; width:100%; height:40px; line-height:40px; border-bottom:solid 1px #CCCCCC; }
+#main_block #other_info_block .tlt{float:left;width:25%;height:40px; font-size:14px; line-height:40px; font-weight:bold; text-align:right; padding-right:10px;}
+#main_block #other_info_block .single_i .in_txt{float:left; width:20%; height:40px; line-height:40px; text-align:center; border:0; font-size:20px; background:#fcfcfc; font-family:Verdana, Geneva, sans-serif;}
+#main_block #other_info_block .single_i input[name=price]{color:#F00;}
+#main_block #other_info_block .single_i input[name=nums]{color:#00F;}
+#main_block #other_info_block .single_i input[type=range]{ float:left; width:50%; margin-left:1%; height:40px;}
+
+#sub_block{ position:fixed;width:100%; bottom:0; background-color:#ccc;overflow:hidden; padding-top:10px; border-top:solid 1px #bbb; text-align:center;}
+#sub_block #btn_sub{ display:block; width:80%; height:40px; font:bold 20px Verdana, Geneva, sans-serif; color:#fff; background:#F00; text-align:center; line-height:40px; margin-bottom:10px; border-radius:3px;}
+

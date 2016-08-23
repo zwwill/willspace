@@ -1,0 +1,53 @@
+/* CSS Document */
+#main_block .top_btn_block{float:left; height:auto; width:100%; overflow:hidden; z-index:9999; text-align:center; background:#000; font:bold 18px/45px "微软雅黑"; color:#fff;}
+#main_block .top_btn_block #btn_back{ float:left; height:35px; width:40px;  margin:5px 0 5px 10px; }
+#main_block .top_btn_block img{ width:25px; height:25px; margin:5px;}
+
+#main_block .info_buyer{float:left;width:97%; padding:20px 3% 10px 0; background:#fafafa; border-bottom:solid 1px #CCC;}
+.info_buyer .addr_ico{float:left; height:60px; width:60px; margin-top:0px; background:url(../img/app/ico_addr.png) no-repeat; opacity:0.5;}
+#main_block .info_buyer .name{float:left;font-size:16px;}
+#main_block .info_buyer .phonenum{float:right;font-size:16px; padding-right:5%; }
+#main_block .info_buyer .addr_line{float:left; width:79%; margin-top:5px;}
+#main_block .info_buyer .addr_line p{float:left;font-size:16px;color:#666; }
+#main_block .info_buyer .addr{ float:left; width:85%;font-size:14px; word-break:break-all; color:#000;}
+#main_block .info_buyer .btn_edit{float:right; height:30px;width:13%; margin-top:-10px; background:url(../img/app/ico_row_b.png) no-repeat; background-position:center; background-size:contain;}
+
+#main_block .order_block{float:left;width:100%; margin-top:10px;}
+#main_block .order_block .group_block{ float:left; width:100%; background:#fafafa;border-top:solid 1px #CCC;border-bottom:solid 1px #CCC;}
+#main_block .order_block .group_block .top_b{ float:left; width:100%; height:40px; border-bottom:solid 1px #CCCCCC; display:block; line-height:40px;}
+#main_block .order_block .group_block .top_b .btn_store_in{ float:left; width:93%; height:40px; line-height:40px; margin-left:10px; }
+#main_block .order_block .group_block .top_b .btn_store_in .txt_tlt{ float:left; max-width:93%; overflow:hidden; font-size:14px;}
+#main_block .order_block .group_block .top_b .btn_store_in .img_in{ float:left; height:18px; margin-top:11px;}
+#main_block .order_block .group_block .single_goods{ float:left; width:90%; height:81px;  margin:0 5%;  display:block; overflow:hidden;}
+#main_block .order_block .group_block .single_goods .btn_block_in{float:right; width:100%; margin:5px 0 0 5px; height:70px; overflow:hidden;border-bottom:solid 1px #CCCCCC; padding-bottom:5px; }
+.order_block .group_block .single_goods .block_left{ float:left; width:70px; }
+.order_block .group_block .single_goods .img_goods{width:70px;}
+.order_block .group_block .single_goods .block_middle{ float:left;height:70px; width:47%; overflow:hidden;}
+.order_block .group_block .single_goods .block_middle .txt_tlt{ display:block; width:90%; margin-left:5%; word-break:break-all; overflow:hidden; font-size:12px; height:35px; line-height:18px;}
+.order_block .group_block .single_goods .block_middle .txt_info{ display:block; width:90%; margin-left:5%; word-break:break-all; overflow:hidden; font-size:10px; height:30px; line-height:15px; color:#666;}
+.order_block .group_block .single_goods .block_right{ float:right;height:70px; width:24%; overflow:hidden; text-align:right;}
+.order_block .group_block .single_goods .block_right p{display:block; width:100%; white-space:nowrap; overflow:hidden; word-wrap:break-word;text-overflow: ellipsis; line-height:20px; }
+.order_block .group_block .single_goods .block_right .txt_xianjia{ color:#000; font-weight:bold;}
+.order_block .group_block .single_goods .block_right .txt_yuanjia{ text-decoration:line-through; color:#999;}
+.order_block .group_block .single_goods .block_right .txt_yuanjia .nums{color:#999;}
+.order_block .group_block .single_goods .block_right .txt_nums{ color:#000; font-weight:bold;}
+.order_block .group_block .edit{ float:left; width:90%; margin:0 5%; padding:5px 0;border-bottom:solid 1px #CCC; overflow:hidden;}
+.order_block .group_block .edit .tlt{float:left; height:40px; font-size:16px; line-height:40px;}
+.order_block .group_block .edit .right{ float:right;height:30px; margin-top:7px; text-align:center;  width:100px; overflow:hidden;}
+.order_block .group_block .edit .right .edit_minus{ float:left;height:25px; width:25px; background-color:#eee; font-size:40px; text-align:center; line-height:18px;color:#666;}
+.order_block .group_block .edit .right .edit_nums{ border-left:0; border-right:0; float:left;height:25px; width:50px; border:none; background:#fafafa; color:#000; font-size:20px; text-align:center; line-height:25px;}
+.order_block .group_block .edit .right .edit_plus{ float:left;height:25px; width:25px; background-color:#eee; font-size:25px; font-weight:bold; text-align:center;color:#666; line-height:23px;}
+.order_block .group_block .txt_liulan{float:left; width:90%; margin:15px 0 25px 5%;line-height:20px; background:#fafafa;resize: none;overflow-y:visible; height:60px; border:0; border-bottom:solid 1px #ccc;}
+
+.order_block .info_seller{ float:left; width:90%; padding:5px 5% 15px; overflow:hidden; }
+.order_block .info_seller .seller{ float:left; width:100%; font-size:14px; line-height:20px; padding:5px 0; max-height:40px; overflow:hidden; word-break:break-all;}
+.order_block .info_seller .phonenum{ float:left;  height:30px;  width:47%; text-align:center; margin:5px 0 0 0%; font-size:16px; color:#06C; border:solid 1px #06C; line-height:30px; overflow:hidden;}
+.order_block .info_seller .btn_shownum{ float:left; clear:left;  height:30px;  width:47%; text-align:center; background:#06C;  margin:-32px 0 0 0%;border:solid 1px #06C; font-size:16px; opacity:; color:#fff;  line-height:30px; overflow:hidden;}
+.order_block .info_seller .btn_sixin{ float:left;height:30px;  width:47%; text-align:center; background:#090; margin:5px 0 0 4%; border:solid 1px #090;font-size:16px; color:#fff;  line-height:30px; overflow:hidden;}
+
+#sub_block{ position:fixed;width:100%; bottom:0; background-color:#eee;overflow:hidden;text-align:center;}
+#sub_block .btn_2{ float:right; width:30%; height:40px;color:#fff; text-align:center; line-height:40px;overflow:hidden; font-size:16px;}
+#sub_block #btn_buynow{ background:#F00;}
+#sub_block .total_price{ float:right; height:40px; font-size:16px; line-height:40px; margin-right:20px;}
+#sub_block .total_price span{ font-size:18px; font-weight:bold; color:#f00;}
+

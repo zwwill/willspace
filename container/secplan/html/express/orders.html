@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>快递订单</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="../../css/com.css">
+<link rel="stylesheet" type="text/css" href="../../css/express/orders.css">
+<!--JS文件-->
+<script src="../../js/jquery-1.11.2.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../../js/com.js"></script>
+<script src="../../js/express/orders.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+ 
+	<!--main_block-->
+	<div id="main_block">
+      	<div class="top_nav">
+        	<span class="btn" id="all">全部</span>
+       	 	<span class="btn" id="shouli">待受理</span>
+        	<span class="btn" id="qujian">待取件</span>
+        	<span class="btn" id="paisong">待派送</span>
+        	<span class="btn" id="wancheng">已完成</span>
+      	</div>
+      <!-- order_all 全部-->
+    	<div class="order_block" id="order_all">
+        	<div class="single_o">
+                <a href="order_edit.html">
+                    <span class="order_tlt">服务方尚未受理</span>
+                    <span class="order_state">待受理</span>
+                    <div class="order_info">
+                        <img src="../../img/app/expr/zto.png" class="img_expr" />
+                        <span class="expr_name">服务方：拯旧快递</span>
+                        <span class="level">一般快件</span>
+                        <span class="price">服务费：￥2.0</span>
+                    </div>
+                    <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+                </a>
+                <div class="btns">
+                	<span class="time">03/15</span>
+                	<span class="btn">提醒处理</span>
+                	<span class="btn">终止合约</span>
+                </div>
+            </div>
+            
+        	<div class="single_o">
+                <a href="order_edit.html">
+                    <span class="order_tlt">服务方尚未受理</span>
+                    <span class="order_state">待受理</span>
+                    <div class="order_info">
+                        <img src="../../img/app/expr/yto.png" class="img_expr" />
+                        <span class="expr_name">服务方：拯旧快递</span>
+                        <span class="level">加急快件</span>
+                        <span class="price">服务费：￥12.0</span>
+                    </div>
+                    <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+                </a>
+                <div class="btns">
+                	<span class="time">03/15</span>
+                	<span class="btn">提醒处理</span>
+                	<span class="btn">终止合约</span>
+                </div>
+            </div>
+            
+            <div class="single_o">
+                <a href="order_edit.html">
+                    <span class="order_tlt">服务方尚未受理</span>
+                    <span class="order_state">待取件</span>
+                    <div class="order_info">
+                        <img src="../../img/app/expr/sto.png" class="img_expr" />
+                        <span class="expr_name">服务方：拯旧快递</span>
+                        <span class="level">一般快件</span>
+                        <span class="price">服务费：￥2.0</span>
+                    </div>
+                    <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+                </a>
+                <div class="btns">
+                	<span class="time">03/15</span>
+                	<span class="btn">提醒处理</span>
+                	<span class="btn">终止合约</span>
+                </div>
+            </div>
+            
+        </div>
+      <!-- END order_all 全部-->
+      
+      <!-- order_shouli 待受理-->
+    	<div class="order_block" id="order_shouli">
+        	<div class="single_o">
+                <a href="order_edit.html">
+                    <span class="order_tlt">服务方尚未受理</span>
+                    <span class="order_state">待受理</span>
+                    <div class="order_info">
+                        <img src="../../img/app/expr/zto.png" class="img_expr" />
+                        <span class="expr_name">服务方：拯旧快递</span>
+                        <span class="level">一般快件</span>
+                        <span class="price">服务费：￥2.0</span>
+                    </div>
+                    <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+                </a>
+                <div class="btns">
+                	<span class="time">03/15</span>
+                	<span class="btn">提醒处理</span>
+                	<span class="btn">终止合约</span>
+                </div>
+            </div>
+            
+        	<div class="single_o">
+                <a href="order_edit.html">
+                    <span class="order_tlt">服务方尚未受理</span>
+                    <span class="order_state">待受理</span>
+                    <div class="order_info">
+                        <img src="../../img/app/expr/yto.png" class="img_expr" />
+                        <span class="expr_name">服务方：拯旧快递</span>
+                        <span class="level">加急快件</span>
+                        <span class="price">服务费：￥12.0</span>
+                    </div>
+                    <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+                </a>
+                <div class="btns">
+                	<span class="time">03/14</span>
+                	<span class="btn">提醒处理</span>
+                	<span class="btn">终止合约</span>
+                </div>
+            </div>
+            
+            
+        </div>
+      <!-- END order_shouli 待受理-->
+        
+        <!-- order_qujian 待取件-->
+    	<div class="order_block" id="order_qujian">
+        	<div class="single_o">
+                <a href="order_edit.html">
+                    <span class="order_tlt">服务方尚未受理</span>
+                    <span class="order_state">待取件</span>
+                    <div class="order_info">
+                        <img src="../../img/app/expr/sto.png" class="img_expr" />
+                        <span class="expr_name">服务方：拯旧快递</span>
+                        <span class="level">一般快件</span>
+                        <span class="price">服务费：￥2.0</span>
+                    </div>
+                    <span class="btn_edit"><img src="../../img/app/ico_row_b.png" /></span>
+                </a>
+                <div class="btns">
+                	<span class="time">03/15</span>
+                	<span class="btn">提醒处理</span>
+                	<span class="btn">终止合约</span>
+                </div>
+            </div>
+           
+            
+        </div>
+      <!-- END order_qujian 待取件-->
+        
+        <!-- order_fahuo 待派送-->
+    	<div class="order_block" id="order_paisong">
+        	<div class="single_o">
+            	待派送
+            </div>
+            
+            
+        </div>
+      <!-- END order_fahuo 待派送-->
+      
+        <!-- order_wancheng 已完成-->
+    	<div class="order_block" id="order_wancheng">
+        	<div class="single_o">
+            	已完成
+            </div>
+            
+            
+        </div>
+      <!-- END order_wancheng 已完成-->
+       
+        
+      
+    </div>
+	<!--END main_block-->
+	
+	<!--sub_block-->
+	<!--END sub_block-->
+</div>
+</body>
+</html>

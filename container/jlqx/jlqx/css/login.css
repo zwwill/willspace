@@ -1,0 +1,50 @@
+/* CSS Document */
+
+*{
+	margin:0px auto;
+	padding:0px;
+	font-size:12px;
+	
+}
+#background{
+	width:1000px;
+	height:600px;
+	background:url(../images/loginback.png) 40px no-repeat;
+	z-index:-1000;
+}
+#login{
+	margin:180px 0px 0px 620px;
+	width:400px;
+	height:300px;
+}
+#login td{
+	font-size:15px;
+	height: 40px;
+	font-family: "Adobe 黑体 Std R";
+	color:#666;
+}
+.txtInput{
+	height:25px;
+	width:180px;
+	border:2px solid #ccc ;
+}
+#login .submit_login{
+		background:url(../images/dl.png) no-repeat;
+		width:70px;
+		height:28px;
+		border:0px;
+		margin-top:10px;
+}
+#login .submit_login:hover{
+	background: url(../images/dl_on.png) no-repeat;
+}
+#login .submit_back{
+		background:url(../images/fh.png) no-repeat;
+		width:70px;
+		height:28px;
+		border:0px;
+		margin-top:10px;
+}
+#login .submit_back:hover{
+		background:url(../images/fh_on.png) no-repeat;
+}

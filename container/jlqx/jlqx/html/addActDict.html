@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新增活动项目</title>
+</head>
+
+<style>
+*{
+	margin:0px auto;
+	padding:0px;
+	font-size:14px;
+}
+.title{
+	margin:10px 0px;
+	font:bold 18px "Adobe 黑体 Std R";
+	color:#069;
+	text-align:center;
+}
+#add{
+	width:500px;
+	height:auto;
+	background:#e3e3e3;
+	margin-top:50px;
+}
+table{
+	line-height:30px;
+	border-top:2px solid #fff;
+}
+.sub{
+	border-top:1px solid #aaa;
+	text-align:center;
+}
+
+
+</style>
+
+<body style="background:#e3e3e3">
+<div id="add">
+<p class="title">新&nbsp;增&nbsp;活&nbsp;动&nbsp;队</p>
+	<form action="../php/admin/addActDict.php" method="post" >
+    	<table width="500px" border="0" >
+        	<tr>
+            	<td width="152" align="right">活动队名称</td>
+            	<td width="338">
+                <input name="actName" type="text" class="text" />
+                </td>
+            </tr>
+			<tr>
+            	<td align="right">活动时间</td>
+            	<td>
+				<script language="javascript" type="text/javascript" src="../../js/DatePicker/WdatePicker.js"></script>
+				<input class="Wdate" type="time" onfocus="WdatePicker({skin:'whyGreen',dateFmt:'H:mm:ss'})" name="actTime" />
+                
+                </td>
+            </tr> 
+			<tr>
+            	<td align="right">活动时长</td>
+            	<td>
+				<label for="select"></label>
+            	  <select name="actHour" >
+                  <option value="1" selected="selected">1</option>
+                  <option value="2" >2</option>
+                  <option value="3" >3</option>
+				  <option value="4" >4</option>
+				  <option value="5" >5</option>
+				  <option value="6" >6</option>
+          	    </select>
+                </td>
+            </tr> 
+            <tr>
+            	<td align="right">活动队简介</td>
+            	<td>
+           	    <textarea name="actIntro" cols ="30" rows = "8"></textarea>
+				</td>
+            </tr>        	
+            <tr>
+            	<td colspan="2" class="sub">
+                	<input type="submit" value="提交" name="button" />
+                	<input type="reset" value="重置" name="reset" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

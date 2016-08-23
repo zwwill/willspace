@@ -1,0 +1,30 @@
+/* CSS Document */
+
+#order_num{ float:left;width:95%; padding:20px 0 20px 5%; background:#666;font-weight:bold; line-height:30px; font-size:20px; color:#CCC; word-break:break-all;}
+#order_num .num{ font-size:24px;  color:#fff;}
+
+.block_tlt{ float:left; width:95%; padding-left:5%; height:25px; font-size:14px; font-weight:bold; line-height:25px;margin-left:-9px;}
+
+#goods_info{ float:left; width:90%; margin:10px 5%; padding-bottom:5px; background:#eee; border-radius:0 5px 5px;}
+#goods_info .line{ float:left; width:90%; margin: 0 5%; border-bottom:dashed 1px #fff;}
+#goods_info .block_tlt{ border-left: solid 6px #09F;  color:#09F;}
+#goods_info .line .name{ float:left; width:60px; font-size:14px; height:40px; line-height:40px; font-weight:bold; text-align:center;}
+#goods_info .line .val{ float:left; width:75%;min-height:40px; font-size:14px; line-height:40px;color:#000; text-align:right;}
+#goods_info .line .val input[name=price_postage]{ border:0; background:none; font-size:16px;font-weight:bold; line-height:40px; width:50%; color:#999;}
+#goods_info .line .val input[name=price_all]{ border:0; background:none; font-size:16px; font-weight:bold; line-height:40px; width:90%; color:#0C0;}
+#goods_info .line .val #btn_postage_onoff{ float:right; width:40%;}
+#goods_info .line .val #btn_postage_onoff .onoff label::after{top: -33px;}
+#goods_info .line .val #btn_postage_onoff .onoff .b::before{content:'包邮'; color:#fff;}
+#goods_info .line .val #btn_postage_onoff .onoff label::after{content:'自费'; color:#666;}
+#goods_info .tips{ float:left; width:90%; margin-left:5%;font-size:14px; line-height:20px; color:#F90;}
+
+
+#buyer_info{ float:left; width:90%; margin:10px 5%; padding-bottom:5px; background:#eee; border-radius:0 5px 5px;}
+#buyer_info .line{ float:left; width:90%; margin: 0 5%; border-bottom:dashed 1px #fff;}
+#buyer_info .block_tlt{ border-left: solid 6px #93C; color:#93C;}
+#buyer_info .line .name{ float:left; width:60px; font-size:14px; height:40px; line-height:40px; font-weight:bold; text-align:center;}
+#buyer_info .line .val{ float:left; width:75%;min-height:40px; text-align:right;font-size:14px; line-height:40px; word-break:break-strict; color:#000;}
+
+.bottom_btn{ float:left; width:90%; margin:0 5% 15px; height:40px; font-weight:bold; color:#fff; font-size:20px; line-height:40px; text-align:center; border-radius:3px;}
+.bottom_btn[id=btn_sub]{background:#FC6;}
+.bottom_btn[id=btn_cancel]{background:#999;}

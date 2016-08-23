@@ -1,0 +1,34 @@
+/* CSS Document */
+
+/*top_blcok*/
+#top_blcok{ float:left; width:100%; height:110px; background:#Fafafa;}
+#top_blcok .pic{ float:left; width:75px; height:75px; margin:15px 10px 0 15px ; outline:solid 2px #eee; outline-offset:2px;}
+#top_blcok .store_name{ float:left; height:35px; width:55%; margin:15px 0 0 0; font-size:14px; line-height:35px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+#top_blcok .btn_checkbox{float:left; width:50%; text-align:left; height:40px; }
+#top_blcok .btn_checkbox .checkbox{ float:left;}
+#top_blcok .btn_checkbox .onoff .b::before{content:'营业'; color:#fff;}
+#top_blcok .btn_checkbox .onoff label::after{content:'打烊'; color:#666;}
+#top_blcok .btn_edit{float:right; width:10%; text-align:left; height:75px; margin:-35px 5px 0 0; overflow:hidden;}
+#top_blcok .btn_edit img{ width:100%; height:100%;}
+
+/*list_block*/
+#list_block{ float:left; width:100%; margin-bottom:10px;}
+#list_block .top_sort{ float:left; width:90%; margin:10px 5%; height:35px; overflow:hidden; background:#999;}
+#list_block .top_sort .single_sort{ float:left; width:33.3%; height:35px;  text-align:center; overflow:hidden; line-height:35px;}
+#list_block .top_sort .single_sort p{ display:inline-block; color:#fff;font-size:13px;}
+#list_block .top_sort .single_sort .row_pic{ display:inline-block; height:20px; width:20px; margin-bottom:-5px;overflow:hidden; }
+#list_block .top_sort .single_sort .row_pic img{ height:75%; width:100%; padding-bottom:5px;}
+#list_block .list{ float:left; width:90%; margin:0 5% 10px;}
+#list_block .list .single_one{ float:left;  height:115px; width:100%; margin-bottom:10px; overflow:hidden; background:#fAFAFA; outline:solid 1px #fff;}
+#list_block .list .single_one .goods_pic{ float:left;  height:75px; width:75px;}
+#list_block .list .single_one .tlt{ float:left; height:50px; width:63%;margin-left:2%;font-size:16px;line-height:25px;overflow:hidden; word-break:break-all;}
+#list_block .list .single_one .price{ float:left; height:25px;width:50%; margin-left:3%; font-size:15px;line-height:25px; overflow:hidden;}
+#list_block .list .single_one .btn_edit{ float:right; height:75px;width:30px; margin-top:-50px; font-size:15px; line-height:25px; overflow:hidden; opacity:0.5;}
+#list_block .list .single_one .btn_edit img{ width:100%; height:100%;}
+#list_block .list .single_one .btn_goods_onoff{ float:left; width:70px; clear:both;}
+#list_block .list .single_one .btn_goods_onoff .onoff .b::before{content:'上架'; color:#fff;}
+#list_block .list .single_one .btn_goods_onoff .onoff label::after{content:'下架'; color:#666;}
+#list_block .list .single_one .goods_info{ float:right; margin-top:5px; height:30px; width:74%;line-height:30px; }
+#list_block .list .single_one .goods_info span{ float:left; width:33.3%;  line-height:35px; text-align:center; overflow:hidden; }
+
+

@@ -1,0 +1,29 @@
+/* CSS Document */
+
+body{overflow-x:hidden; background:#fff;}
+
+.bar{list-style:none; position:fixed; bottom:0;backface-visibility:hidden;
+-webkit-backface-visibility:hidden;	/* Chrome 和 Safari */
+-moz-backface-visibility:hidden; 	/* Firefox */
+-ms-backface-visibility:hidden; 	/* Internet Explorer */
+ background:#f1f1f1 !important; opacity:0.9;  width:100%; height:40px; border-top:solid 1px #999; z-index:9999; min-width:300px; max-width:560px;}
+
+#bar .inp_block{float:left;height:100%;	width:100%;}
+#bar .txt_inp{display:block;float:left;	height:30px;width:77%;	margin:4px 0 0 3%;	border:solid 1px #aaa;	border-radius:4px; font-size:14px; line-height:30px;	background:#f9f9f9;resize: none;overflow-y:visible;}
+#bar .btn_sub{display:block;	float:left;	text-decoration:none;	font:bold 16px "微软雅黑";	height:30px;	width:16%;	padding:5px 0 5px 0; line-height:30px;margin-left:2%;	text-align:center;	color:#666;}
+#bar .btn_sub:hover{	color:#0C0;}
+#box{	display:block;height:auto;width:100%;	overflow-x:hidden;padding-bottom:23%;}
+#box .time_block{float:left;width:100%;height:auto;text-align:center;color:#999;font:normal 10px "黑体";}
+#box #dialogue_list{padding-top:20px;}
+/*左边泡泡*/
+#box .left_dialogue{display:block;float:left;width:100%;height:auto;margin-top:5px;	background:#fff;color:#000;}
+#box .left_dialogue .dialogue_l{position:relative;z-index:101;bottom:0px;float:left;height:30px;width:15px;overflow:hidden;left:6px;background:url(../../img/app/chatboard/d_l.png) no-repeat;background-size:120%;background-position:1px 1px;}
+#box .left_dialogue .dialogue_m{float:left;height:auto;width:auto;max-width:70%;padding:10px;overflow:hidden;	word-break:break-all;border-radius:15px;font-size:14px;}
+#box #dialogue_list .l_b{background:#e5e5ea;}
+#box .left_dialogue .time{float:left;clear:both;color:#999;margin-left:20px;}
+/*右边泡泡*/
+#box .right_dialogue{display:block;float:right;width:100%;height:auto;margin-top:5px;background:#fff;color:#fff;}
+#box .right_dialogue .dialogue_r{position:relative;z-index:101;bottom:0px;float:right;height:30px;width:15px;right:6px;background:url(../../img/app/chatboard/d_r.png) no-repeat;background-size:100%;background-position:-2px 0;}
+#box .right_dialogue .dialogue_m{float:right;height:auto;width:auto;max-width:80%;padding:10px;	overflow:hidden;	word-break:break-all;	background:#DCE2E9;	border-radius:15px;font-size:14px;}
+#box #dialogue_list .r_b{background:#00da4b;}
+#box .right_dialogue .time{	float:right;	clear:both;color:#999;margin-right:20px;}

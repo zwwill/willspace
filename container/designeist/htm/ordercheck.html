@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>确认订单</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="../css/com.css">
+<link rel="stylesheet" type="text/css" href="../css/ordercheck.css">
+<!--JS文件-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/com.js"></script>
+<script src="../js/ordercheck.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+ 
+	<!--main_block-->
+	<div id="main_block">
+      <div class="top_btn_block">
+      	<span id="btn_back" onClick="javascript:history.go(-1);"><img src="../img/app/ico_row_w_left.png"></span>确认订单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    	<div class="info_buyer">
+        	<div class="addr_ico"></div>
+        	<span class="name">收货人：张威</span><span class="phonenum">13057557808</span>
+            <span class="addr_line"><p>收货地址：</p><span class="addr">南京市浦口区学府路8号南京大学</span><a href="#"><span class="btn_edit"></span></a></span>
+        </div>
+        <!-- order_block -->
+        <div class="order_block">
+            <div class="group_block" >
+            	<div class="top_b">
+                    <a href="store01.html" class="btn_store_in"><p class="txt_tlt">【设计师】Ansen</p><img src="../img/app/ico_row_b.png" class="img_in" /></a>
+                </div>
+                <div class="single_goods"> 
+                    <a class="btn_block_in" href="info_goods01.html">
+                    	<div class="block_left" >
+                    		<img src="../img/d/d4_work10.jpg" class="img_goods" />
+                        </div>
+                        <div class="block_middle info_hidden_show">
+                        	<p class="txt_tlt">{转运珠}【按粒出售】</p>
+                        	<p class="txt_info">【Ansen工作室】手工纯银｛转运珠｝系列。手工镂空打造。由印度工作室制作完成。</p>
+                        </div>
+                    	<div class="block_right info_hidden_show" >
+                    		<p class="txt_xianjia">￥<span class="nums">100.0</span></p>
+                    		<p class="txt_yuanjia">￥<span class="nums">260.0</span></p>
+                    		<p class="txt_nums">x<span class="nums">1</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="edit">
+                	<span class="tlt">购买数量</span>
+                     <div class="right">
+                    	<span class="edit_minus">-</span><input name="nums" class="edit_nums" type="num" value="1" /><span class="edit_plus">+</span>
+                      </div>
+                     
+                </div>
+            <textarea id="liulan" class="txt_liulan" placeholder="给卖家的留言："></textarea>
+                <div class="info_seller">
+                	<p class="seller"></p>
+                    <span class="phonenum">13000000001</span>
+            		<a href="chatblock/chatboard.html"><span class="btn_sixin">私信卖家</span></a>
+            		<span class="btn_shownum">联系电话</span>
+                </div>
+            </div>
+        </div>
+        <!-- End order_block -->
+        
+    </div>
+	<!--END main_block-->
+	
+	<!--sub_block-->
+    <span class="menu_padding_block"></span>
+    <div id="sub_block"  class="foot_block">
+    	<a href="buy_success.html"><div class="btn_2" id="btn_buynow">确 认</div></a>
+    	<p class="total_price">合计：<span>￥100.0</span></p>
+    </div>
+	<!--END sub_block-->
+</div>
+</body>
+</html>

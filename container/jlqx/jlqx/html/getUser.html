@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>南大金陵青协-成员表单</title>
+<link href="css/table.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+		window.show_userlist();//该页面被载入则自动调用show函数
+		var role;//全局变量用于存放取得的身份
+		var stuID;
+		function show_userlist()
+		{	
+			//权限控制
+            $.ajax({
+                url:"../php/getSession.php",
+                datatype:"json",
+                type:"post",
+                success:function(data){
+                    role=eval("("+data+")")[1];
+					stuID=eval("("+data+")")[0];
+					$.ajax({
+						url: '../php/admin/getUser.php',   
+						datatype:"json",
+						type: "POST",
+						success:function(data){
+							var product = eval("(" + data + ")");
+                    
+							if(product=="没有人员")//没有人员信息提示
+								alert(product);
+							else if(product=="没有权限")//没有权限信息提示
+								alert(product);	
+							else
+								tbl_users(product);
+						}
+					}); 
+                }
+            }); 
+		}
+		//用户信息表
+		function tbl_users(product)
+		{
+			var tab=document.getElementById("table");
+			//清空之前的记录
+			var num=tab.rows.length;
+			for(var i=0;i<num;i++){
+				tab.deleteRow(num-i-1);	
+			}
+			for(var i=0;i<=product.length;i++)
+			{	
+				var tr=tab.insertRow(tab.rows.length);
+				var td1=tr.insertCell(0);
+				var td2=tr.insertCell(1);
+				var td3=tr.insertCell(2);
+				var td4=tr.insertCell(3);
+				var td5=tr.insertCell(4);
+				var td6=tr.insertCell(5);
+				var td7=tr.insertCell(6);
+				var td8=tr.insertCell(7);
+				if(0<role&&role<4)
+				{
+					var td_del=tr.insertCell(8);
+					td_del.align="center";td_del.width="90";
+				}
+				td1.align="center";td1.width="130";
+				td2.align="center";td2.width="100";
+				td3.align="center";td3.width="60";
+				td4.align="center";td4.width="170";
+				td5.align="center";td5.width="190";
+				td6.align="center";td6.width="170";
+				td7.align="center";td7.width="100";
+				td8.align="center";td8.width="110";
+				
+				if(i==0)
+				{
+					td1.innerHTML="学号";
+					td1.setAttribute("class","tab_h");
+					td2.innerHTML="姓名";
+					td2.setAttribute("class","tab_h");
+					td3.innerHTML="性别";
+					td3.setAttribute("class","tab_h");
+					td4.innerHTML="身份证号";
+					td4.setAttribute("class","tab_h");
+					td5.innerHTML="院系专业";
+					td5.setAttribute("class","tab_h");
+					td6.innerHTML="服务总时长";
+					td6.setAttribute("class","tab_h");
+					td7.innerHTML="籍贯";
+					td7.setAttribute("class","tab_h");
+					td8.innerHTML="手机号";
+					td8.setAttribute("class","tab_h");
+					if(0<role&&role<4){
+						td_del.innerHTML="操作";
+						td_del.setAttribute("class","tab_h");
+					}
+				}
+				else
+				{
+					td1.innerHTML=product[i-1].studentID;
+					td2.innerHTML=product[i-1].userName;
+					td4.innerHTML=product[i-1].citizenID;
+					td6.innerHTML=product[i-1].activityHours;
+					td7.innerHTML=product[i-1].naviePlace;
+					td8.innerHTML=product[i-1].phoneNumber;
+					
+					if(i%2==0){
+						td1.setAttribute("class","tab_l");
+						td2.setAttribute("class","tab_l");
+						td3.setAttribute("class","tab_l");
+						td4.setAttribute("class","tab_l");
+						td5.setAttribute("class","tab_l");
+						td6.setAttribute("class","tab_l");
+						td7.setAttribute("class","tab_l");
+						td8.setAttribute("class","tab_l");
+						if(0<role&&role<4)
+						td_del.setAttribute("class","tab_l");
+					}
+					if(product[i-1].sex==0){
+						td3.innerHTML="男";
+					}else{
+						td3.innerHTML="女";
+					}
+					
+					if(product[i-1].admissionDepartment==1){
+						td5.innerHTML="传媒学院 "+product[i-1].admissionMajor;
+					}else if(product[i-1].admissionDepartment==2){
+						td5.innerHTML="信工学院 "+product[i-1].admissionMajor;
+					}else if(product[i-1].admissionDepartment==3){
+						td5.innerHTML="商学院 "+product[i-1].admissionMajor;
+					}else if(product[i-1].admissionDepartment==4){
+						td5.innerHTML="化生学院 "+product[i-1].admissionMajor;
+					}else if(product[i-1].admissionDepartment==5){
+						td5.innerHTML="艺术学院 "+product[i-1].admissionMajor;
+					}else if(product[i-1].admissionDepartment==6){
+						td5.innerHTML="城资源学院 "+product[i-1].admissionMajor;
+					}else if(product[i-1].admissionDepartment==7){
+						td5.innerHTML="外国语学院 "+product[i-1].admissionMajor;
+					}
+					
+					if(role==3&&product[i-1].studentID!=stuID)	{
+						//td_del.innerHTML="<a href='../php/admin/deleteUser.php?delStuID="+product[i-1].studentID+"' onclick='confirm();'>删除</a>";
+						td_del.innerHTML="<a href=\"#\" onclick=\"f_editStu('../php/admin/correctUser.php?editStuID="+product[i-1].studentID+"','"+product[i-1].studentID+" ： "+product[i-1].userName+"');\">编辑 </a><a href=\"#\" onclick=\"f_delStu('../php/admin/deleteUser.php?delStuID="+product[i-1].studentID+"','"+product[i-1].studentID+" ： "+product[i-1].userName+"');\">删除</a>";	
+						
+					}
+					else if(role==2&&product[i-1].studentID!=stuID)
+					{
+						td_del.innerHTML="<a href=\"#\" onclick=\"f_editStu('../php/admin/correctUser.php?editStuID="+product[i-1].studentID+"','"+product[i-1].studentID+" ： "+product[i-1].userName+"');\">编辑</a>";
+					}
+				}	
+			}
+		}
+		function f_editStu(){}
+		
+		function f_delStu(url,studentInfo){
+			if(confirm("是否要删除所选学员【"+studentInfo+"】？")){
+				location.href=url;
+			}
+		}
+		
+		
+</script>
+<style>
+#show{
+	width:auto;
+	height:auto;
+}
+</style>
+
+<body >
+	<div id="continer">
+        <div id="show">
+    		<table id="table" >		
+            </table>
+         
+        </div>
+ 
+	</div>
+
+</body>
+</html>

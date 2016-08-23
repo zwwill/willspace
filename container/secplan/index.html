@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>拯旧计划</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="css/com.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<!--JS文件-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/com.js"></script>
+<script src="js/jquery.touchslider.min.js"></script>
+<script src="js/index.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+
+	<!--search_block-->
+	<div id="search_block">
+    	<a href="#"><img class="logo" src="img/app/logo.png" /></a>
+       	<a href="html/search.html" ><span class="search_btn"><img src="img/app/ico_search.png" /><p>搜索二货、商品</p></span></a>
+        <a href="html/chatblock/chatlist.html" class="btn_sixin"><img class="img_sixin" src="img/app/ico_sixin.png"><p class="txt_sixin">私信</p></a>
+    </div>
+	<!--END search_block-->
+
+	<!--main_block-->
+	<div id="main_block">
+    	<!--adds touchslider-->
+        <div id="adds_block">
+            <div class="touchslider">
+                <div class="touchslider-viewport" id="viewport-roll"> 
+                    <div class="touchslider-item">
+                        <a href="#"><img src="img/ads_b/zjjh_ad.jpg" style="vertical-align:top;"/></a>
+                    </div> 
+                    <div class="touchslider-item">
+                        <a href="#"><img src="img/ads_b/qingxie.jpg" style="vertical-align:top;"/></a>
+                    </div> 
+                    <div class="touchslider-item">
+                        <a href="#"><img src="img/ads_b/qufenqi.jpg" style="vertical-align:top;"/></a>
+                    </div>
+                    <div class="touchslider-item">
+                        <a href="#"><img src="img/ads_b/youjianshudian.jpg" style="vertical-align:top;"/></a>
+                    </div>
+                    <div class="touchslider-item">
+                        <a href="#"><img src="img/ads_b/mix.jpg" style="vertical-align:top;"/></a>
+                    </div> 
+                    <div class="touchslider-item">
+                        <a href="#"><img src="img/ads_b/wenzhi.jpg" style="vertical-align:top;"/></a>
+                    </div>
+                    <div class="touchslider-item">
+                        <a href="#"><img src="img/ads_b/hehetuandui.jpg" style="vertical-align:top;"/></a>
+                    </div>
+                </div>
+                <div class="touchslider-navtag"> 
+                    <span class="touchslider-nav-item touchslider-nav-item-current"></span> 
+                    <span class="touchslider-nav-item "></span> 
+                    <span class="touchslider-nav-item "></span> 
+                    <span class="touchslider-nav-item "></span> 
+                    <span class="touchslider-nav-item "></span> 
+                    <span class="touchslider-nav-item "></span> 
+                    <span class="touchslider-nav-item "></span>
+                 </div>
+            </div>
+        </div>
+    	<!--END ADDS touchslider-->
+        
+    	<!--NAV 导航-->
+        <div id="nav_block">
+        	<div class="sigle_nav">
+            	<a href="html/storeslist.html">
+                	<img class="nav_pic square_pic" src="img/app/nav_weidian.png" />
+                    <p class="nav_p">校园微店</p>
+                </a>
+            </div>
+        	<div class="sigle_nav">
+            	<a href="html/goodslist.html">
+                	<img class="nav_pic square_pic" src="img/app/nav_erhuo.png" />
+                    <p class="nav_p">拯救二货</p>
+                </a>
+            </div>
+        	<div class="sigle_nav">
+            	<a href="html/myexpr.html">
+                	<img class="nav_pic square_pic" src="img/app/nav_kuaidi.png" />
+                    <p class="nav_p">快递代领</p>
+                </a>
+            </div>
+        	<div class="sigle_nav">
+            	<a href="#" >
+                	<img class="nav_pic square_pic" src="img/app/nav_xiaoyuan.png" />
+                    <p class="nav_p">校园通</p>
+                </a>
+            </div>
+        </div>
+    	<!--END NAV-->
+        
+        <!--好店推荐-->
+        <div id="weidian_block">
+        	<div class="tlt_and_more">
+            	<p class="top_p">好店推荐</p>
+                <div class="more"><a href="html/storeslist.html">更多<span class="btn_more"></span></a></div>
+            </div>
+            <div class="list_x">
+            	<div class="touchslider">
+                    <div class="touchslider-viewport"> 
+                        <div class="touchslider-item">
+                        	<div class="store_block">
+                                <div class="single_store">
+                                    <a href="html/info_goods.html" class="store1"><img class="square_pic square_bac" src="img/stores/s10.jpg" /></a>
+                                    <a href="html/info_goods.html" class="store2"><img class="square_pic square_bac" src="img/stores/s11.jpg" /></a>
+                                    <a href="html/info_goods.html" class="store3"><img class="square_pic square_bac" src="img/stores/s12.jpg" /></a>
+                                    <p class="txt_store">Apple旗舰店</p>
+                                </div>
+                                <div class="single_store">
+                                    <a href="html/info_goods.html" class="store1"><img class="square_pic square_bac" src="img/stores/s20.jpg" /></a>
+                                    <a href="html/info_goods.html" class="store2"><img class="square_pic square_bac" src="img/stores/s21.jpg" /></a>
+                                    <a href="html/info_goods.html" class="store3"><img class="square_pic square_bac" src="img/stores/s22.jpg" /></a>
+                                    <p class="txt_store">NAN</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="touchslider-item">
+                        	<div class="store_block">
+                                <div class="single_store">
+                                    <a href="html/info_goods.html" class="store1"><img class="square_pic square_bac" src="img/stores/s30.jpg" /></a>
+                                    <a href="html/info_goods.html" class="store2"><img class="square_pic square_bac" src="img/stores/s31.jpg" /></a>
+                                    <a href="html/info_goods.html" class="store3"><img class="square_pic square_bac" src="img/stores/s32.jpg" /></a>
+                                    <p class="txt_store">时尚箱包城</p>
+                                </div>
+                                <div class="single_store">
+                                    <a href="html/info_goods.html" class="store1"><img class="square_pic square_bac" src="img/stores/s40.jpg" /></a>
+                                    <a href="html/info_goods.html" class="store2"><img class="square_pic square_bac" src="img/stores/s41.jpg" /></a>
+                                    <a href="html/info_goods.html" class="store3"><img class="square_pic square_bac" src="img/stores/s42.jpg" /></a>
+                                    <p class="txt_store">时装展</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="touchslider-item">
+                        	<div class="store_block">
+                                <div class="single_store">
+                                    <a href="html/info_goods.html" class="store1"><img class="square_pic square_bac" src="img/stores/s50.jpg" /></a>
+                                    <a href="html/info_goods.html" class="store2"><img class="square_pic square_bac" src="img/stores/s51.jpg" /></a>
+                                    <a href="html/info_goods.html" class="store3"><img class="square_pic square_bac" src="img/stores/s52.jpg" /></a>
+                                    <p class="txt_store">零食店</p>
+                                </div>
+                                <div class="single_store">
+                                    <a href="html/info_goods.html" class="store1"><img class="square_pic square_bac" src="img/stores/s60.jpg" /></a>
+                                    <a href="html/info_goods.html" class="store2"><img class="square_pic square_bac" src="img/stores/s61.jpg" /></a>
+                                    <a href="html/info_goods.html" class="store3"><img class="square_pic square_bac" src="img/stores/s62.jpg" /></a>
+                                    <p class="txt_store">拯旧书店</p>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                    </div>
+                    <div class="touchslider-navtag"> 
+                        <span class="touchslider-nav-item touchslider-nav-item-current"></span> 
+                        <span class="touchslider-nav-item "></span> 
+                        <span class="touchslider-nav-item "></span>
+                     </div>
+                </div>
+            </div>
+            <div id="ad">
+            	<a href="#"><img src="img/ads_b/ad.jpg" class="img_ad"/></a>
+            </div>
+        </div>
+        <!--END校园微店-->
+        
+        <!--校园二货-->
+		<div id="erhuo_block">
+        	<div class="tlt_and_more">
+            	<p class="top_p">二货</p>
+                <div class="more"><a href="html/goodslist.html">更多<span class="btn_more"></span></a></div>
+            </div>
+            <div class="list_x">
+                <div class="single_goods">
+                	<a href="html/info_2huo.html" class="a_2huo">
+                    	<img src="img/stores/s10.jpg" class="img_2huo square_pic square_bac"/>
+                        <p class="info_2huo">【测试数据】拯旧计划推荐产品、热卖中...</p>
+                        <p class="price_2huo">￥889.0</p>
+                    </a>
+                </div>
+                <div class="single_goods">
+                	<a href="html/info_2huo.html" class="a_2huo">
+                    	<img src="img/stores/s11.jpg" class="img_2huo square_pic square_bac"/>
+                        <p class="info_2huo">【测试数据】拯旧计划推荐产品、热卖中...</p>
+                        <p class="price_2huo">￥889.0</p>
+                    </a>
+                </div>
+                <div class="single_goods">
+                	<a href="html/info_2huo.html" class="a_2huo">
+                    	<img src="img/stores/s21.jpg" class="img_2huo square_pic square_bac"/>
+                        <p class="info_2huo">【测试数据】拯旧计划推荐产品、热卖中...</p>
+                        <p class="price_2huo">￥889.0</p>
+                    </a>
+                </div>
+                <div class="single_goods">
+                	<a href="html/info_2huo.html" class="a_2huo">
+                    	<img src="img/stores/s22.jpg" class="img_2huo square_pic square_bac"/>
+                        <p class="info_2huo">【测试数据】拯旧计划推荐产品、热卖中...</p>
+                        <p class="price_2huo">￥889.0</p>
+                    </a>
+                </div>
+                <div class="single_goods">
+                	<a href="html/info_2huo.html" class="a_2huo">
+                    	<img src="img/stores/s30.jpg" class="img_2huo square_pic square_bac"/>
+                        <p class="info_2huo">【测试数据】拯旧计划推荐产品、热卖中...</p>
+                        <p class="price_2huo">￥889.0</p>
+                    </a>
+                </div>
+                <div class="single_goods">
+                	<a href="html/info_2huo.html" class="a_2huo">
+                    	<img src="img/stores/s32.jpg" class="img_2huo square_pic square_bac"/>
+                        <p class="info_2huo">【测试数据】拯旧计划推荐产品、热卖中...</p>
+                        <p class="price_2huo">￥889.0</p>
+                    </a>
+                </div>
+                <div class="single_goods">
+                	<a href="html/info_2huo.html" class="a_2huo">
+                    	<img src="img/stores/s40.jpg" class="img_2huo square_pic square_bac"/>
+                        <p class="info_2huo">【测试数据】拯旧计划推荐产品、热卖中...</p>
+                        <p class="price_2huo">￥889.0</p>
+                    </a>
+                </div>
+                <div class="single_goods">
+                	<a href="html/info_2huo.html" class="a_2huo">
+                    	<img src="img/stores/s42.jpg" class="img_2huo square_pic square_bac"/>
+                        <p class="info_2huo">【测试数据】拯旧计划推荐产品、热卖中...</p>
+                        <p class="price_2huo">￥889.0</p>
+                    </a>
+                </div>
+                <div class="single_goods">
+                	<a href="html/info_2huo.html" class="a_2huo">
+                    	<img src="img/stores/s52.jpg" class="img_2huo square_pic square_bac"/>
+                        <p class="info_2huo">【测试数据】拯旧计划推荐产品、热卖中...</p>
+                        <p class="price_2huo">￥889.0</p>
+                    </a>
+                </div>
+                <div class="single_goods">
+                	<a href="html/info_2huo.html" class="a_2huo">
+                    	<img src="img/stores/s60.jpg" class="img_2huo square_pic square_bac"/>
+                        <p class="info_2huo">【测试数据】拯旧计划推荐产品、热卖中...</p>
+                        <p class="price_2huo">￥889.0</p>
+                    </a>
+                </div>
+            </div>
+            <div class="loading">
+            	<img src="img/app/loading.gif" class="img_loading" />Loding...
+            </div>
+        </div>
+        <!--END 校园二货-->
+		<a id="btn_top" href="#m_top">Top</a>
+    </div>
+	<!--END main_block-->
+
+	<!--menu_block-->
+    <span class="menu_padding_block"></span>
+    <div id="menu_block">
+      <div class="single_menu">
+    	<span><div id="menu_home">
+        	<img src="img/app/ico_home_on.png" class="menu_pic" />
+            <p class="menu_p menu_p_on">首页</p>
+        </div></span>
+      </div>
+      
+      <div class="single_menu">
+    	<a href="html/mystore.html" class=""><div id="menu_home">
+        	<img src="img/app/ico_store.png" class="menu_pic" />
+            <p class="menu_p">我的店</p>
+        </div></a>
+      </div>
+      
+      <div class="single_menu">
+    	<a href="html/add.html"><div id="menu_home">
+        	<img src="img/app/ico_add.png" class="menu_pic" />
+            <p class="menu_p">发布</p>
+        </div></a>
+      </div>
+      
+      <div class="single_menu">
+    	<a href="html/shoppingcart.html" class="a_del_back"><div id="menu_home">
+        	<img src="img/app/ico_basket.png" class="menu_pic" />
+            <p class="menu_p">购物车</p>
+        </div></a>
+      </div>
+      
+      <div class="single_menu">
+    	<a href="html/mine.html" class="a_del_back"><div id="menu_home">
+        	<img src="img/app/ico_mine.png" class="menu_pic" />
+            <p class="menu_p">我的</p>
+        </div></a>
+      </div>
+      
+    </div>
+	<!--END menu_block-->
+</div>
+</body>
+</html>

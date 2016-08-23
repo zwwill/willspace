@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>货运公司注册</title>
+		<script src="js/jquery.js"></script>
+        <script src="js/regist.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/regist.css">
+  
+    </head>
+
+    <body>
+        <div id="container">
+            <form action="/Wuliuwang/company_regist.wlw" method="post" enctype="multipart/form-data" id="form1">
+      <table border="0">
+      <tr>
+        <td colspan="2" class="lr_title">注 册</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="height:15px;"></td>
+      </tr>
+      <tr>
+        <td width="140">用户名：</td>
+        <td width="279"><input type="text" class="inport"  name="username" id="username"/></td>
+      </tr>
+      <tr>
+        <td>密码：</td>
+        <td><input type="password" class="inport"  name="passwd" id="passwd"/></td>
+      </tr>
+      <tr>
+        <td>公司名称：</td>
+        <td><input type="text" class="inport" name="name" id="name"/></td>
+      </tr>
+      <tr>
+        <td>机构代码：</td>
+        <td><input type="text" class="inport" name="org_code" id="org_code"/></td>
+      </tr>
+      <tr>
+        <td>营业执照号码：</td>
+        <td><input type="text" class="inport" name="license" id="license"/></td>
+      </tr>
+      <tr>
+        <td>营业执照照片：</td>
+        <td><input type="file" class="f_inport" name="license_photo" id="license_photo"/></td>
+      </tr>
+      <tr>
+        <td>账号：</td>
+        <td><input type="text" class="inport" name="account" id="account"/></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="height:10px;"></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+        <input type="submit" value="注 册"  class="btn" id="regist"/>
+        <a href="#" id="btn_back" class="btn">返 回</a> 
+        </td>
+      </tr>
+    </table>
+            </form>
+        </div>
+    </body>
+</html>

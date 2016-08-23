@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>招聘</title>
+<link href="want.css" rel="stylesheet" type="text/css" />
+<!--反转效果的CSS和JS-->
+<link href="../../css/animation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.11.js"></script>
+</head>
+
+<body>
+<div id="con"> 
+		<!--Left招聘信息块-->
+		<div id="left">
+				<div class="wantCard_side">
+						<div class="wantCard">
+								<div id="wantInfor">
+										<p class="wanttitle">加载中................</p>
+								</div>
+						</div>
+				</div>
+				<div class="wantControl"> <span class="up"></span> <span class="txt"><i>1</i>/2</span> <span class="down"></span> </div>
+		</div>
+		<!--Right个人信息及简历-->
+		<div id="right">
+				<form action="../../php/common/hunts.php" method="post" enctype="multipart/form-data" target="hidden_frame">
+						<table>
+								<tr>
+										<td><input id="u_name" name="u_name" class="input_name" type="text" onfocus="" value="" /></td>
+								</tr>
+								<tr>
+										<td><input id="phone" name="phone" class="input_other" type="text" onfocus="name_clear()" value="" /></td>
+								</tr>
+								<tr>
+										<td><select id="select_job" name="job"  class="input_other">
+												</select></td>
+								</tr>
+								<tr>
+										<td><span class="span">
+												<input name="" type="text" id="viewfile"
+ onmouseout="document.getElementById('upload').style.display='none';"
+ class=" input_other" />
+												</span>
+												<input type="file" id="upload" name="file_resume"
+ onchange="document.getElementById('viewfile').value=this.value;this.style.display='none';"
+ class="input_file" /></td>
+								</tr>
+								<tr>
+										<td><input id="sub" type="submit"  value="提交" class="btn_sub"/></td>
+								</tr>
+						</table>
+				</form>
+				 <iframe name='hidden_frame' id="hidden_frame" style="display:none"></iframe>  
+		</div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript" src="want.js"></script>
+<script>getQueryString("mg");</script>

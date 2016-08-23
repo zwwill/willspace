@@ -1,0 +1,121 @@
+/* CSS Document */
+
+body{
+	overflow-x:hidden;
+	background:#fff;
+}
+#box{
+	display:block;
+	float:left;
+	height:auto;
+	width:100%;
+}
+#box .dialogue_one{
+	position:relative;
+	display:block;
+	clear:both;
+}
+#box .a_single{
+	display:block;
+	float:left;
+	width:100%;
+	height:auto;
+}
+#box .flag_block{
+	display:block;
+	float:left;
+	width:12px;
+	margin-left:3%;
+	margin-right:1%;
+	height:12px;
+	margin-top:13px;
+	background:#fff; /*00da4b*/
+	border-radius:100px;
+}
+#box .a_single .single{
+	display:block;
+	float:left;
+	width:92%;
+	height:auto;
+	padding:8px 0 ;
+	border-bottom:solid 1px #CCC;
+}
+#box .single .linkman{
+	display:block;
+	float:left;
+	height:auto;
+	width:60%;
+	overflow:hidden;
+	font:bold 16px "黑体","微软雅黑";
+	color:#000;
+	line-height:20px;
+}
+#box .single .date{
+	display:block;
+	float:right;
+	width:26%;
+	overflow:hidden;
+	padding-right:2%;
+	line-height:20px;
+	height:auto;
+	text-align:right;
+	color:#999;
+}
+#box .single .arrow{
+	display:block;
+	float:right;
+	width:4%;
+	height:20px;
+	margin-right:10px;
+	line-height:20px;
+	background:url(../../img/app/chatboard/arrow_right.png) ;
+	background-repeat:no-repeat;
+	background-size:10px 15px;
+	background-position:0;
+	opacity:0.5;
+}
+#box .single .info{
+	display:block;
+	float:left;
+	padding:5px 0 0 0;
+	word-break:break-strict;
+	height:34px;
+	line-height:17px;
+	width:95%;
+	clear:both;
+	color:#999;
+	overflow:hidden;
+}
+#box .hiden_block{
+	height:76px;
+	width:100%;
+}
+#box .hiden_block a{
+	float:left; 
+	display:block; 
+	width:46%; 
+	height:100%; 
+	font:normal 20px "黑体","微软雅黑";
+	text-align:center;
+	line-height:76px;
+	color:#fff;
+}
+
+#box .hiden_block .btn_del{
+	background:#F30;
+
+}
+#box .hiden_block .btn_info{
+	background:#00da4b;
+}
+#error_msg{
+	display:none;
+	width:100%;
+	height:300px;
+	text-align:center;
+	font:normal 20px "黑体","微软雅黑";
+	line-height:300px;
+	color:#fff;
+	text-shadow:#000 0 0px 3px;
+	
+}

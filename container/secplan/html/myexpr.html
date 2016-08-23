@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>拯旧计划</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="../css/com.css">
+<link rel="stylesheet" type="text/css" href="../css/myexpr.css">
+<!--JS文件-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/com.js"></script>
+<script src="../js/myexpr.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+ 	
+    <!--background_block-->
+    	<span id="background_block"></span>
+    <!--END background_block-->
+	<!--main_block-->
+	<div id="main_block">
+    	<span id="tlt_block"><img src="../img/app/expr/tlt_myexpr.png" class="img_tlt" /></span>
+    	<!--导航块 nav_block-->
+    	<div id="nav_block">
+        	<div class="single_nav" id="btn_erhuo"><a href="express/add_expr_order.html" class="a_left bg_color1">
+            	<img src="../img/app/weidian/ico_erhuo.png" class="img_nav square_pic" />
+                <p class="txt_nav">预约</p>
+            </a></div>
+        	<div class="single_nav" id="btn_dingdan"><a href="express/orders.html" class="a_right bg_color2">
+            	<img src="../img/app/weidian/ico_dingdan.png" class="img_nav square_pic" />
+                <p class="txt_nav">我的快递</p>
+            </a></div>
+        	<div class="single_nav" id="btn_dingdan"><a href="#" class="a_left bg_color3">
+            	<img src="../img/app/weidian/ico_dingdan.png" class="img_nav square_pic" />
+                <p class="txt_nav">期待...</p>
+            </a></div>
+        </div>
+    	<!--END 导航块 nav_block-->
+        <span class="padding_bottom"></span>
+    </div>
+	<!--END main_block-->
+	
+	<!--menu_block-->
+    	
+	<!--END menu_block-->
+</div>
+</body>
+</html>

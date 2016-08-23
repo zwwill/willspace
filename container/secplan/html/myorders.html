@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>我的订单</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="../css/com.css">
+<link rel="stylesheet" type="text/css" href="../css/myorders.css">
+<!--JS文件-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/com.js"></script>
+<script src="../js/myorders.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+ 
+	<!--main_block-->
+	<div id="main_block">
+      <div class="top_nav">
+      	<span class="btn" id="quanbu">全部</span>
+        <span class="btn" id="fukuan">待付款</span>
+        <span class="btn" id="fahuo">待发货</span>
+        <span class="btn" id="shouhuo">待收货</span>
+        <span class="btn" id="pingjia">待评价</span>
+      </div>
+      <!-- order_quanbu-->
+    	<div class="order_block" id="order_quanbu">
+        
+            <div class="group_block" >
+            	<div class="top_b">
+                    <a href="store.html" class="btn_store_in"><p class="txt_tlt">【测试数据】Apple旗舰店001</p><img src="../img/app/ico_row_b.png" class="img_in" /></a>
+                    <span class="txt_state">已完成</span>
+                </div>
+                <div class="single_goods"> 
+                    <a class="btn_block_in" href="orderinfo.html">
+                    	<div class="block_left" >
+                    		<img src="../img/stores/s11.jpg" class="img_goods" />
+                        </div>
+                        <div class="block_middle info_hidden_show">
+                        	<p class="txt_tlt">【测试数据】iPhone 6Plus</p>
+                        	<p class="txt_info">【测试数据】拯旧计划推荐产品，热卖中。。。</p>
+                            
+                        </div>
+                    	<div class="block_right info_hidden_show" >
+                    		<p class="txt_xianjia">￥<span class="nums">4999.0</span></p>
+                    		<p class="txt_yuanjia">￥<span class="nums">5999.0</span></p>
+                    		<p class="txt_nums">x<span class="nums">3</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="single_goods"> 
+                    <a class="btn_block_in" href="orderinfo.html">
+                    	<div class="block_left" >
+                    		<img src="../img/stores/s10.jpg" class="img_goods" />
+                        </div>
+                        <div class="block_middle info_hidden_show">
+                        	<p class="txt_tlt">【测试数据】iWatch</p>
+                        	<p class="txt_info">【测试数据】拯旧计划推荐产品，热卖中。。。</p>
+                        </div>
+                    	<div class="block_right info_hidden_show" >
+                    		<p class="txt_xianjia">￥<span class="nums">2800.0</span></p>
+                    		<p class="txt_yuanjia">￥<span class="nums">3899.0</span></p>
+                    		<p class="txt_nums">x<span class="nums">2</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="sumup">
+                	<p>实付<span>￥20597.0</span></p>
+                    <p>运费<span>￥10.0</span></p>
+                    <p>共<span>5</span>件商品</p>
+                </div>
+                <div class="btn_group">
+                	<span class="btn btn_del">删除订单</span>
+                </div>
+            </div>
+            
+            <div class="group_block" >
+            	<div class="top_b">
+                    <a href="store.html" class="btn_store_in"><p class="txt_tlt">【测试数据】Apple旗舰店002</p><img src="../img/app/ico_row_b.png" class="img_in" /></a>
+                    <span class="txt_state">待付款</span>
+                </div>
+                <div class="single_goods"> 
+                    <a class="btn_block_in" href="orderinfo.html">
+                    	<div class="block_left" >
+                    		<img src="../img/stores/s11.jpg" class="img_goods" />
+                        </div>
+                        <div class="block_middle info_hidden_show">
+                        	<p class="txt_tlt">【测试数据】iPhone 6Plus</p>
+                        	<p class="txt_info">【测试数据】拯旧计划推荐产品，热卖中。。。</p>
+                            
+                        </div>
+                    	<div class="block_right info_hidden_show" >
+                    		<p class="txt_xianjia">￥<span class="nums">4999.0</span></p>
+                    		<p class="txt_yuanjia">￥<span class="nums">5999.0</span></p>
+                    		<p class="txt_nums">x<span class="nums">1</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="sumup">
+                	<p>实付<span>￥4999.0</span></p>
+                    <p>运费<span>￥10.0</span></p>
+                    <p>共<span>1</span>件商品</p>
+                </div>
+                <div class="btn_group">
+                	<span class="btn btn_pay">立即付款</span>
+                	<span class="btn btn_cancel">取消订单</span>
+                </div>
+            </div>
+            
+            <div class="group_block" >
+            	<div class="top_b">
+                    <a href="store.html" class="btn_store_in"><p class="txt_tlt">【测试数据】Apple旗舰店003</p><img src="../img/app/ico_row_b.png" class="img_in" /></a>
+                    <span class="txt_state">待发货</span>
+                </div>
+                <div class="single_goods"> 
+                    <a class="btn_block_in" href="orderinfo.html">
+                    	<div class="block_left" >
+                    		<img src="../img/stores/s10.jpg" class="img_goods" />
+                        </div>
+                        <div class="block_middle info_hidden_show">
+                        	<p class="txt_tlt">【测试数据】iWatch</p>
+                        	<p class="txt_info">【测试数据】拯旧计划推荐产品，热卖中。。。</p>
+                        </div>
+                    	<div class="block_right info_hidden_show" >
+                    		<p class="txt_xianjia">￥<span class="nums">2800.0</span></p>
+                    		<p class="txt_yuanjia">￥<span class="nums">3899.0</span></p>
+                    		<p class="txt_nums">x<span class="nums">2</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="sumup">
+                	<p>实付<span>￥5600.0</span></p>
+                    <p>运费<span>￥10.0</span></p>
+                    <p>共<span>2</span>件商品</p>
+                </div>
+                <div class="btn_group">
+                	<span class="btn btn_recmd">提醒发货</span>
+                </div>
+            </div>
+            
+            <div class="group_block" >
+            	<div class="top_b">
+                    <a href="store.html" class="btn_store_in"><p class="txt_tlt">【测试数据】Apple旗舰店004</p><img src="../img/app/ico_row_b.png" class="img_in" /></a>
+                    <span class="txt_state">待收货</span>
+                </div>
+                <div class="single_goods"> 
+                    <a class="btn_block_in" href="orderinfo.html">
+                    	<div class="block_left" >
+                    		<img src="../img/stores/s11.jpg" class="img_goods" />
+                        </div>
+                        <div class="block_middle info_hidden_show">
+                        	<p class="txt_tlt">【测试数据】iPhone 6Plus</p>
+                        	<p class="txt_info">【测试数据】拯旧计划推荐产品，热卖中。。。</p>
+                            
+                        </div>
+                    	<div class="block_right info_hidden_show" >
+                    		<p class="txt_xianjia">￥<span class="nums">4999.0</span></p>
+                    		<p class="txt_yuanjia">￥<span class="nums">5999.0</span></p>
+                    		<p class="txt_nums">x<span class="nums">1</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="sumup">
+                	<p>实付<span>￥4999.0</span></p>
+                    <p>运费<span>￥10.0</span></p>
+                    <p>共<span>1</span>件商品</p>
+                </div>
+                <div class="btn_group">
+                	<span class="btn btn_sub">确认收货</span>
+                	<span class="btn btn_wuliu">查看物流</span>
+                </div>
+            </div>
+            
+            <div class="group_block" >
+            	<div class="top_b">
+                    <a href="store.html" class="btn_store_in"><p class="txt_tlt">【测试数据】Apple旗舰店005</p><img src="../img/app/ico_row_b.png" class="img_in" /></a>
+                    <span class="txt_state">待评价</span>
+                </div>
+                <div class="single_goods"> 
+                    <a class="btn_block_in" href="orderinfo.html">
+                    	<div class="block_left" >
+                    		<img src="../img/stores/s10.jpg" class="img_goods" />
+                        </div>
+                        <div class="block_middle info_hidden_show">
+                        	<p class="txt_tlt">【测试数据】iWatch</p>
+                        	<p class="txt_info">【测试数据】拯旧计划推荐产品，热卖中。。。</p>
+                        </div>
+                    	<div class="block_right info_hidden_show" >
+                    		<p class="txt_xianjia">￥<span class="nums">2800.0</span></p>
+                    		<p class="txt_yuanjia">￥<span class="nums">3899.0</span></p>
+                    		<p class="txt_nums">x<span class="nums">2</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="sumup">
+                	<p>实付<span>￥5600.0</span></p>
+                    <p>运费<span>￥10.0</span></p>
+                    <p>共<span>2</span>件商品</p>
+                </div>
+                <div class="btn_group">
+                	<span class="btn btn_comment">立即评价</span>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+      <!-- END order_quanbu-->
+        
+      <!-- order_fukuan-->
+    	<div class="order_block" id="order_fukuan">
+        
+            <div class="group_block" >
+            	<div class="top_b">
+                    <a href="store.html" class="btn_store_in"><p class="txt_tlt">【测试数据】Apple旗舰店002</p><img src="../img/app/ico_row_b.png" class="img_in" /></a>
+                    <span class="txt_state">待付款</span>
+                </div>
+                <div class="single_goods"> 
+                    <a class="btn_block_in" href="orderinfo.html">
+                    	<div class="block_left" >
+                    		<img src="../img/stores/s11.jpg" class="img_goods" />
+                        </div>
+                        <div class="block_middle info_hidden_show">
+                        	<p class="txt_tlt">【测试数据】iPhone 6Plus</p>
+                        	<p class="txt_info">【测试数据】拯旧计划推荐产品，热卖中。。。</p>
+                            
+                        </div>
+                    	<div class="block_right info_hidden_show" >
+                    		<p class="txt_xianjia">￥<span class="nums">4999.0</span></p>
+                    		<p class="txt_yuanjia">￥<span class="nums">5999.0</span></p>
+                    		<p class="txt_nums">x<span class="nums">1</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="sumup">
+                	<p>实付<span>￥4999.0</span></p>
+                    <p>运费<span>￥10.0</span></p>
+                    <p>共<span>1</span>件商品</p>
+                </div>
+                <div class="btn_group">
+                	<span class="btn btn_pay">立即付款</span>
+                	<span class="btn btn_cancel">取消订单</span>
+                </div>
+            </div>
+         
+        </div>
+      <!-- END order_fukuan-->
+        
+      <!-- order_fahuo-->
+    	<div class="order_block" id="order_fahuo">
+        
+            
+            <div class="group_block" >
+            	<div class="top_b">
+                    <a href="store.html" class="btn_store_in"><p class="txt_tlt">【测试数据】Apple旗舰店003</p><img src="../img/app/ico_row_b.png" class="img_in" /></a>
+                    <span class="txt_state">待发货</span>
+                </div>
+                <div class="single_goods"> 
+                    <a class="btn_block_in" href="orderinfo.html">
+                    	<div class="block_left" >
+                    		<img src="../img/stores/s10.jpg" class="img_goods" />
+                        </div>
+                        <div class="block_middle info_hidden_show">
+                        	<p class="txt_tlt">【测试数据】iWatch</p>
+                        	<p class="txt_info">【测试数据】拯旧计划推荐产品，热卖中。。。</p>
+                        </div>
+                    	<div class="block_right info_hidden_show" >
+                    		<p class="txt_xianjia">￥<span class="nums">2800.0</span></p>
+                    		<p class="txt_yuanjia">￥<span class="nums">3899.0</span></p>
+                    		<p class="txt_nums">x<span class="nums">2</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="sumup">
+                	<p>实付<span>￥5600.0</span></p>
+                    <p>运费<span>￥10.0</span></p>
+                    <p>共<span>2</span>件商品</p>
+                </div>
+                <div class="btn_group">
+                	<span class="btn btn_recmd">提醒发货</span>
+                </div>
+            </div>
+         
+        </div>
+      <!-- END order_fahuo-->
+        
+      <!-- order_shouhuo-->
+    	<div class="order_block" id="order_shouhuo">
+         
+            <div class="group_block" >
+            	<div class="top_b">
+                    <a href="store.html" class="btn_store_in"><p class="txt_tlt">【测试数据】Apple旗舰店004</p><img src="../img/app/ico_row_b.png" class="img_in" /></a>
+                    <span class="txt_state">待收货</span>
+                </div>
+                <div class="single_goods"> 
+                    <a class="btn_block_in" href="orderinfo.html">
+                    	<div class="block_left" >
+                    		<img src="../img/stores/s11.jpg" class="img_goods" />
+                        </div>
+                        <div class="block_middle info_hidden_show">
+                        	<p class="txt_tlt">【测试数据】iPhone 6Plus</p>
+                        	<p class="txt_info">【测试数据】拯旧计划推荐产品，热卖中。。。</p>
+                            
+                        </div>
+                    	<div class="block_right info_hidden_show" >
+                    		<p class="txt_xianjia">￥<span class="nums">4999.0</span></p>
+                    		<p class="txt_yuanjia">￥<span class="nums">5999.0</span></p>
+                    		<p class="txt_nums">x<span class="nums">1</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="sumup">
+                	<p>实付<span>￥4999.0</span></p>
+                    <p>运费<span>￥10.0</span></p>
+                    <p>共<span>1</span>件商品</p>
+                </div>
+                <div class="btn_group">
+                	<span class="btn btn_sub">确认收货</span>
+                	<span class="btn btn_wuliu">查看物流</span>
+                </div>
+            </div>
+         
+        </div>
+      <!-- END order_shouhuo-->
+       
+      <!-- order_pingjia-->
+    	<div class="order_block" id="order_pingjia">
+        
+            <div class="group_block" >
+            	<div class="top_b">
+                    <a href="store.html" class="btn_store_in"><p class="txt_tlt">【测试数据】Apple旗舰店005</p><img src="../img/app/ico_row_b.png" class="img_in" /></a>
+                    <span class="txt_state">待评价</span>
+                </div>
+                <div class="single_goods"> 
+                    <a class="btn_block_in" href="orderinfo.html">
+                    	<div class="block_left" >
+                    		<img src="../img/stores/s10.jpg" class="img_goods" />
+                        </div>
+                        <div class="block_middle info_hidden_show">
+                        	<p class="txt_tlt">【测试数据】iWatch</p>
+                        	<p class="txt_info">【测试数据】拯旧计划推荐产品，热卖中。。。</p>
+                        </div>
+                    	<div class="block_right info_hidden_show" >
+                    		<p class="txt_xianjia">￥<span class="nums">2800.0</span></p>
+                    		<p class="txt_yuanjia">￥<span class="nums">3899.0</span></p>
+                    		<p class="txt_nums">x<span class="nums">2</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="sumup">
+                	<p>实付<span>￥5600.0</span></p>
+                    <p>运费<span>￥10.0</span></p>
+                    <p>共<span>2</span>件商品</p>
+                </div>
+                <div class="btn_group">
+                	<span class="btn btn_comment">立即评价</span>
+                </div>
+            </div>
+        </div>
+      <!-- END order_pingjia-->
+      
+    </div>
+	<!--END main_block-->
+	
+	<!--sub_block-->
+    <span class="menu_padding_block"></span>
+    <div id="sub_block"  class="foot_block">
+    
+    </div>
+	<!--END sub_block-->
+</div>
+</body>
+</html>

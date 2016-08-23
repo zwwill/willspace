@@ -1,0 +1,84 @@
+/* CSS Document */
+
+* {
+	margin: 0px auto;
+	padding: 0px;
+	font-size: 14px;
+}
+#container {
+	height: auto;
+	width: auto;
+}
+#main {
+	width: 720px;
+	height: atuo;
+}
+#main #top {
+	height: 495px;
+	width: 720px;
+	
+}
+#main #top .master {
+	width: 350px;
+	height: 150px;
+	margin: 5px;
+	float: left;
+	background: #f3f3f3;
+}
+#main #top a {
+	height:495px;
+	width:auto;
+	color: #000;
+}
+#main #top a:hover {
+	color: #282;
+}
+#main #top .photo {
+	height: 140px;
+	width: 110px;
+	float: left;
+	margin: 5px;
+}
+#main #top .name {
+	height: 28px;
+	width: 225px;
+	font: normal 18px "微软雅黑";
+	margin-top: 5px;
+	line-height: 28px;
+	float: left;
+	clear: right;
+}
+#main #top .pos {
+	font: normal 18px "微软雅黑";
+	line-height: 28px;
+	margin-top: 5px;
+	height: 28px;
+	width: 225px;
+	float: left;
+	clear: right;
+}
+#main #top .info {
+	margin-top: 5px;
+	height: 74px;
+	width: 225px;
+	font: normal 13px "微软雅黑";
+	line-height: 18px;
+	float: left;
+	clear: right;
+}
+#main #teachers_list a {
+	clear:both;
+	width: 200px;
+	height: 30px;
+	font: normal 18px "微软雅黑";
+	line-height: 30px;
+	text-decoration: none;
+	color: #060;
+	float:left;
+	background: #B3DDA8;
+	padding-left: 20px;
+}
+#main #teachers_list a:hover {
+	color: #fff;
+	background: #137C3F;
+}

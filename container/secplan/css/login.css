@@ -1,0 +1,13 @@
+/* CSS Document */
+
+#login_block{width:100%; text-align:center;}
+#login_block .img_tlt{ display:block; width:40%; max-width:200px; margin-top:30px; margin-bottom:30px; border-radius:300px; box-shadow:#000 0px -5px 30px;}
+#login_block .in{ display:block; width:100%; height:45px; border:none; margin-top:2px; background:rgba(255,255,255,.5); text-align:center; font-size:18px; color:#000;}
+#login_block .btn_login{display:block; width:100%; height:50px; margin-top:20px;background:rgba(0,153,0,.6); font-size:22px; color:#fff; line-height:50px;}
+#login_block .btn_login:hover{background:rgba(0,153,0,1);}
+#login_block .btn_reg{display:block; width:100%; height:50px; margin-top:20px;background:rgba(255,102,0,.6); font-size:22px; color:#fff; line-height:50px;}
+#login_block .btn_reg:hover{background:rgba(255,102,0,1)}
+#container #main_block{ float:left;width:100%;background:url(../img/app/bg2.jpg) no-repeat; background-size:cover; background-position:top; overflow:scroll;}
+
+
+

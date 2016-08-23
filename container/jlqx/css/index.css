@@ -1,0 +1,217 @@
+/* CSS Document */
+
+*{
+	margin:0px auto;
+	padding:0px;
+	font-size:12px;
+	
+}
+#container{
+	width:1180px;
+}
+
+#header{
+	width:980px;
+	height:140px;
+}
+#header #logo{
+	height:150px;
+	width:200px;
+	margin:0px 0px 0px 10px;
+	background:url(../images/logo.png);
+	float:left;
+}
+#header #login{
+	width:130px;
+	height:30px;
+	float:right;
+	margin-top:110px;
+	
+}
+#header #login li{
+	float:left;
+	list-style:none;
+	line-height:24px;
+	margin:4px 0px 0px 6px;
+}
+#login li.add0{
+	width:20px;
+	background:url(../images/logo_r.png) no-repeat;
+	clear:right;
+}
+#login a{
+	text-decoration:none;
+	font-size:13px;
+	color:#999;
+}
+#login a:hover{
+	color:#F30;
+	text-decoration:underline;
+}
+#header .low{
+	width:100%;
+	height:auto;
+	clear:both;
+	background:url(../images/up_r.png) no-repeat;
+}
+
+
+#main{
+	width:100%;
+	height: auto;
+	color: #333;
+	margin-top:40px;
+}
+#main #link{
+	width:100%;
+	height:900px;
+	clear:both;
+}
+
+#main #link #link_left{
+	width:210px;
+	height:auto;
+	float:left;
+}
+#main #link .link_piece{
+	margin-top:10px;
+	width:200px;
+	height:140px;
+	background:#F60;
+}
+#main #link .link_piece_word1{
+	width:170px;
+	height:100%;
+	color:#fff;
+	font:normal 40px "Adobe 黑体 Std R";
+	line-height:140px;
+	text-align:center;
+}
+#main #link  .link_piece_word2{
+	width:170px;
+	height:140px;
+	color:#fff;
+	font:normal 40px "Adobe 黑体 Std R";
+	line-height:70px;
+	text-align:center;
+}
+#main #link  .link_piece_pic{
+	height:140px;
+	width:200px;
+	position:absolute;
+	opacity:0;
+	margin-top:-140px;
+}
+#main #link #link_middle{
+	float:left;
+	height:auto;
+	width:740px;
+	margin-left:10px;
+}
+#main #link #link_middle .act_piece{
+	
+	height:290px;
+	width:740px;
+	background:url(../images/act_bac.png);
+	margin-top:10px;
+}
+#main #link #link_middle .act_pic{
+	height:230px;
+	margin:30px;
+	width:280px;
+	border:solid 2px #FFFFFF;
+	float:left;
+}
+#main #link #link_middle .act_title{
+	margin-top:40px;
+	height:40px;
+	width:360px;
+	float:left;
+	font: normal 30px "Adobe 黑体 Std R";
+	line-height:40px;
+}
+#main #link #link_middle .act_info {
+	text-indent:32px;
+	font:normal 17px "Adobe 黑体 Std R";
+	margin-top:10px;
+	height:170px;
+	width:360px;
+	line-height:28px;
+	background:#eee;
+	float:left;
+	opacity:0.7;
+}
+
+#main #link #link_right{
+	width:210px;
+	height:auto;
+	float:right;
+}
+
+
+
+
+
+#back_mark{
+	background:url(../images/bac_mark.png) no-repeat;
+	margin-top:20px;
+	height:273px;
+	width:1230px;
+	clear:both;
+}
+
+#footer{
+	width:980px;
+	height:300px;
+}
+#footer li{
+	list-style:none;
+	text-align:center;
+}
+#footer .hr{
+	height:1px;
+	width:100%;
+	background:#F00;
+	clear:both;
+	margin-top:20px;
+}
+#footer .help{
+	width:250px;
+	float:left;
+}
+#footer .link{
+	width:400px;
+	margin:0px 40px;
+}
+#footer .link .ff{
+	width:200px;
+	float:left;
+}
+#footer .about{
+	width:250px;
+}
+#footer a{
+	line-height:17px;
+	list-style:none;
+	text-decoration:none;
+	color: #900;
+}
+#footer a:hover{
+	color:#666;
+	text-decoration:underline;
+}
+#footer #down{
+	width:100%;
+	height:70px;
+	clear:both;
+	padding-top:16px;
+}
+#footer #down p{
+	text-align:center;
+	line-height:20px;
+	color:#666;
+
+
+
+
+

@@ -1,0 +1,21 @@
+/* CSS Document */
+
+
+
+ #show table{
+	border:solid 1px #FFFFFF;
+}
+ #show td{
+	text-align:center;
+	line-height:20px;
+	font-size:14px;
+}
+#show .tab_l{
+	background:#D0D8DD;
+}
+#show .tab_h{
+	height:40px;
+	background:#09C;
+	font:bold 16px "Adobe 黑体 Std R";
+	color:#FFF;
+}

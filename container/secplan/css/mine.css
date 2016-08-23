@@ -1,0 +1,32 @@
+/* CSS Document */
+
+/*top_head*/
+#container #main_block #top_head{display:block; width:100%;  background:#0F0;}
+#container #main_block #top_head .btn_pic{ float:left; clear:both;width:100%;}
+#container #main_block #top_head .btn_pic .pic_head_b{ float:left;width:100%; }
+#container #main_block #top_head .btn_pic .info_block{ float:left;width:100%; margin-top:-155px; text-align:center;}
+#container #main_block #top_head .btn_pic .pic_head{ display:block; width:23%; border-radius:100px;box-shadow:0 -2px 10px #eee;}
+#container #main_block #top_head .btn_pic .txt_nickname{ display:block; padding-top:3%;font-size:16px; color:#fff; text-shadow:0 -1px 3px #ccc;}
+#container #main_block #top_head .btn_sixin{ float:right;width:40px; height:40px; margin:-50% 20px 0 0; text-align:center; background:#000; opacity:0.6; border:solid 1px #999; border-radius:40px; line-height:40px;}
+#container #main_block #top_head .btn_sixin .rmd_num{ position:relative;float:right; z-index:3; padding:0 7px; background:#F60; color:#fff; font-weight:bold; height:20px; line-height:20px; border-radius:10px; margin:-40px -6px 0 0;}
+#container #main_block #top_head .btn_sixin img{ display:block;width:80%; margin-top:15%;}
+#container #main_block #top_head .btn_collect{ float:left; margin-top:-40px; width:100%; height:40px;  opacity:0.7;}
+#container #main_block #top_head .btn_collect a{width:49.8%;background:#000; text-align:center; line-height:40px; color:#fff; font-size:16px;}
+#container #main_block #top_head .btn_collect .float_left{float:left}
+#container #main_block #top_head .btn_collect .float_right{float:right}
+
+/*order_block*/
+#container #main_block #order_block{ display:block; float:left; margin-top:12px; clear:both;width:100%; background:#fafafa;hidden;border-bottom: solid 1px #CCC;}
+#container #main_block #order_block #tlt_btn_block .left_tlt{ border-left:solid 7px #F60;}
+#container #main_block #order_block #nav_block{ display:block; float:left;clear:both;width:100%;}
+#container #main_block #order_block #nav_block .single_nav{display:block; float:left;width:25%; text-align:center;}
+#container #main_block #order_block #nav_block .single_nav .nav_ico{display:block; height:32px;width:32px; padding:15px 0 0 0;z-index:2; }
+#container #main_block #order_block #nav_block .single_nav .txt_nav{display:block; padding:10px 0; }
+#container #main_block #order_block #nav_block .single_nav .rmd_num{ position:relative;float:right; z-index:3; padding:0 5px; background:#F60; color:#fff; font-weight:bold; border-radius:10px; margin:-75px 10px 0 0;}
+
+#container #main_block #safe_block{display:block; float:left; margin-top:12px; clear:both;width:100%; background:#fafafa;}
+#container #main_block #safe_block #tlt_btn_block .left_tlt{ border-left:solid 7px #0BBC01;}
+
+#container #main_block #help_block{display:block; float:left; margin:12px 0 30px 0; clear:both;width:100%; background:#fafafa;}
+#container #main_block #help_block #tlt_btn_block .left_tlt{ border-left:solid 7px #06F;}
+

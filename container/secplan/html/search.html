@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>搜索</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<link rel="stylesheet" type="text/css" href="../css/com.css">
+<link rel="stylesheet" type="text/css" href="../css/search.css">
+<!--JS文件-->
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/jquery.touchslider.min.js"></script>
+<script src="../js/com.js"></script>
+<script src="../js/search.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<!--锚链接 Top-->
+    <a name="m_top"></a>
+    <!--自定义提示alert-->
+    <div id="alert_block" show='0'><p class="txt"></p></div>
+ 
+	<!--search_block-->
+	<div id="search_block2">
+    	<a href="javascript:history.go(-1);" id="btn_back"><img class="back" src="../img/app/ico_row_w_left.png" /></a>
+       	<span class="search_in"><img src="../img/app/ico_search.png" /><input type="text" class="search_input" placeholder="搜索商品、二货" /></span>
+        <a href="#" class="btn_search"><img class="img_search" src="../img/app/ico_search2.png"></a>
+    </div>
+	<!--END search_block2-->
+
+	
+	<!--top_btn_block-->
+	<div id="top_btn_block">
+    	<span class="single_btn" id="btn_class" isopen='0'><p>分类</p><img src="../img/app/ico_row_b_down.png"><p class="txt_class">【商品】电子产品</p></span>
+        
+        
+        <div class="class_block">
+          <div>
+        	<p class="txt_cc">全局</p>
+        	<span class="single_class" c="100">全部</span>
+        	<span class="single_class" c="101">商品</span>
+        	<span class="single_class" c="102">二货</span>
+          </div>
+          <div>
+        	<p class="txt_cc">商品</p>
+        	<span class="single_class" c="201">书本</span>
+        	<span class="single_class" c="202">电子产品</span>
+        	<span class="single_class" c="203">生活用品</span>
+        	<span class="single_class" c="204">零食小吃</span>
+        	<span class="single_class" c="205">其他</span>
+          </div>
+          <div>
+        	<p class="txt_cc">二货</p>
+        	<span class="single_class" c="301">书本</span>
+        	<span class="single_class" c="302">电子产品</span>
+        	<span class="single_class" c="303">生活用品</span>
+        	<span class="single_class" c="304">零食小吃</span>
+        	<span class="single_class" c="305">其他</span>
+          </div>
+        </div>
+    </div>
+	<!-- END top_btn_block-->
+	
+	<!--main_block-->
+	<div id="main_block">
+        <div id="main_block_cover"></div>
+        <div id="suggest_block">
+        	<span class="single_sug">【测试数据】二手课本</span>
+        	<span class="single_sug">【测试数据】电子产品</span>
+        	<span class="single_sug">【测试数据】化妆品</span>
+        	<span class="single_sug">【测试数据】零食</span>
+        </div>
+        <div id="history_block">
+        	<div class="list">
+            	<!--<span class="single_h"><p>【测试数据】二手课本</p><span class="del" h_kw_i=''>×</span></span>
+            	<span class="single_h"><p>【测试数据】电子产品</p><span class="del" h_kw_i=''>×</span></span>
+            	<span class="single_h"><p>【测试数据】零食</p><span class="del" h_kw_i=''>×</span></span>-->
+            </div>
+            <div class="remind_b">暂无搜索历史</div>
+            <span class="btn_clear">清空记录</span>
+        </div>
+    </div>
+	<!--END main_block-->
+
+	<!--menu_block-->
+    <span class="menu_padding_block"></span>
+    <div id="menu_block">
+      <div class="single_menu">
+    	<a href="../index.html"><div id="menu_home">
+        	<img src="../img/app/ico_home.png" class="menu_pic" />
+            <p class="menu_p">首页</p>
+        </div></a>
+      </div>
+      
+      <div class="single_menu">
+    	<a href="mystore.html"><div id="menu_home">
+        	<img src="../img/app/ico_store.png" class="menu_pic" />
+            <p class="menu_p">我的店</p>
+        </div></a>
+      </div>
+      
+      <div class="single_menu">
+    	<a href="add.html"><div id="menu_home">
+        	<img src="../img/app/ico_add.png" class="menu_pic" />
+            <p class="menu_p">发布</p>
+        </div></a>
+      </div>
+      
+      <div class="single_menu">
+    	<a href="shoppingcart.html"><div id="menu_home">
+        	<img src="../img/app/ico_basket.png" class="menu_pic" />
+            <p class="menu_p">购物车</p>
+        </div></a>
+      </div>
+      
+      <div class="single_menu">
+    	<a href="mine.html"><div id="menu_home">
+        	<img src="../img/app/ico_mine.png" class="menu_pic" />
+            <p class="menu_p">我的</p>
+        </div></a>
+      </div>
+      
+    </div>
+	<!--END menu_block-->
+</div>
+</body>
+</html>

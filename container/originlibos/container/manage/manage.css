@@ -1,0 +1,225 @@
+/* CSS Document */
+.td_10{width:10px;}
+.td_20{width:20px;}
+.td_30{width:30px;}
+.td_40{width:40px;}
+.td_50{width:50px;}
+.td_100{width:100px;}
+.td_150{width:150px;}
+.td_200{width:200px;}
+.td_250{width:250px;}
+.td_300{width:300px;}
+.td_400{width:400px;}
+.td_500{width:500px;}
+.t_head{font: bold 16px "宋体";color:#000;background:#ccc;border-radius:0 0 8px 8px;}
+.t_head_left{ border-radius:8px 0 8px 0;}
+.t_head_right{ border-radius:0 8px 0 8px;}
+td{	height:60px;	background:#fff;	padding:0px 5px;	text-shadow:#000 0px 0 0;	border-radius:7px;}
+#main{
+	width:1200px;
+	margin-top:40px;
+}
+#main #manage{
+	float:left;
+	margin-top:15px;
+	width:100%;
+	height:auto;
+	padding:0 10px 20px 10px;
+	border:solid 1px #060;
+	border-radius:10px;
+	background:#eee;
+	box-shadow:#888 0px 2px 4px;
+}
+#main #manage .top_tlt{
+	height:40px;
+	width:500px;
+	display:block;
+	background:#070;
+	font: bold 18px "黑体";
+	line-height:40px;
+	text-align:center;
+	border-radius:2px 2px 10px 10px;
+	color:#fff;
+	box-shadow:#333 0px 2px 2px;
+}
+#main #manage .info_block{
+	margin:15px 0 0 35px;
+	float:left;
+	width:1100px;
+	height:auto;
+	border-radius:15px;
+	background:#fff;
+	box-shadow:#888 0px 2px 4px;
+}
+#main #manage .title{
+	height:40px;
+	width:100px;
+	float:left;
+	margin-left:50px;
+	background:#070;
+	font:normal 16px "黑体";
+	line-height:40px;
+	text-align:center;
+	border-radius:1px 1px 7px 7px;
+	color:#fff;
+	box-shadow:#333 0px 2px 2px;
+}
+#main #manage #func_block{
+	
+}
+#main #manage #func_block #func_parent{
+	float:right;
+	margin:20px 60px 10px 0;
+}
+#main #manage #func_block .p_func{
+	display:block;
+	height:25px;
+	background:#CCC;
+	padding:2px 5px;
+	margin-right:10px;
+	color:#fff;
+	line-height:25px;
+	text-decoration:none;
+	border-radius:6px;
+	width:auto;
+	float:left;
+}
+#main #manage #func_block .p_func:hover{
+	background:#090;
+}
+#main #manage #func_block .pfunc_f{
+	background:#090;
+}
+ .func_son{
+	width:1000px;
+	height:auto;
+	float:left;
+	padding:10px 0 ;
+	margin:5px 0px 10px 45px;
+	border-top:dashed 1px #00CC00;
+}
+#main #manage #func_block .func_son .s_func{
+	display:block;
+	height:40px;
+	width:auto;
+	background:#CCC;
+	padding:2px 10px;
+	margin:0 10px;
+	font:bold 18px "宋体";
+	color:#fff;
+	line-height:40px;
+	text-decoration:none;
+	border-radius:8px;
+	float:left;
+}
+#main #manage #func_block .func_son .s_func:hover{
+	background:#090;
+}
+#main #manage #func_block .func_son .sfunc_f{
+	background:#090;
+}
+#main #manage #func_block #s1{
+	display:block;
+}
+#main #manage #func_block #s2{
+	display:none;
+}
+#main #manage #func_block #s3{
+	display:none;
+}
+#main #manage #s_manager_block .title{
+	height:40px;
+	width:auto;
+	float:left;
+	margin-left:50px;
+	padding:0 20px;
+	background:#070;
+	font:normal 16px "黑体";
+	line-height:40px;
+	text-align:center;
+	border-radius:1px 1px 7px 7px;
+	color:#fff;
+	box-shadow:#333 0px 2px 2px;
+}
+#main #manage #s_manager_block .manager_frame{
+	display:none;
+	height:auto;
+	width:1000px;
+	float:left;
+	margin:20px 0px 20px 50px;
+	padding:5px;
+	background:#f3f3f3;
+	border:solid 1px #ccc;
+	border-radius:5px;
+}
+#main #manage #s_manager_block .manager_frame .m_table{
+	height:auto;
+	width:100%;
+	display:block;
+	float:left;
+}
+
+#main #manage #s_manager_block .manager_frame .m_table a{
+	
+}
+#main #manage #s_manager_block .manager_frame .m_table .btn{
+	display:block;
+	float:left;
+	height:25px;
+	width:auto;
+	padding:2px 10px;
+	margin:0 0 0 10px;
+	background:#070;
+	color:#FFF;
+	border-radius:7px;
+	text-align:center;
+	line-height:25px;
+	text-decoration:none;
+}
+#main #manage #s_manager_block .manager_frame .m_table .shield{
+	background:#CCC;
+}
+#main #manage #s_manager_block .manager_frame .m_table .del{
+	background:#CC0;
+}
+#main #manage #s_manager_block .manager_frame .m_table .btn:hover{
+	background:#090;
+}
+#main #manage #s_manager_block .span_top{
+	height:80px;
+	width:200px;
+	display:block;
+	margin:0 auto;
+	font:bold 23px "黑体";
+	line-height:80px;
+	color:#090;
+	text-align:center;
+}
+#main #manage #s_manager_block #addlib_frame{
+	width:800px;
+	padding:20px 40px;
+	border:dashed 1px #00CC00;
+	border-radius:8px;
+}
+#main #manage #s_manager_block #addlib_frame label{
+	width:20%;
+	line-height:40px;
+	text-align:right;
+}
+#main #manage #s_manager_block .submit{
+	display:block;
+	height:40px;
+	width:100px;
+	margin:20px auto;
+	font:bold 20px "黑体";
+	line-height:40px;
+	text-align:center;
+	color:#fff;
+	background:#080;
+	text-decoration:none;
+	border-radius:10px;
+}
+#main #manage #s_manager_block .submit:hover{
+	background:#090;
+}
+

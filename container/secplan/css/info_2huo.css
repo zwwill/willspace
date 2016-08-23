@@ -1,0 +1,41 @@
+/* CSS Document */
+#main_block .top_btn_block{ position:fixed; top:0px;min-width:300px; max-width:560px; width:100%; height:auto; overflow:hidden; }
+#main_block .top_btn_block #btn_back{ float:left; height:40px; width:40px; border-radius:40px; margin:10px;background:#000; opacity:0.5;}
+#main_block .top_btn_block #btn_shoppingcart{ float:right; height:40px; width:40px; border-radius:40px; margin:10px;background:#000; opacity:0.5;}
+#main_block .top_btn_block img{ width:30px; height:30px; margin:5px;}
+
+#main_block #img_block{ float:left; width:100%; background:#666; height:300px; overflow:hidden;}
+#main_block #img_block .main_img{width:100%;}
+#main_block .name{ float:left; width:98%; padding-left:2%; min-height:40px; background:#000; color:#fff; font-size:18px; font-weight:bold; line-height:40px; opacity:0.5;margin-top:-40px;  }
+#main_block #info_block{ float:left; width:100%; background:#fafafa; }
+#main_block #info_block .price{ float:left; width:98%; padding-left:2%;height:30px; color:#F00; font-size:18px; font-weight:bold; line-height:35px;}
+#main_block #info_block .old_price{ float:left; width:98%; padding-left:2%;height:30px; color:#666; font-size:14px; font-weight:bold; line-height:30px; }
+#main_block #info_block .old_price .num{ color:#999;font-size:14px; text-decoration:line-through;}
+#main_block #info_block .visited_num{ float:left; width:98%; padding-right:2%; text-align:right;height:30px; color:#333; font-weight:bold; line-height:30px; margin-top:-30px; }
+
+#main_block #seller_block{ float:left; width:100%; padding-bottom:10px; background:#efefef;}
+#main_block #seller_block .photo_name{ float:left; width:100%; height:80px; overflow:hidden;}
+#main_block #seller_block .photo_name .img_touxiang{ float:left; width:60px; height:60px; border-radius:40px; box-shadow:0 0 5px #333333; margin:10px 15px 10px 20px;}
+#main_block #seller_block .photo_name .txt_name{ float:left;  height:50px;  width:65%; font-size:16px; padding-top:30px; line-height:25px; overflow:hidden;}
+#main_block #seller_block .phonenum{ float:left;  height:30px;  width:40%; text-align:center; margin:5px 0 0 7%; font-size:16px; color:#06C; border:solid 1px #06C; line-height:30px; overflow:hidden;}
+#main_block #seller_block .btn_shownum{ float:left; clear:left;  height:30px;  width:40%; text-align:center; background:#06C;  margin:-32px 0 0 7%;border:solid 1px #06C; font-size:16px; opacity:; color:#fff;  line-height:30px; overflow:hidden;}
+#main_block #seller_block .btn_sixin{ float:left;height:30px;  width:40%; text-align:center; background:#090; margin:5px 0 0 5%; border:solid 1px #090;font-size:16px; color:#fff;  line-height:30px; overflow:hidden;}
+
+#main_block #further_block{ float:left; width:100%; padding-bottom:10px;}
+#main_block #further_block .btn{ float:left; height:40px; width:50%; font-size:16px; line-height:40px; text-align:center; font-weight:bold; color:#fff;background:#aaa;}
+#main_block #further_block #btn_picinfo{  color:#666;background:#ddd;}
+#main_block #further_block .picinfo_block{ display:block; float:left; min-height:150px; width:100%; color:#000; background:#fafafa;}
+#main_block #further_block .picinfo_block .txt{ float:left; width:94%; color:#000; padding:10px 3%; line-height:25px;}
+#main_block #further_block .picinfo_block img{ float:left; min-height:150px; width:100%; color:#000;}
+
+#main_block #further_block .message_block{ display:none; float:left; min-height:100px; width:100%; color:#000; background:#f3f3f3;}
+#main_block #further_block .message_block .err_p{ float:left; width:100%; height:150px; line-height:100px; text-align:center; font-size:20px; text-shadow:0 -2px 60px #000; color:#fff;}
+
+
+#sub_block{ position:fixed;width:100%; bottom:0; background-color:#eee;overflow:hidden;text-align:center;}
+#sub_block .btn_1{ float:left; width:16%; height:40px;color:#fff; text-align:center; line-height:40px; overflow:hidden; background:#aaa;}
+#sub_block .btn_2{ float:left; width:34%; height:40px;color:#fff; text-align:center; line-height:40px;overflow:hidden; font-size:16px;}
+#sub_block img{ height:70%; margin-top:4px;}
+#sub_block #btn_collect{ background:#fff; height:39px; border-top:solid 1px #CCC;}
+#sub_block #btn_add2basket{ background:#CC0;}
+#sub_block #btn_buynow{ background:#F00;}

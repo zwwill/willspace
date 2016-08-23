@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>拯旧计划</title>
+<!--禁止浏览器缓存-->
+<meta http-equiv="pragma" content="no-cach" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<!--宽度为设备的最大宽度，禁止用户放大和缩小
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+<!--让网页内容以应用程序风格显示，并使状态栏透明-->
+<!--删除默认的苹果工具栏和菜单栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<!--告诉设备忽略将页面中的数字识别为电话号码-->
+<meta content="telephone=no" name="format-detection" />
+<!--favicon-->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<!--CSS文件-->
+<style>
+*{ margin:0 auto; padding:0; font-family:"微软雅黑"; cursor:default;}
+#container{ position:fixed; display:block; background:url(img/bg.jpg) no-repeat; background-size:100% 100%; height:100%; width:100%;}
+.tlt{ display:block;width:90%; text-align:center; font-size:4vw; font-weight:bold; margin-top:15%; color:#fff; text-shadow:0 -5px 40px #000;}
+.inpt_pwd{display:block;width:400px; height:50px; font-size:40px; text-align:center; color:#0f0; line-height:50px; background:rgba(0,0,0,0.1); border-radius:10px; margin-top:30px;}
+.err_txt{display:none; float:left;width:100%; height:50px; font-size:30px; text-align:center; color:#F00; line-height:50px; margin-top:-52px;  text-align:center;}
+.btn_in{ display:block;width:300px; height:50px; font-size:30px; text-align:center; color:#fff; line-height:50px; background:rgba(0,0,0,0.2); border-radius:10px; margin-top:30px;  text-shadow:0 -1px 10px #000;}
+.btn_in:hover{ cursor:pointer;background:rgba(0,0,0,0.5);}
+.tips{float:left;width:100%; height:50px; font-size:20px; text-align:center; color:#6F6; line-height:50px; text-align:center;}
+</style>
+<!--JS文件-->
+<script src="js/jquery-1.11.2.min.js"></script>
+</head>
+
+<body>
+<div id="container">
+<span class="tlt">拯旧计划微信墙</span>
+<input class="inpt_pwd" name="password" type="password" maxlength="8" />
+<span class="err_txt">口 令 错 误</span>
+<span class="btn_in">验 证 进 入</span>
+<span class="tips">体验验证口令：123456</span>
+</div>
+</body>
+
+<script>
+window.onselectstart=function(){return   false;}       //禁用选择
+window.oncopy=function(){return   false;}       //禁止复制
+//禁止查看源代码
+function stop(){
+	return false;
+}
+document.oncontextmenu=stop;
+document.onkeydown=function(){ 
+	if(window.event && window.event.keyCode >= 113&&window.event.keyCode<=123&&window.event.keyCode!=116&&window.event.keyCode!=122) { 
+		return false;
+	};
+	if(event.keyCode==13){
+		check_pwd();
+	}
+}
+$(".btn_in").click(function(){
+	check_pwd();
+});
+
+function check_pwd(){
+	var pwd=$(".inpt_pwd").val();
+	if(pwd==""){
+		$(".inpt_pwd").css("box-shadow","0 0px 10px #f00");
+		$(".inpt_pwd").val("");
+	}else if(pwd=="123456"){
+		$(".inpt_pwd").css("box-shadow","none");
+		sessionStorage.isCheck=1;
+		location.href ="main_index.html";
+	}else if(pwd=="zw00909"){
+		$(".inpt_pwd").css("box-shadow","none");
+		sessionStorage.isCheck=1;
+		location.href ="http://wxhzj.sinaapp.com/html/web/secplanwall/main_index.html";
+	}else{
+		$(".inpt_pwd").css("box-shadow","0 0px 10px #f00");
+		$(".inpt_pwd").val("");
+		$(".err_txt").slideDown();
+		setTimeout(function(){
+			$(".err_txt").slideUp();
+			$(".inpt_pwd").css("box-shadow","none");
+		},2000);
+		sessionStorage.isCheck=0;
+	}
+}
+
+</script>

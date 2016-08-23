@@ -1,0 +1,73 @@
+/*base*/
+label {
+	font-size: 12px;
+}
+form table tr td {
+	text-align: right;
+	white-space: nowrap;
+	padding-right: 15px;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.show-off {
+	display: none;
+}
+.show-on {
+ display:;
+}
+/*基本块*/
+.back-block {
+	width: 100%;
+	height: 427px;
+	padding: 5px;
+	box-shadow: rgba(35, 25, 25, 0.5) 5px 1px 5px;
+	background: rgba(232,232,232,0.2);
+}
+/* 表单 */
+.form {
+	margin: 15% 32%;
+}
+.form-control {
+	max-width:200px;
+	min-width:100px;
+	width:200px;
+	height: auto;
+	padding: 6px 12px;
+	font-size: 15px;
+	color: #555555;
+	background-color: white;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.btn {
+	color: #fff;
+	background-color: #428bca;
+	border-color: #357ebd;
+}
+.btn {
+	background-color: #000;
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	opacity: 0.9;
+}
+.btn:hover {
+	color: #fff;
+	opacity: 1;
+	background-color: #000;
+	border-color: #285e8e;
+}

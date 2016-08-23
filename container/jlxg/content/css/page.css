@@ -1,0 +1,79 @@
+/* CSS Document */
+
+*{
+	margin:0px auto;
+	padding:0px;
+	font-size:18px;
+}
+
+#container{
+	width:730px;
+}
+
+#neirong{
+	width:100%;
+	float:left;
+	height:auto;
+	background: #F0F0F0;
+	word-break:break-all;
+} 
+#neirong .title{
+	margin:20px 10px 20px 10px;
+	width:710px;
+	height:auto;
+	background:#FFF;
+}
+
+#neirong .title p{
+	text-align:center;
+	line-height:40px;
+	font-size:20px;
+	font-weight:bold;
+	vertical-align:bottom;
+}
+
+#neirong .pp{
+	text-indent:32px;
+	width:710px;
+	margin:10px;
+	height:auto;
+	background:#FFF ;
+	
+	
+}
+#neirong .pp p{
+	
+	padding:0px 20px;
+	font-size:16px;
+	line-height:26px;
+}
+#neirong .pp .strong{
+	font-weight:bold;
+	font-size:21px;
+}
+#neirong .page{
+	width:600px;
+	height:25px;
+	padding-top:10px;
+	text-align:center;
+}
+#neirong .page a{
+	text-decoration:none;
+	padding:3px 2px;
+	color:#666;
+}
+#neirong .page a:hover{
+	color:#F30;
+	text-decoration:underline;
+}
+
+#class_table td{
+	border-bottom:solid 1px #006699;
+	font:normal 18px "微软雅黑";
+}
+
+table{
+	text-indent:0px;
+}
+
+
