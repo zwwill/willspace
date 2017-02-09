@@ -39,6 +39,7 @@ scrollbar-base-color:#000; /*滚动条的基色*/
 ::-webkit-scrollbar-track-piece{ background-color:#fff; -webkit-border-radius:0;  }  
 
 </style>
+
 <body>
 <div id="container">
 <iframe src="../secplan/index.html" class="in_scr" ></iframe></div>
@@ -50,6 +51,16 @@ scrollbar-base-color:#000; /*滚动条的基色*/
 </div>
 </body>
 </html>
+
+
+<script>
+    var _cWidth = window.screen.width;
+	var _webUrl = document.location.url;
+	var _appUrl = document.getElementsByClassName('in_scr')[0].src;
+	if(_cWidth<800){
+		location.replace(_appUrl);
+	}
+</script>
 
 <script>
 window.onselectstart=function()   {return   false;}       //禁用选择
